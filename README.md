@@ -10,9 +10,9 @@ In the last years, especially due to distance learning, we saw the importance of
 
 * The folder "Comixplain_Guide" contains instructions on how to design and adapt Comixplain comics.
 
-* The folder "Comixplain_Editions" contains the main stories developed by the Comixplain team (.pdf and .pptx files).
+* The folder "Comixplain_Editions" contains the main stories developed by the Comixplain team.
 
-* The folder "Community_Contributions" contains derivatives promoted by the Comixplain team (.pdf and .pptx files).
+* The folder "Community_Contributions" contains derivatives promoted by the Comixplain team.
 
 ## Contributing
 
