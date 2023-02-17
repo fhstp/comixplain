@@ -1,5 +1,10 @@
 ![comixplain](https://github.com/fhstp/comixplain/blob/main/docs/images/logo.png?raw=true "Title")
 
+
+<p align="center">
+  <img alt="comixplain" src="https://github.com/fhstp/comixplain/blob/main/docs/images/logo.png?raw=true">
+</p>
+
 Comixplain is proposed to promote student-centred teaching and learning. As students vary in their previous knowledge and preferences, we propose alternative didactic materials to cater to individual learning processes. We propose a novel storytelling-based strategy to engage students in learning complex scientific subjects through comics.
 
 The effectiveness of comics in learning for both children and adults has been shown in many studies. However, many STEM topics have not yet been explored in depth. The power of comics in learning does not only come with their familiarity, but also from a unique combination of traits of the medium itself: They offer an engaging narrative structure as mostly seen in learning videos while keeping the freedom of 2D spatial layout as text, visualizations, and infographics do. This means that a reader can benefit from a friendly, linear presentation and continuously keep the overview of the subject (as opposed to rewinding a video), and while having full control over the reading speed.
