@@ -38,4 +38,4 @@ Magdalena Boucher & Alena Ertl
 
 ## Acknowledgments
 
-SoniControl is a project of the Institute for Creative\Media/Technologies [(IC\M/T)](https://icmt.fhstp.ac.at), developed at Sankt Pölten University of Applied Sciences [(STPUAS)](https://www.fhstp.ac.at/en) and funded by STPUAS' Innovation Call 2022.
+Comixplain is a project of the Institute for Creative\Media/Technologies [(IC\M/T)](https://icmt.fhstp.ac.at), developed at Sankt Pölten University of Applied Sciences [(STPUAS)](https://www.fhstp.ac.at/en) and funded by STPUAS' Innovation Call 2022.
