@@ -11440,6 +11440,12 @@ section.cta:before {
   display: inline;
 }
 
+.icon-git {
+  font-size: 5rem;
+  display: inline;
+  color: #ffffff;
+}
+
 .p-contact{
   margin-left: 4.5rem;
   margin-top: -3.8rem;
