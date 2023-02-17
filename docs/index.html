@@ -21,16 +21,16 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top">Comixplain</a>
+                <a class="navbar-brand fw-bold" href="#page-top"><img height="50px" alt="comixplain" src="./assets/logo.png"/></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#features">User Guide</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Comixplain Editions</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Community Contributions</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#userGuide">User Guide</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#editions">Comixplain Editions</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#derivatives">Community Contributions</a></li>
                     </ul>
                     <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
                         <span class="d-flex align-items-center">
@@ -48,11 +48,11 @@
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-1 lh-1 mb-3">Showcase your app beautifully.</h1>
-                            <p class="lead fw-normal text-muted mb-5">Launch your mobile app landing page faster with this free, open source theme from Start Bootstrap!</p>
+                            <h1 class="display-1 lh-1 mb-3">Explaining through Comics</h1>
+                            <p class="lead fw-normal text-muted mb-5">Comixplain promotes student-centred teaching and learning. As students vary in their previous knowledge and preferences, we propose alternative didactic materials to cater to individual learning processes. We propose a novel storytelling-based strategy to engage students in learning complex scientific subjects through comics.</p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
-                                <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+                                <a class="me-lg-3 mb-4 mb-lg-0" href="https://research.fhstp.ac.at/"><img height="70px" src="assets/FHlogo.png" alt="FHSTP" /></a>
+                                <p class="funding">Comixplain is a project developed at Sankt Pölten University of Applied Sciences (<a src="https://www.fhstp.ac.at/en">STPUAS</a>), Austria, and funded by the STPUAS' Innovation Call 2022.</p>
                             </div>
                         </div>
                     </div>
@@ -72,14 +72,10 @@
                                 <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect></svg
                             ><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"></circle></svg>
                             <div class="device-wrapper">
-                                <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
-                                    <div class="screen bg-black">
-                                        <!-- PUT CONTENTS HERE:-->
-                                        <!-- * * This can be a video, image, or just about anything else.-->
-                                        <!-- * * Set the max width of your media to 100% and the height to-->
-                                        <!-- * * 100% like the demo example below.-->
-                                        <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%"><source src="assets/img/demo-screen.mp4" type="video/mp4" /></video>
-                                    </div>
+  
+                                <div class="device">
+                                    <img height="500px" src="./assets/shaded_character.png">
+                                    
                                 </div>
                             </div>
                         </div>
@@ -98,8 +94,23 @@
                 </div>
             </div>
         </aside>
+        <!-- Basic features section-->
+        <section id="editions">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                    <div class="col-12 col-lg-5">
+                        <h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
+                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
+                    </div>
+                    <div class="col-sm-8 col-md-6">
+                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- App features section-->
-        <section id="features">
+        <section id="userGuide" class="bg-light">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
@@ -173,22 +184,9 @@
                 </div>
             </div>
         </section>
-        <!-- Basic features section-->
-        <section class="bg-light">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-12 col-lg-5">
-                        <h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
-                    </div>
-                    <div class="col-sm-8 col-md-6">
-                        <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <!-- Call to action section-->
-        <section class="cta">
+        <section id="derivatives" class="cta">
             <div class="cta-content">
                 <div class="container px-5">
                     <h2 class="text-white display-1 lh-1 mb-4">
@@ -234,9 +232,9 @@
                     <div class="modal-body border-0 p-4">
                         <p>We appreciate your contribution. Your participation can help us to improve our comics and to continue producing new stories.</p>
 
-                        <p>For feedback and suggestions, please contact <a href="mailto:victor.oliveira@fhstp.ac.at">victor.oliveira@fhstp.ac.at</a></p>
+                        <i class="bi-envelope icon-contact text-gradient mb-3"></i> <p class="p-contact"> For feedback and suggestions, please contact <a href="mailto:victor.oliveira@fhstp.ac.at">victor.oliveira@fhstp.ac.at</a></p>
 
-                        <p>You can also find all comixplain files on <a href="https://github.com/fhstp/comixplain">GitHub</a>. Please feel free to open Issues and submit Pull Requests.</p>
+                        <i class="bi-github icon-contact text-gradient mb-3"></i> <p class="p-contact">You can also find all comixplain files on <a href="https://github.com/fhstp/comixplain">GitHub</a>. Please feel free to open Issues and submit Pull Requests.</p>
                     </div>
                 </div>
             </div>

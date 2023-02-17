@@ -158,6 +158,11 @@ p {
   margin-bottom: 1rem;
 }
 
+p.funding {
+  margin-top: 15px;
+  margin-bottom: 1rem;
+}
+
 abbr[title],
 abbr[data-bs-original-title] {
   -webkit-text-decoration: underline dotted;
@@ -11428,6 +11433,16 @@ section.cta:before {
 
 .icon-feature {
   font-size: 4rem;
+}
+
+.icon-contact {
+  font-size: 3rem;
+  display: inline;
+}
+
+.p-contact{
+  margin-left: 4.5rem;
+  margin-top: -3.8rem;
 }
 
 .features-device-mockup {
