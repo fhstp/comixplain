@@ -23,9 +23,13 @@ This project is licensed under the CC BY-SA license. This license allows reusers
 ## Project Team
 
 Victor-Adriel De-Jesus-Oliveira
+
 Hsiang-Yun Wu
+
 Christina Stoiber
+
 Magdalena Boucher
+
 Alena Ertl
 
 ## Illustrations
