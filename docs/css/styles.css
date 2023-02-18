@@ -11312,6 +11312,14 @@ html {
   font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
 
+.comixplainLogo{
+  height: 30px;
+}
+
+.masthead .masthead-device-mockup .device-wrapper{
+  display: none;
+}
+ 
 .text-gradient {
   background: -webkit-linear-gradient(#2937f0, #9f1ae2);
   background-clip: text;
@@ -11608,8 +11616,7 @@ footer a:hover, footer a:active, footer a:focus {
 }
 @media (min-width: 576px) {
   .masthead .masthead-device-mockup .circle {
-    width: 70%;
-    display: block;
+    display: none;
   }
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 12.5rem;
@@ -11617,7 +11624,7 @@ footer a:hover, footer a:active, footer a:focus {
 }
 @media (min-width: 768px) {
   .masthead .masthead-device-mockup .circle {
-    width: 60%;
+    display: none;
   }
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 15rem;
@@ -11626,9 +11633,11 @@ footer a:hover, footer a:active, footer a:focus {
 @media (min-width: 992px) {
   .masthead .masthead-device-mockup .circle {
     width: 90%;
+    display: block;
   }
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 15rem;
+    display: inline;
   }
 }
 @media (min-width: 1200px) {
@@ -11637,6 +11646,7 @@ footer a:hover, footer a:active, footer a:focus {
   }
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 15rem;
+    display: inline;
   }
 }
 @media (min-width: 1400px) {
@@ -11645,5 +11655,10 @@ footer a:hover, footer a:active, footer a:focus {
   }
   .masthead .masthead-device-mockup .device-wrapper {
     max-width: 17rem;
+    display: inline;
+  }
+
+  .comixplainLogo{
+    height: 50px;
   }
 }
