@@ -11614,6 +11614,19 @@ footer a:hover, footer a:active, footer a:focus {
 .masthead .masthead-device-mockup .device-wrapper {
   max-width: 10rem;
 }
+.modalComicsImage{
+  margin: -60px auto 0 auto;
+  display: block;
+}
+.modalComics button{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+.modalComics h5,
+.modalComics p{
+  text-align: center;
+}
 @media (min-width: 576px) {
   .masthead .masthead-device-mockup .circle {
     display: none;
