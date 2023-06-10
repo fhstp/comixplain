@@ -5588,7 +5588,7 @@ textarea.form-control-lg {
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .modal-footer {
@@ -11615,7 +11615,7 @@ footer a:hover, footer a:active, footer a:focus {
   max-width: 10rem;
 }
 .modalComicsImage{
-  margin: -60px auto 0 auto;
+  margin: 20px auto 0 auto;
   display: block;
 }
 .modalComics button{
