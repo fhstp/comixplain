@@ -63,7 +63,7 @@
     </nav>
 
     <!-- Bootstrap Grid -->
-    <section class="mt-5">
+    <section class="mt-5 pb-0">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-2">
@@ -73,8 +73,13 @@
                         <div class="col-auto pl-2">
                             <i class="bi bi-file-font"></i>
                         </div>
-                        <div class="col-auto p-0">
+                        <div class="col-auto p-0 sidebar-item" id="item-1">
                             <div><i class="bi bi-chevron-right"></i> Templates</div>
+                            <div class="collapse" id="sidebar-sub-items-1">
+                                <div class="mx-4">test</div>
+                                <div class="mx-4">test</div>
+                                <div class="mx-4">test</div>
+                            </div>
                         </div>
                     </div>
 
@@ -82,8 +87,13 @@
                         <div class="col-auto pl-2">
                             <i class="bi bi-person"></i>
                         </div>
-                        <div class="col-auto p-0">
+                        <div class="col-auto p-0 sidebar-item" id="item-2">
                             <div><i class="bi bi-chevron-right"></i> Characters</div>
+                            <div class="collapse" id="sidebar-sub-items-2">
+                                <div class="mx-4">test</div>
+                                <div class="mx-4">test</div>
+                                <div class="mx-4">test</div>
+                            </div>
                         </div>
                     </div>
 
@@ -91,8 +101,13 @@
                         <div class="col-auto pl-2">
                             <i class="bi bi-mic"></i>
                         </div>
-                        <div class="col-auto p-0">
+                        <div class="col-auto p-0 sidebar-item" id="item-3">
                             <div><i class="bi bi-chevron-right"></i> Speech Bubbles</div>
+                            <div class="collapse" id="sidebar-sub-items-3">
+                                <div class="mx-4">test</div>
+                                <div class="mx-4">test</div>
+                                <div class="mx-4">test</div>
+                            </div>
                         </div>
                     </div>
 
@@ -100,8 +115,13 @@
                         <div class="col-auto pl-2">
                             <i class="bi bi-house-door"></i>
                         </div>
-                        <div class="col-auto p-0">
+                        <div class="col-auto p-0 sidebar-item" id="item-4">
                             <div><i class="bi bi-chevron-right"></i> Scenes</div>
+                            <div class="collapse" id="sidebar-sub-items-4">
+                                <div class="mx-4">test</div>
+                                <div class="mx-4">test</div>
+                                <div class="mx-4">test</div>
+                            </div>
                         </div>
                     </div>
 
@@ -109,26 +129,36 @@
                         <div class="col-auto pl-2">
                             <i class="bi bi-box-arrow-in-down-right"></i>
                         </div>
-                        <div class="col-auto p-0">
+                        <div class="col-auto p-0 sidebar-item" id="item-5">
                             <div><i class="bi bi-chevron-right"></i> Annotations</div>
+                            <div class="collapse" id="sidebar-sub-items-5">
+                                <div class="mx-4">test</div>
+                                <div class="mx-4">test</div>
+                                <div class="mx-4">test</div>
+                            </div>
                         </div>
                     </div>
 
                     <hr />
                 </div>
                 <div class="col-md-8">
-                    <h3>Column 2</h3>
-                    <p>This is the content of column 2.</p>
+                    <h3>Gallery</h3>
+                    <p>Images go here</p>
                 </div>
                 <div class="col-sm-2">
-                    <h3>Column 3</h3>
-                    <p>This is the content of column 3.</p>
+                    <h3>Meta Data</h3>
+                    <p>will be here</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <h3>Row 2</h3>
-                    <p>This is the content of column 1.</p>
+            <div class="row pb-3">
+                <div class="col-10 text-center">
+                    <h3>Selected Assets</h3>
+                    <p>No Assets selected yet.</p>
+                </div>
+                <div class="col-2 text-center">
+                    <h3>Buttons</h3>
+                    <p>Clear</p>
+                    <p>Download</p>
                 </div>
             </div>
         </div>

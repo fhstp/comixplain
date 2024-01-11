@@ -32,3 +32,37 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+// sidebar toogle items
+window.addEventListener('DOMContentLoaded', event => {
+    // Get all elements with class 'sidebar-item'
+    const navItems = document.querySelectorAll('.sidebar-item');
+
+    // Iterate over each 'sidebar-item'
+    navItems.forEach(navItem => {
+        // Extract the numeric part from the 'id' attribute
+        const navItemId = navItem.id.split('-')[1];
+        
+        // Find the corresponding 'sidebar-sub-items' based on the extracted ID
+        const subNavItems = document.getElementById(`sidebar-sub-items-${navItemId}`);
+
+        // get the i element inside the navItem
+        const navItemIcon = navItem.querySelector('i');
+
+        // Add a click event listener to each 'sidebar-item'
+        navItem.addEventListener('click', () => {
+            // Toggle the visibility of the corresponding sub-items
+            if (subNavItems) {
+                subNavItems.classList.toggle('collapse');
+            }
+
+            // change the icon
+            if(navItemIcon) {
+                navItemIcon.classList.toggle('bi-chevron-right');
+                navItemIcon.classList.toggle('bi-chevron-down');
+            }
+        });
+    });
+});
+
