@@ -63,10 +63,11 @@
     </nav>
 
     <!-- Bootstrap Grid -->
-    <section class="mt-5 pb-0">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-2">
+    <section class="pb-0">
+        <div class="container-fluid mt-1">
+            <div class="row pt-3">
+                <!-- Sidebar -->
+                <div class="col-sm-2 pt-3">
                     <h3>Categories</h3>
                     <hr />
                     <div class="row pb-3">
@@ -141,32 +142,64 @@
 
                     <hr />
                 </div>
-                <div class="col-md-8">
+                <!-- Gallery -->
+                <div class="col-md-8 pt-3" style="background-color: #f8f9fa;">
+                    <!-- Search Bar -->
                     <div class="input-group pb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="bi bi-search me-2"></i></span>
                         </div>
                         <input class="form-control" placeholder="Search Assets..."></input>
                     </div>
+                    <!-- Filter Pills -->
+                    <div class="pb-3">
+                        <button type="button" class="btn btn-secondary btn-sm">filter 1</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm">filter 2</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm">filter 3</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm">filter 4</button>
+                        <button type="button" class="btn btn-secondary btn-sm">filter 5</button>
+                        <button type="button" class="btn btn-secondary btn-sm">filter 6</button>
+                        <button type="button" class="btn btn-secondary btn-sm">filter 7</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm">filter 8</button>
+                    </div>
+                    <!-- Images -->
                     <div style="overflow-y: scroll; height: 500px;">
-                    <p>Images go here</p><p>Images go here</p><p>Images go here</p><p>Images go here</p>
-                    <p>Images go here</p><p>Images go here</p><p>Images go here</p><p>Images go here</p>
-                    <p>Images go here</p><p>Images go here</p><p>Images go here</p><p>Images go here</p>
-                    <p>Images go here</p><p>Images go here</p><p>Images go here</p><p>Images go here</p>
-                    <p>Images go here</p><p>Images go here</p><p>Images go here</p><p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
+                        <p>Images go here</p>
                     </div>
                 </div>
-                <div class="col-sm-2">
+                <!-- Meta Data -->
+                <div class="col-sm-2 pt-3" style="background-color: #f8f9fa;" >
                     <h3>Meta Data</h3>
                     <p>will be here</p>
                 </div>
             </div>
-            <div class="row pb-3">
-                <div class="col-10">
+            <div class="row pb-3 pt-3" style="height: 20vh;">
+                <!-- Selected Assets -->
+                <div class="col-lg-10">
                     <h3>Selected Assets</h3>
                     <p>No Assets selected yet.</p>
                 </div>
-                <div class="col-2">
+                <!-- Buttons -->
+                <div class="col-sm-2" style="display: flex; flex-direction: column; justify-content: flex-end; ">
                     <div class="col-auto mb-2">
                         <button class="btn btn-outline-secondary px-3 mb-2 mb-lg-0">
                             <span class="d-flex align-items-center">
