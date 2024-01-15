@@ -7630,6 +7630,10 @@ textarea.form-control-lg {
   font-size: 1rem !important;
 }
 
+.fs-7 {
+  font-size: 0.875rem !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -11675,4 +11679,9 @@ footer a:hover, footer a:active, footer a:focus {
   .comixplainLogo{
     height: 50px;
   }
+}
+
+/* New styles */
+.sidebar-active-item {
+  text-decoration: underline;
 }

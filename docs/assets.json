@@ -1,0 +1,98 @@
+{
+  "categories": {
+    "templates": [
+      {
+        "subcategory": "frames",
+        "name": "single_frame.png",
+        "keywords": [
+          "frame",
+          "single frame",
+          "panel",
+          "single panel",
+          "single",
+          "border"
+        ],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/single_frame.png?raw=true"
+      },
+      {
+        "subcategory": "frames",
+        "name": "double_frame.png",
+        "keywords": [
+          "frame",
+          "double frame",
+          "panel",
+          "double panel",
+          "double",
+          "border"
+        ],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/double_frame.png?raw=true"
+      },
+      {
+        "subcategory": "frames",
+        "name": "triple_frame.png",
+        "keywords": [
+          "frame",
+          "triple frame",
+          "panel",
+          "triple panel",
+          "triple",
+          "border"
+        ],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/triple_frame.png?raw=true"
+      },
+      {
+        "subcategory": "font",
+        "name": "Pangolin-Regular.ttf",
+        "keywords": [
+          "font",
+          "Pangolin",
+          "Pangolin-Regular",
+          "Pangolin Regular",
+          "Pangolin-Regular.ttf"
+        ],
+        "created_by": "Kevin Burke, Google Fonts",
+        "file_location": "https://raw.githubusercontent.com/Annacc211018/comixplain/dfaf650a894c350b2efbff8cb5eaa27cda83e86d/Comixplain_Editions/fonts.svgf"
+      }
+    ],
+    "characters": [
+      {
+        "subcategory": "facial expressions",
+        "name": "expression angry2.png",
+        "keywords": ["angry", "annoyed"],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/expression%20angry2.png?raw=true"
+      },
+      {
+        "subcategory": "facial expressions",
+        "name": "expression big mouth.png",
+        "keywords": ["talking", "happy", "neutral"],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20big%20mouth.png?raw=true"
+      },
+      {
+        "subcategory": "facial expressions",
+        "name": "expression neutral6.png",
+        "keywords": ["neutral", "sad", "annoyed", "bored"],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/expression%20neutral6.png?raw=true"
+      },
+      {
+        "subcategory": "facial expressions",
+        "name": "expression talking 27.png",
+        "keywords": ["talking", "happy", "neutral"],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/expression%20talking%2027.png?raw=true"
+      },
+      {
+        "subcategory": "facial expressions",
+        "name": "expression happy12.png",
+        "keywords": ["happy", "embarrased", "neutral"],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/expression%20happy12.png?raw=true"
+      }
+    ]
+  }
+}
