@@ -5,34 +5,49 @@ console.log(typeof imageData);
 
 // filter json data by category and subcategory
 function filterDataByCategory(category, subcategory) {
-  const filteredData = imageData[category].filter(
-    (item) => item.subcategory === subcategory
-  );
-  return filteredData;
+  return imageData[category][subcategory];
 }
 
 // function to create the image card
 function renderImages(filteredData) {
-  // Example: Rendering images
+  // get the image container
   const imageContainer = document.getElementById("image-container");
-  imageContainer.innerHTML = ""; // Clear previous content
 
+  // Create a document fragment to hold the images
+  const fragment = document.createDocumentFragment();
+
+  // Clear previous content
+  imageContainer.innerHTML = "";
+
+  // Iterate over each item in the filtered data
   filteredData.forEach((item) => {
     const imgElement = document.createElement("img");
     imgElement.src = item.file_location;
     imgElement.alt = item.name;
-    imgElement.height = 100;
+    imgElement.height = 150;
+    imgElement.classList.add("p-2");
+    imgElement.classList.add("bg-white");
+    imgElement.classList.add("rounded");
+    imgElement.classList.add("m-2");
+
     imgElement.addEventListener("click", () => {
-        console.log("Clicked image" + item.name)
+      console.log("Clicked image " + item.name);
     });
-    imageContainer.appendChild(imgElement);
+
+    // Append the image to the document fragment
+    fragment.appendChild(imgElement);
   });
+
+  // Append the entire document fragment to the container in one go
+  imageContainer.appendChild(fragment);
 }
 
 let activeCategory = "Templates";
 let activeSubCategory = "Frames";
 
-let defaultImages = filterDataByCategory(activeCategory, activeSubCategory);    
+let defaultImages = filterDataByCategory(activeCategory, activeSubCategory);
+
+console.log(defaultImages);
 
 renderImages(defaultImages);
 
