@@ -1,7 +1,8 @@
 // function to access the json file and get the data
 import imageData from "../assets.json" assert { type: "json" };
 
-console.log(typeof imageData);
+// global variables
+let selectedAsset = [];
 
 // filter json data by category and subcategory
 function filterDataByCategory(category, subcategory) {
@@ -24,21 +25,50 @@ function renderImages(filteredData) {
     const imgElement = document.createElement("img");
     imgElement.src = item.file_location;
     imgElement.alt = item.name;
-    imgElement.height = 150;
+    imgElement.style.minHeight = "100px";
+    imgElement.style.maxHeight = "150px";
+    imgElement.style.maxWidth = "300px";
+    imgElement.style.verticalAlign = "bottom";
+
     imgElement.classList.add("p-2");
+    imgElement.classList.add("pt-4");
     imgElement.classList.add("bg-white");
     imgElement.classList.add("rounded");
     imgElement.classList.add("m-2");
+    imgElement.classList.add("shadow");
+
+    let isSelected = false;
+
+    // COMMENT: SELECTION STILL NEEDS TO BE REFINED WITH KEEPING SELECTIONS WHEN SWITCHING CATEGORIES
 
     imgElement.addEventListener("click", () => {
       console.log("Clicked image " + item.name);
+
+      if (!isSelected) {
+        isSelected = true;
+        imgElement.classList.toggle("border");
+        imgElement.classList.toggle("border-secondary");
+        selectedAsset.push(item.name);
+      } else {
+        isSelected = false;
+        imgElement.classList.toggle("border");
+        imgElement.classList.toggle("border-secondary");
+        selectedAsset.splice(selectedAsset.indexOf(item.name), 1);
+      }
+
+      console.log(selectedAsset);
     });
 
     // Append the image to the document fragment
     fragment.appendChild(imgElement);
   });
 
-  // Append the entire document fragment to the container in one go
+  // Delay the append operation by 2 seconds
+  // setTimeout(() => {
+  //   // Append the entire document fragment to the container after the delay
+  //   imageContainer.appendChild(fragment);
+  // }, 500);
+
   imageContainer.appendChild(fragment);
 }
 
@@ -50,8 +80,6 @@ let defaultImages = filterDataByCategory(activeCategory, activeSubCategory);
 console.log(defaultImages);
 
 renderImages(defaultImages);
-
-console.log(filterDataByCategory(activeCategory, activeSubCategory));
 
 // add event listener to the DOMContentLoaded event
 // this handles sidebar functionality

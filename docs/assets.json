@@ -1563,7 +1563,7 @@
     ]
   },
   "Speech Bubbles": {
-    "Standalone": [
+    "Full Bubbles": [
       {
         "name": "Speechbubble12.png",
         "keywords": ["speech bubble", "standalone", "balloon"],
@@ -1595,24 +1595,18 @@
         "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble1.png?raw=true"
       }
     ],
-    "Paneltop": [
-      {
-        "name": "Paneltop_Caption6.png",
-        "keywords": ["speech bubble", "panel top", "paneltop", "balloon"],
-        "created_by": "Magdalena Boucher & Alena Ertl",
-        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption6.png?raw=true"
-      },
-      {
-        "name": "Paneltop_Caption7.png",
-        "keywords": ["speech bubble", "panel top", "paneltop", "balloon"],
-        "created_by": "Magdalena Boucher & Alena Ertl",
-        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption7.png?raw=true"
-      },
+    "Half Bubbles": [
       {
         "name": "Paneltop_Bubble1.png",
         "keywords": ["speech bubble", "panel top", "paneltop", "balloon"],
         "created_by": "Magdalena Boucher & Alena Ertl",
         "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble1.png?raw=true"
+      },
+      {
+        "name": "Paneltop_Bubble3.png",
+        "keywords": ["speech bubble", "panel top", "paneltop", "balloon"],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble3.png?raw=true"
       },
       {
         "name": "Paneltop_Bubble11.png",
@@ -1625,6 +1619,45 @@
         "keywords": ["speech bubble", "panel top", "paneltop", "balloon"],
         "created_by": "Magdalena Boucher & Alena Ertl",
         "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble10.png?raw=true"
+      },
+      {
+        "name": "Paneltop_Bubble2.png",
+        "keywords": ["speech bubble", "panel top", "paneltop", "balloon"],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble2.png?raw=true"
+      }
+    ],
+    "Caption Boxes": [
+      {
+        "name": "Paneltop_Caption6.png",
+        "keywords": ["caption", "caption box", "panel top", "paneltop"],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption6.png?raw=true"
+      },
+      {
+        "name": "Paneltop_Caption7.png",
+        "keywords": ["caption", "caption box", "panel top", "paneltop"],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption7.png?raw=true"
+      },
+      {
+        "name": "Paneltop_Caption1.png",
+        "keywords": ["caption", "caption box", "panel top", "paneltop"],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption1.png?raw=true"
+      }
+      ,
+      {
+        "name": "Paneltop_Caption2.png",
+        "keywords": ["caption", "caption box", "panel top", "paneltop"],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption2.png?raw=true"
+      },
+      {
+        "name": "Paneltop_Caption3.png",
+        "keywords": ["caption", "caption box", "panel top", "paneltop"],
+        "created_by": "Magdalena Boucher & Alena Ertl",
+        "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption3.png?raw=true"
       }
     ]
   },
