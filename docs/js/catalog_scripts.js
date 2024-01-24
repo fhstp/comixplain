@@ -3,11 +3,28 @@ import imageData from "../assets.json" assert { type: "json" };
 
 // global variables
 let selectedAsset = [];
+let filteredImagesByCategory = [];
+let activeFilter = [];
 
 // filter json data by category and subcategory
-function filterDataByCategory(category, subcategory) {
-  return imageData[category][subcategory];
+function filterAssetsByCategory(category, subcategory) {
+  return imageData[category][subcategory]["assets"];
 }
+
+// filter json data by filter options
+function filterAssetsByActiveFilter(imageData, activeFilter) {
+  let filteredData = [];
+  activeFilter.forEach((filter) => {
+    imageData.forEach((item) => {
+      if (item.keywords.includes(filter) && !filteredData.includes(item)) {
+        filteredData.push(item);
+      }
+    });
+  });
+  renderImages(filteredData);
+}
+
+// console.log(filterAssetsByActiveFilter("old"));
 
 // function to create the image card
 function renderImages(filteredData) {
@@ -77,11 +94,69 @@ function renderImages(filteredData) {
 let activeCategory = "Templates";
 let activeSubCategory = "Frames";
 
-let defaultImages = filterDataByCategory(activeCategory, activeSubCategory);
+let defaultImages = filterAssetsByCategory(activeCategory, activeSubCategory);
 
-console.log(defaultImages);
+// console.log(defaultImages);
 
 renderImages(defaultImages);
+
+//
+
+// get filter-options from JSON
+function createFilter(category, subcategory) {
+  const filterOptions = imageData[category][subcategory]["filter-options"];
+  const filterContainer = document.getElementById("filter-container");
+
+  // Create a document fragment to hold the filter options
+  const fragment = document.createDocumentFragment();
+
+  // Clear previous content
+  filterContainer.innerHTML = "";
+
+  // Iterate over each item in the filter options
+  filterOptions.forEach((item) => {
+    const filterElement = document.createElement("button");
+    filterElement.innerText = item;
+    filterElement.type = "button";
+    filterElement.style.marginRight = "0.5rem";
+    filterElement.style.marginBottom = "0.5rem";
+
+    // add classes to the filter element
+    filterElement.classList.add("btn", "btn-outline-secondary", "btn-sm");
+
+    // Append the filter to the document fragment
+    fragment.appendChild(filterElement);
+
+    let isActive = false;
+
+    // add a click event listener to each filter
+    filterElement.addEventListener("click", () => {
+      if (!isActive) {
+        isActive = true;
+        filterElement.classList.toggle("btn-outline-secondary");
+        filterElement.classList.toggle("btn-secondary");
+
+        activeFilter.push(item);
+      } else {
+        isActive = false;
+        filterElement.classList.toggle("btn-outline-secondary");
+        filterElement.classList.toggle("btn-secondary");
+
+        activeFilter.splice(activeFilter.indexOf(item), 1);
+      }
+
+      // filter the images
+      filterAssetsByActiveFilter(filteredImagesByCategory, activeFilter);
+
+      console.log(activeFilter);
+    });
+  });
+
+  // Append the entire document fragment to the container
+  filterContainer.appendChild(fragment);
+}
+
+createFilter(activeCategory, activeSubCategory);
 
 // add event listener to the DOMContentLoaded event
 // this handles sidebar functionality
@@ -170,12 +245,17 @@ window.addEventListener("DOMContentLoaded", (event) => {
           // remove the "link-secondary" class
           subCategory.classList.toggle("link-secondary");
 
-          const filteredImagesByCategory = filterDataByCategory(
+          filteredImagesByCategory = filterAssetsByCategory(
             activeCategory,
             activeSubCategory
           );
 
+          // render the images and create the filter
           renderImages(filteredImagesByCategory);
+          createFilter(activeCategory, activeSubCategory);
+
+          // clear the active filter array
+          activeFilter = [];
         });
       });
     }
