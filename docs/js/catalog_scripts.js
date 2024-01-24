@@ -13,13 +13,17 @@ function filterAssetsByCategory(category, subcategory) {
 
 // filter json data by filter options
 function filterAssetsByActiveFilter(imageData, activeFilter) {
-  let filteredData = [];
-  activeFilter.forEach((filter) => {
-    imageData.forEach((item) => {
-      if (item.keywords.includes(filter) && !filteredData.includes(item)) {
-        filteredData.push(item);
-      }
-    });
+  // let filteredData = [];
+  // activeFilter.forEach((filter) => {
+  //   imageData.forEach((item) => {
+  //     if (item.keywords.includes(filter) && !filteredData.includes(item)) {
+  //       filteredData.push(item);
+  //     }
+  //   });
+  // });
+
+  let filteredData = imageData.filter((item) => {
+    return activeFilter.every(keyword => item.keywords.includes(keyword));
   });
   renderImages(filteredData);
 }
@@ -82,11 +86,13 @@ function renderImages(filteredData) {
     fragment.appendChild(imgElement);
   });
 
-  // Delay the append operation by 2 seconds
-  // setTimeout(() => {
-  //   // Append the entire document fragment to the container after the delay
-  //   imageContainer.appendChild(fragment);
-  // }, 500);
+  // handle case when filteredData is empty
+  if (filteredData.length === 0) {
+    const noImagesElement = document.createElement("p");
+    noImagesElement.innerText = "No images found for the currently selected filters.";
+    noImagesElement.classList.add("text-center", "text-muted", "mt-5");
+    fragment.appendChild(noImagesElement);
+  }
 
   imageContainer.appendChild(fragment);
 }
