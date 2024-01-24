@@ -1,0 +1,25 @@
+/* Custom Catalog Styles */
+
+/* Images */
+.catalog-image {
+    min-height: 100px;
+    max-height: 150px;
+    max-width: 300px;
+    vertical-align: bottom;
+}
+
+#image-container {
+    overflow-y: scroll;
+    height: 500px;
+}
+
+/* Catalog */
+#selection {
+    height: 200px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

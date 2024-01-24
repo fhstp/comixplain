@@ -25,17 +25,17 @@ function renderImages(filteredData) {
     const imgElement = document.createElement("img");
     imgElement.src = item.file_location;
     imgElement.alt = item.name;
-    imgElement.style.minHeight = "100px";
-    imgElement.style.maxHeight = "150px";
-    imgElement.style.maxWidth = "300px";
-    imgElement.style.verticalAlign = "bottom";
 
-    imgElement.classList.add("p-2");
-    imgElement.classList.add("pt-4");
-    imgElement.classList.add("bg-white");
-    imgElement.classList.add("rounded");
-    imgElement.classList.add("m-2");
-    imgElement.classList.add("shadow");
+    // add classes to the image element
+    imgElement.classList.add(
+      "catalog-image",
+      "p-2",
+      "pt-4",
+      "bg-white",
+      "rounded",
+      "m-2",
+      "shadow"
+    );
 
     let isSelected = false;
 
@@ -45,11 +45,13 @@ function renderImages(filteredData) {
       console.log("Clicked image " + item.name);
 
       if (!isSelected) {
+        // add styling and push to selectedAsset array
         isSelected = true;
         imgElement.classList.toggle("border");
         imgElement.classList.toggle("border-secondary");
         selectedAsset.push(item.name);
       } else {
+        // remove styling and remove from selectedAsset array
         isSelected = false;
         imgElement.classList.toggle("border");
         imgElement.classList.toggle("border-secondary");
