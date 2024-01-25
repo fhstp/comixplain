@@ -164,9 +164,13 @@ createFilter(activeCategory, activeSubCategory);
 function displayMetaData(selectedAsset) {
   const metaDataContainer = document.getElementById("metaData-Image");
   metaDataContainer.innerHTML = "";
+  const metaDataTable = document.getElementById("details-Table");
 
   // check if only one image is selected
   if (selectedAsset.length === 1) {
+    // hide table
+    metaDataTable.style.display = "none";
+
     const fragment = document.createDocumentFragment();
     let asset = selectedAsset[0];
 
@@ -189,19 +193,36 @@ function displayMetaData(selectedAsset) {
     const name = document.createElement("h6");
     name.innerText = `${asset.name}`;
 
+    // metadata table
+    metaDataTable.style.display = "block";
+
+    const keywords = document.getElementById("td-Keywords");
+    keywords.innerText = asset.keywords.join(', ');
+
+    const createdBy = document.getElementById("td-Created");
+    createdBy.innerText = `${asset.created_by}`;
+
+    const fileLocation = document.getElementById("td-Location");
+    fileLocation.innerText = `${asset.file_location}`;
+    fileLocation.href = asset.file_location;
+
     // attach elements
     fragment.appendChild(imgElement);
     fragment.appendChild(name);
     metaDataContainer.appendChild(fragment);
-
   } else if (selectedAsset.length === 0) {
-    const placeHolderText = document.createElement("p");
+    // hide table
+    metaDataTable.style.display = "none";
+
+    const placeHolderText = document.createElement("h6");
     placeHolderText.innerText = "Select an Asset to see details.";
 
     metaDataContainer.appendChild(placeHolderText);
   } else {
+    // hide table
+    metaDataTable.style.display = "none";
     // show how many assets are selected
-    const assetCount = document.createElement("p");
+    const assetCount = document.createElement("h6");
     assetCount.innerText = `${selectedAsset.length} Assets selected`;
 
     metaDataContainer.appendChild(assetCount);

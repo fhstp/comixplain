@@ -2,40 +2,72 @@
 
 /* Images */
 .catalog-image {
-    min-height: 100px;
-    max-height: 150px;
-    max-width: 300px;
-    vertical-align: bottom;
+  min-height: 100px;
+  max-height: 150px;
+  max-width: 300px;
+  vertical-align: bottom;
 }
 
 #image-container {
-    overflow-y: scroll;
-    height: 500px;
+  overflow-y: scroll;
+  height: 500px;
 }
 
 /* Catalog */
 #selection {
-    height: 200px;
+  height: 200px;
 }
 
 #buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 /* Meta Data */
 #metaData-Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 #metaData-Image {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+#details-Table {
+  width: 100%;
+  overflow: hidden;
+  display: none;
+}
+
+th,
+td {
+  font-size: small;
+}
+
+td {
+  padding-bottom: 0.5rem;
+}
+
+.td-left {
+  vertical-align: top;
+  padding-right: 2rem;
+}
+
+.td-right {
+  max-width: 11rem;
+  padding-right: 2rem;
+}
+
+#td-Location {
+  overflow: hidden;
+  white-space: nowrap;
 }
