@@ -5,6 +5,8 @@ import imageData from "../assets.json" assert { type: "json" };
 let selectedAsset = [];
 let filteredImagesByCategory = [];
 let activeFilter = [];
+let activeCategory = "Templates";
+let activeSubCategory = "Frames";
 
 // filter json data by category and subcategory
 function filterAssetsByCategory(category, subcategory) {
@@ -23,12 +25,10 @@ function filterAssetsByActiveFilter(imageData, activeFilter) {
   // });
 
   let filteredData = imageData.filter((item) => {
-    return activeFilter.every(keyword => item.keywords.includes(keyword));
+    return activeFilter.every((keyword) => item.keywords.includes(keyword));
   });
   renderImages(filteredData);
 }
-
-// console.log(filterAssetsByActiveFilter("old"));
 
 // function to create the image card
 function renderImages(filteredData) {
@@ -70,16 +70,18 @@ function renderImages(filteredData) {
         isSelected = true;
         imgElement.classList.toggle("border");
         imgElement.classList.toggle("border-secondary");
-        selectedAsset.push(item.name);
+        selectedAsset.push(item);
       } else {
         // remove styling and remove from selectedAsset array
         isSelected = false;
         imgElement.classList.toggle("border");
         imgElement.classList.toggle("border-secondary");
-        selectedAsset.splice(selectedAsset.indexOf(item.name), 1);
+        selectedAsset.splice(selectedAsset.indexOf(item), 1);
       }
 
       console.log(selectedAsset);
+
+      displayMetaData(selectedAsset);
     });
 
     // Append the image to the document fragment
@@ -89,7 +91,8 @@ function renderImages(filteredData) {
   // handle case when filteredData is empty
   if (filteredData.length === 0) {
     const noImagesElement = document.createElement("p");
-    noImagesElement.innerText = "No images found for the currently selected filters.";
+    noImagesElement.innerText =
+      "No images found for the currently selected filters.";
     noImagesElement.classList.add("text-center", "text-muted", "mt-5");
     fragment.appendChild(noImagesElement);
   }
@@ -97,16 +100,9 @@ function renderImages(filteredData) {
   imageContainer.appendChild(fragment);
 }
 
-let activeCategory = "Templates";
-let activeSubCategory = "Frames";
-
+// Render the fist images on page load
 let defaultImages = filterAssetsByCategory(activeCategory, activeSubCategory);
-
-// console.log(defaultImages);
-
 renderImages(defaultImages);
-
-//
 
 // get filter-options from JSON
 function createFilter(category, subcategory) {
@@ -163,6 +159,56 @@ function createFilter(category, subcategory) {
 }
 
 createFilter(activeCategory, activeSubCategory);
+
+// display metadata
+function displayMetaData(selectedAsset) {
+  const metaDataContainer = document.getElementById("metaData-Image");
+  metaDataContainer.innerHTML = "";
+
+  // check if only one image is selected
+  if (selectedAsset.length === 1) {
+    const fragment = document.createDocumentFragment();
+    let asset = selectedAsset[0];
+
+    // image
+    const imgElement = document.createElement("img");
+    imgElement.src = asset.file_location;
+    imgElement.alt = asset.name;
+
+    imgElement.classList.add(
+      "catalog-image",
+      "p-2",
+      "pt-4",
+      "bg-white",
+      "rounded",
+      "m-2",
+      "shadow"
+    );
+
+    // name
+    const name = document.createElement("h6");
+    name.innerText = `${asset.name}`;
+
+    // attach elements
+    fragment.appendChild(imgElement);
+    fragment.appendChild(name);
+    metaDataContainer.appendChild(fragment);
+
+  } else if (selectedAsset.length === 0) {
+    const placeHolderText = document.createElement("p");
+    placeHolderText.innerText = "Select an Asset to see details.";
+
+    metaDataContainer.appendChild(placeHolderText);
+  } else {
+    // show how many assets are selected
+    const assetCount = document.createElement("p");
+    assetCount.innerText = `${selectedAsset.length} Assets selected`;
+
+    metaDataContainer.appendChild(assetCount);
+  }
+}
+
+displayMetaData(selectedAsset);
 
 // add event listener to the DOMContentLoaded event
 // this handles sidebar functionality

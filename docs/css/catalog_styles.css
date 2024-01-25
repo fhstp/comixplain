@@ -23,3 +23,19 @@
     flex-direction: column;
     justify-content: flex-end;
 }
+
+/* Meta Data */
+#metaData-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#metaData-Image {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+}
