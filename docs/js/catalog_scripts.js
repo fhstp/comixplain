@@ -19,6 +19,7 @@ function filterAssetsByCategory(category, subcategory) {
 
 // filter json data by filter options
 function filterAssetsByActiveFilter(imageData, activeFilter) {
+  // COMMENT: THIS IS AN ALTERNATIVE WAY OF FILTERING THE DATA
   // let filteredData = [];
   // activeFilter.forEach((filter) => {
   //   imageData.forEach((item) => {
@@ -62,28 +63,32 @@ function renderImages(filteredData) {
       "shadow"
     );
 
-    let isSelected = false;
+    item.isSelected = false;
 
-    // COMMENT: SELECTION STILL NEEDS TO BE REFINED WITH KEEPING SELECTIONS WHEN SWITCHING CATEGORIES
-
+    // click functionality
     imgElement.addEventListener("click", () => {
-      if (!isSelected) {
-        // add styling and push to selectedAsset array
-        isSelected = true;
+      if (!item.isSelected) {
+        // add styling and add to beginning selectedAsset array
+        item.isSelected = true;
         imgElement.classList.toggle("border");
         imgElement.classList.toggle("border-secondary");
-        selectedAsset.push(item);
+        selectedAsset.unshift(item);
         renderSelectedImages(selectedAsset);
       } else {
         // remove styling and remove from selectedAsset array
-        isSelected = false;
+        item.isSelected = false;
         imgElement.classList.toggle("border");
         imgElement.classList.toggle("border-secondary");
         selectedAsset.splice(selectedAsset.indexOf(item), 1);
         renderSelectedImages(selectedAsset);
-      }
 
-      console.log(selectedAsset);
+        // remove from selectedImageContainer
+        selectedImageContainer.childNodes.forEach((child) => {
+          if (child.alt === item.name) {
+            selectedImageContainer.removeChild(child);
+          }
+        });
+      }
 
       displayMetaData(selectedAsset);
     });
@@ -102,6 +107,17 @@ function renderImages(filteredData) {
   }
 
   imageContainer.appendChild(fragment);
+
+  // mark selected images as selected
+  selectedAsset.forEach((item) => {
+    imageContainer.childNodes.forEach((child) => {
+      if (child.alt === item.name) {
+        child.classList.add("border");
+        child.classList.add("border-secondary");
+        item.isSelected = true;
+      }
+    }); 
+  });
 }
 
 // Render the fist images on page load
@@ -109,7 +125,7 @@ renderImages(filterAssetsByCategory(activeCategory, activeSubCategory));
 
 // Render selected images
 function renderSelectedImages(selectedAsset) {
-  selectedImageContainer.innerHTML = "";
+  // selectedImageContainer.innerHTML = "";
   const fragment = document.createDocumentFragment();
   const noAssetsText = document.getElementById("noAssetsText");
 
@@ -117,29 +133,56 @@ function renderSelectedImages(selectedAsset) {
   noAssetsText.style.display = "none";
 
   selectedAsset.forEach((item) => {
+    item.alreadyInContainer = false;
+
+    selectedImageContainer.childNodes.forEach((child) => {
+      if (child.alt === item.name) {
+        item.alreadyInContainer = true;
+      }
+    });
     // check if the image is already in the selectedImageContainer
-    const imgElement = document.createElement("img");
-    imgElement.src = item.file_location;
-    imgElement.alt = item.name;
+    if (!item.alreadyInContainer) {
+      const imgElement = document.createElement("img");
+      imgElement.src = item.file_location;
+      imgElement.alt = item.name;
 
-    // add classes to the image element
-    imgElement.classList.add(
-      "catalog-image",
-      "p-2",
-      "pt-4",
-      "bg-white",
-      "rounded",
-      "m-2",
-      "shadow",
-      "border",
-      "border-secondary"
-    );
+      // add classes to the image element
+      imgElement.classList.add(
+        "catalog-image",
+        "p-2",
+        "pt-4",
+        "bg-white",
+        "rounded",
+        "m-2",
+        "shadow",
+        "border",
+        "border-secondary"
+      );
 
-    // Append the image to the document fragment
-    fragment.appendChild(imgElement);
+      // Append the image to the document fragment
+      fragment.appendChild(imgElement);
+
+      // click functionality for removing the image
+      imgElement.addEventListener("click", () => {
+        // remove from selectedAsset array
+        selectedAsset.splice(selectedAsset.indexOf(item), 1);
+        item.isSelected = false;
+        // remove from selectedImageContainer
+        selectedImageContainer.removeChild(imgElement);
+        // go over all images and remove the border
+        const images = document.querySelectorAll(".catalog-image");
+        images.forEach((image) => {
+          if (image.alt === item.name) {
+            image.classList.remove("border");
+            image.classList.remove("border-secondary");
+          }
+        });
+        displayMetaData(selectedAsset);
+      });
+    }
   });
 
-  selectedImageContainer.appendChild(fragment);
+  selectedImageContainer.prepend(fragment);
 
   if (selectedAsset.length === 0) {
     // remove all images from the container
@@ -194,8 +237,6 @@ function createFilter(category, subcategory) {
 
       // filter the images
       filterAssetsByActiveFilter(filteredImagesByCategory, activeFilter);
-
-      console.log(activeFilter);
     });
   });
 
@@ -280,6 +321,10 @@ displayMetaData(selectedAsset);
 // clear selection
 
 function clearSelection() {
+  selectedAsset.forEach((item) => {
+    item.isSelected = false;
+  });
+
   selectedAsset = [];
   displayMetaData(selectedAsset);
   // also remove all borders
@@ -287,12 +332,14 @@ function clearSelection() {
   images.forEach((image) => {
     image.classList.remove("border");
     image.classList.remove("border-secondary");
+
+    // set isSelected to false
   });
 
-    // remove all images from the container
-    selectedImageContainer.innerHTML = "";
-    // show the placeholder text
-    noAssetsText.style.display = "block";
+  // remove all images from the container
+  selectedImageContainer.innerHTML = "";
+  // show the placeholder text
+  noAssetsText.style.display = "block";
 }
 
 clearButton.addEventListener("click", clearSelection);
