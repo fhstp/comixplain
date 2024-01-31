@@ -1,9 +1,12 @@
-// function to access the json file and get the data
+// imports
 import imageData from "../assets.json" assert { type: "json" };
 
+// ---------------------------------------------
 // global variables
+// ---------------------------------------------
 let selectedAsset = [];
 let filteredImagesByCategory = [];
+let filteredImagesBySearch = [];
 let activeFilter = [];
 let activeCategory = "Templates";
 let activeSubCategory = "Frames";
@@ -11,7 +14,11 @@ const clearButton = document.getElementById("clearButton");
 const selectedImageContainer = document.getElementById(
   "selectedAssetsContainer"
 );
+const searchBarInput = document.getElementById("searchBarInput");
 
+// ---------------------------------------------
+//  functions
+// ---------------------------------------------
 // filter json data by category and subcategory
 function filterAssetsByCategory(category, subcategory) {
   return imageData[category][subcategory]["assets"];
@@ -37,6 +44,7 @@ function filterAssetsByActiveFilter(imageData, activeFilter) {
 
 // function to create the image card
 function renderImages(filteredData) {
+  console.log(filteredData);
   // get the image container
   const imageContainer = document.getElementById("image-container");
 
@@ -70,14 +78,14 @@ function renderImages(filteredData) {
       if (!item.isSelected) {
         // add styling and add to beginning selectedAsset array
         item.isSelected = true;
-        
+
         imgElement.classList.toggle("catalog-image-selected");
         selectedAsset.unshift(item);
         renderSelectedImages(selectedAsset);
       } else {
         // remove styling and remove from selectedAsset array
         item.isSelected = false;
-        
+
         imgElement.classList.toggle("catalog-image-selected");
         selectedAsset.splice(selectedAsset.indexOf(item), 1);
         renderSelectedImages(selectedAsset);
@@ -101,7 +109,7 @@ function renderImages(filteredData) {
   if (filteredData.length === 0) {
     const noImagesElement = document.createElement("p");
     noImagesElement.innerText =
-      "No images found for the currently selected filters.";
+      "No images found for the currently selected filters or search term.";
     noImagesElement.classList.add("text-center", "text-muted", "mt-5");
     fragment.appendChild(noImagesElement);
   }
@@ -118,9 +126,6 @@ function renderImages(filteredData) {
     });
   });
 }
-
-// Render the fist images on page load
-renderImages(filterAssetsByCategory(activeCategory, activeSubCategory));
 
 // Render selected images
 function renderSelectedImages(selectedAsset) {
@@ -177,7 +182,7 @@ function renderSelectedImages(selectedAsset) {
         });
         displayMetaData(selectedAsset);
 
-        if(selectedAsset.length === 0) {
+        if (selectedAsset.length === 0) {
           noAssetsText.style.display = "block";
         }
       });
@@ -245,8 +250,6 @@ function createFilter(category, subcategory) {
   // Append the entire document fragment to the container
   filterContainer.appendChild(fragment);
 }
-
-createFilter(activeCategory, activeSubCategory);
 
 // display metadata
 function displayMetaData(selectedAsset) {
@@ -319,11 +322,49 @@ function displayMetaData(selectedAsset) {
   }
 }
 
-displayMetaData(selectedAsset);
+// search functionality
+function searchBar(imageData, searchTerm) {
+  filteredImagesBySearch = [];
 
-// button function
-// clear selection
+  for (const category in imageData) {
+    const subCategories = imageData[category];
 
+    for (const subCategory in subCategories) {
+      const assets = subCategories[subCategory]["assets"];
+
+      for (const asset of assets) {
+        const keywords = asset.keywords;
+
+        for (const keyword of keywords) {
+          if (keyword.toLowerCase().includes(searchTerm.toLowerCase())) {
+            // check if the asset is already in the array
+            if (!filteredImagesBySearch.includes(asset)) {
+              filteredImagesBySearch.push(asset);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  return filteredImagesBySearch;
+}
+
+searchBarInput.addEventListener("search", (e) => {
+  if (searchBarInput.value !== "") {
+    const searchTerm = e.target.value;
+    searchBar(imageData, searchTerm);
+    renderImages(filteredImagesBySearch);
+  } else {
+    let filteredData = filterAssetsByCategory(
+      activeCategory,
+      activeSubCategory
+    );
+    renderImages(filteredData);
+  }
+});
+
+// button function - clear selection
 function clearSelection() {
   selectedAsset.forEach((item) => {
     item.isSelected = false;
@@ -346,10 +387,21 @@ function clearSelection() {
   noAssetsText.style.display = "block";
 }
 
+// ---------------------------------------------
+//  load the page
+// ---------------------------------------------
+// Render the fist images on page load
+renderImages(filterAssetsByCategory(activeCategory, activeSubCategory));
+// create the filter on page load
+createFilter(activeCategory, activeSubCategory);
+// display metadata
+displayMetaData(selectedAsset);
+// add event listener to the clear button
 clearButton.addEventListener("click", clearSelection);
 
-// add event listener to the DOMContentLoaded event
-// this handles sidebar functionality
+// ---------------------------------------------
+// sidebar functionality
+// ---------------------------------------------
 window.addEventListener("DOMContentLoaded", (event) => {
   // Get all elements with class 'sidebar-item'
   const sideBarItems = document.querySelectorAll(".sidebar-item");
