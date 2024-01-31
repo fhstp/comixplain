@@ -15,7 +15,21 @@
 
 /* Catalog */
 #selection {
-  height: 200px;
+  height: 212px;
+}
+
+#selectedAssets {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#selectedAssetsContainer {
+  white-space: nowrap;
+}
+
+#noAssetsText {
+  text-align: center;
 }
 
 #buttons {

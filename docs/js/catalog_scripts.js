@@ -7,6 +7,10 @@ let filteredImagesByCategory = [];
 let activeFilter = [];
 let activeCategory = "Templates";
 let activeSubCategory = "Frames";
+const clearButton = document.getElementById("clearButton");
+const selectedImageContainer = document.getElementById(
+  "selectedAssetsContainer"
+);
 
 // filter json data by category and subcategory
 function filterAssetsByCategory(category, subcategory) {
@@ -63,20 +67,20 @@ function renderImages(filteredData) {
     // COMMENT: SELECTION STILL NEEDS TO BE REFINED WITH KEEPING SELECTIONS WHEN SWITCHING CATEGORIES
 
     imgElement.addEventListener("click", () => {
-      console.log("Clicked image " + item.name);
-
       if (!isSelected) {
         // add styling and push to selectedAsset array
         isSelected = true;
         imgElement.classList.toggle("border");
         imgElement.classList.toggle("border-secondary");
         selectedAsset.push(item);
+        renderSelectedImages(selectedAsset);
       } else {
         // remove styling and remove from selectedAsset array
         isSelected = false;
         imgElement.classList.toggle("border");
         imgElement.classList.toggle("border-secondary");
         selectedAsset.splice(selectedAsset.indexOf(item), 1);
+        renderSelectedImages(selectedAsset);
       }
 
       console.log(selectedAsset);
@@ -101,8 +105,49 @@ function renderImages(filteredData) {
 }
 
 // Render the fist images on page load
-let defaultImages = filterAssetsByCategory(activeCategory, activeSubCategory);
-renderImages(defaultImages);
+renderImages(filterAssetsByCategory(activeCategory, activeSubCategory));
+
+// Render selected images
+function renderSelectedImages(selectedAsset) {
+  selectedImageContainer.innerHTML = "";
+  const fragment = document.createDocumentFragment();
+  const noAssetsText = document.getElementById("noAssetsText");
+
+  // hide the placeholder text
+  noAssetsText.style.display = "none";
+
+  selectedAsset.forEach((item) => {
+    // check if the image is already in the selectedImageContainer
+    const imgElement = document.createElement("img");
+    imgElement.src = item.file_location;
+    imgElement.alt = item.name;
+
+    // add classes to the image element
+    imgElement.classList.add(
+      "catalog-image",
+      "p-2",
+      "pt-4",
+      "bg-white",
+      "rounded",
+      "m-2",
+      "shadow",
+      "border",
+      "border-secondary"
+    );
+
+    // Append the image to the document fragment
+    fragment.appendChild(imgElement);
+  });
+
+  selectedImageContainer.appendChild(fragment);
+
+  if (selectedAsset.length === 0) {
+    // remove all images from the container
+    selectedImageContainer.innerHTML = "";
+    // show the placeholder text
+    noAssetsText.style.display = "block";
+  }
+}
 
 // get filter-options from JSON
 function createFilter(category, subcategory) {
@@ -197,7 +242,7 @@ function displayMetaData(selectedAsset) {
     metaDataTable.style.display = "block";
 
     const keywords = document.getElementById("td-Keywords");
-    keywords.innerText = asset.keywords.join(', ');
+    keywords.innerText = asset.keywords.join(", ");
 
     const createdBy = document.getElementById("td-Created");
     createdBy.innerText = `${asset.created_by}`;
@@ -230,6 +275,27 @@ function displayMetaData(selectedAsset) {
 }
 
 displayMetaData(selectedAsset);
+
+// button function
+// clear selection
+
+function clearSelection() {
+  selectedAsset = [];
+  displayMetaData(selectedAsset);
+  // also remove all borders
+  const images = document.querySelectorAll(".catalog-image");
+  images.forEach((image) => {
+    image.classList.remove("border");
+    image.classList.remove("border-secondary");
+  });
+
+    // remove all images from the container
+    selectedImageContainer.innerHTML = "";
+    // show the placeholder text
+    noAssetsText.style.display = "block";
+}
+
+clearButton.addEventListener("click", clearSelection);
 
 // add event listener to the DOMContentLoaded event
 // this handles sidebar functionality
@@ -269,7 +335,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       }
 
       // add the "link-secondary" class to the clicked sidebar-item
-      sideBarItem.classList.toggle("link-secondary");
+      sideBarItem.classList.add("link-secondary");
 
       // other sidebar-items
       sideBarItems.forEach((item) => {
