@@ -1,6 +1,6 @@
 /* Custom Catalog Styles */
 
-/* Images */
+/* Catalog */
 .catalog-image {
   min-height: 100px;
   max-height: 150px;
@@ -8,18 +8,28 @@
   vertical-align: bottom;
 }
 
+.catalog-image-selected {
+  border: 2px solid #9f1ae2;
+}
+
 #image-container {
   overflow-y: scroll;
   height: 500px;
 }
 
-/* Catalog */
+/* Selection */
+.selected-image {
+  height: 100px;
+  max-width: 250px;
+  vertical-align: bottom;
+}
+
 #selection {
-  height: 212px;
+  min-height: 18vh;
+  margin-top: 0.5rem;
 }
 
 #selectedAssets {
-  max-width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -28,14 +38,12 @@
   white-space: nowrap;
 }
 
-#noAssetsText {
-  text-align: center;
-}
-
 #buttons {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 /* Meta Data */

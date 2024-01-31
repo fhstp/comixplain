@@ -56,13 +56,13 @@ function renderImages(filteredData) {
     imgElement.classList.add(
       "catalog-image",
       "p-2",
-      "pt-4",
       "bg-white",
       "rounded",
       "m-2",
       "shadow"
     );
 
+    // set isSelected to false initially
     item.isSelected = false;
 
     // click functionality
@@ -70,15 +70,15 @@ function renderImages(filteredData) {
       if (!item.isSelected) {
         // add styling and add to beginning selectedAsset array
         item.isSelected = true;
-        imgElement.classList.toggle("border");
-        imgElement.classList.toggle("border-secondary");
+        
+        imgElement.classList.toggle("catalog-image-selected");
         selectedAsset.unshift(item);
         renderSelectedImages(selectedAsset);
       } else {
         // remove styling and remove from selectedAsset array
         item.isSelected = false;
-        imgElement.classList.toggle("border");
-        imgElement.classList.toggle("border-secondary");
+        
+        imgElement.classList.toggle("catalog-image-selected");
         selectedAsset.splice(selectedAsset.indexOf(item), 1);
         renderSelectedImages(selectedAsset);
 
@@ -112,11 +112,10 @@ function renderImages(filteredData) {
   selectedAsset.forEach((item) => {
     imageContainer.childNodes.forEach((child) => {
       if (child.alt === item.name) {
-        child.classList.add("border");
-        child.classList.add("border-secondary");
+        child.classList.toggle("catalog-image-selected");
         item.isSelected = true;
       }
-    }); 
+    });
   });
 }
 
@@ -148,9 +147,8 @@ function renderSelectedImages(selectedAsset) {
 
       // add classes to the image element
       imgElement.classList.add(
-        "catalog-image",
+        "selected-image",
         "p-2",
-        "pt-4",
         "bg-white",
         "rounded",
         "m-2",
@@ -174,10 +172,14 @@ function renderSelectedImages(selectedAsset) {
         images.forEach((image) => {
           if (image.alt === item.name) {
             image.classList.remove("border");
-            image.classList.remove("border-secondary");
+            image.classList.remove("catalog-image-selected");
           }
         });
         displayMetaData(selectedAsset);
+
+        if(selectedAsset.length === 0) {
+          noAssetsText.style.display = "block";
+        }
       });
     }
   });
@@ -300,7 +302,8 @@ function displayMetaData(selectedAsset) {
     // hide table
     metaDataTable.style.display = "none";
 
-    const placeHolderText = document.createElement("h6");
+    const placeHolderText = document.createElement("p");
+    placeHolderText.classList.add("text-center", "text-muted", "mt-5");
     placeHolderText.innerText = "Select an Asset to see details.";
 
     metaDataContainer.appendChild(placeHolderText);
@@ -308,7 +311,8 @@ function displayMetaData(selectedAsset) {
     // hide table
     metaDataTable.style.display = "none";
     // show how many assets are selected
-    const assetCount = document.createElement("h6");
+    const assetCount = document.createElement("p");
+    assetCount.classList.add("text-center", "text-muted", "mt-5");
     assetCount.innerText = `${selectedAsset.length} Assets selected`;
 
     metaDataContainer.appendChild(assetCount);
@@ -331,7 +335,7 @@ function clearSelection() {
   const images = document.querySelectorAll(".catalog-image");
   images.forEach((image) => {
     image.classList.remove("border");
-    image.classList.remove("border-secondary");
+    image.classList.remove("catalog-image-selected");
 
     // set isSelected to false
   });
