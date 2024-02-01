@@ -43,6 +43,30 @@ function filterAssetsByActiveFilter(imageData, activeFilter) {
   renderImages(filteredData);
 }
 
+function getAllKeywords(imageData) {
+  let keywords = [];
+  for (const category in imageData) {
+    const subCategories = imageData[category];
+
+    for (const subCategory in subCategories) {
+      const assets = subCategories[subCategory]["assets"];
+
+      for (const asset of assets) {
+        const assetKeywords = asset.keywords;
+        assetKeywords.forEach((keyword) => {
+          // only push the keyword if it is not already in the array
+          if (!keywords.includes(keyword)) {
+            keywords.push(keyword);
+          }
+        });
+      }
+    }
+  }
+  // sort the keywords
+  keywords.sort();
+  return keywords;
+}
+
 // function to create the image card
 function renderImages(filteredData) {
   // get the image container
@@ -82,8 +106,6 @@ function renderImages(filteredData) {
         imgElement.classList.toggle("catalog-image-selected");
         selectedAsset.unshift(item);
         renderSelectedImages(selectedAsset);
-
-        console.log(selectedAsset);
       } else {
         // remove styling and remove from selectedAsset array
         item.isSelected = false;
@@ -296,7 +318,9 @@ function displayMetaData(selectedAsset) {
     createdBy.innerText = `${asset.created_by}`;
 
     const fileLocation = document.getElementById("td-Location");
-    fileLocation.innerText = `${asset.font_file_location || asset.file_location}`;
+    fileLocation.innerText = `${
+      asset.font_file_location || asset.file_location
+    }`;
     fileLocation.href = asset.font_file_location || asset.file_location;
 
     // attach elements
@@ -366,6 +390,19 @@ searchBarInput.addEventListener("search", (e) => {
   }
 });
 
+// auto complete functionality using jquery ui
+$(function () {
+  const availableTags = getAllKeywords(imageData);
+  $("#searchBarInput").autocomplete({
+    source: availableTags,
+    select: function (event, ui) {
+      const selectedKeyWord = ui.item.value;
+      searchBar(imageData, selectedKeyWord);
+      renderImages(filteredImagesBySearch);
+    },
+  });
+});
+
 // button function - clear selection
 function clearSelection() {
   console.log("button clicked");
@@ -396,27 +433,28 @@ async function downloadSelection(selectedAssets) {
     if (selectedAssets.length === 0) {
       // show alert
       alert("No assets to download selected.");
-    }
-    else if (selectedAssets.length === 1) {
+    } else if (selectedAssets.length === 1) {
       // download the asset directly
       const asset = selectedAssets[0];
       const assetUrl = asset.font_file_location || asset.file_location;
-      const rawUrl = assetUrl.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
+      const rawUrl = assetUrl
+        .replace("github.com", "raw.githubusercontent.com")
+        .replace("/blob/", "/");
       const response = await fetch(rawUrl);
 
       if (!response.ok) {
-        throw new Error('Asset not found.');
+        throw new Error("Asset not found.");
       }
 
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
 
-      const link = document.createElement('a');
+      const link = document.createElement("a");
       link.href = url;
-      link.target = '_blank';
+      link.target = "_blank";
       link.download = asset.name;
 
-      const clickEvent = new MouseEvent('click', {
+      const clickEvent = new MouseEvent("click", {
         view: window,
         bubbles: true,
         cancelable: true,
@@ -432,26 +470,28 @@ async function downloadSelection(selectedAssets) {
 
       for (const asset of selectedAssets) {
         const assetUrl = asset.font_file_location || asset.file_location;
-        const rawUrl = assetUrl.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
+        const rawUrl = assetUrl
+          .replace("github.com", "raw.githubusercontent.com")
+          .replace("/blob/", "/");
         const response = await fetch(rawUrl);
 
         if (!response.ok) {
-          throw new Error('Asset not found.');
+          throw new Error("Asset not found.");
         }
 
         const blob = await response.blob();
         zip.file(asset.name, blob);
       }
 
-      const zipBlob = await zip.generateAsync({ type: 'blob' });
+      const zipBlob = await zip.generateAsync({ type: "blob" });
       const zipUrl = window.URL.createObjectURL(zipBlob);
 
-      const link = document.createElement('a');
+      const link = document.createElement("a");
       link.href = zipUrl;
-      link.target = '_blank';
-      link.download = 'comixplain_assets.zip';
+      link.target = "_blank";
+      link.download = "comixplain_assets.zip";
 
-      const clickEvent = new MouseEvent('click', {
+      const clickEvent = new MouseEvent("click", {
         view: window,
         bubbles: true,
         cancelable: true,
@@ -463,7 +503,7 @@ async function downloadSelection(selectedAssets) {
       window.URL.revokeObjectURL(zipUrl);
     }
   } catch (error) {
-    console.error('Error fetching or downloading assets:', error);
+    console.error("Error fetching or downloading assets:", error);
   }
 }
 

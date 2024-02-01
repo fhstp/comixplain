@@ -22,6 +22,8 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/catalog_styles.css" rel="stylesheet" />
+    <!-- Jquery ui -->
+    <link href="jquery/jquery-ui.min.css" rel="stylesheet">
     <style></style>
 </head>
 
@@ -153,7 +155,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="bi bi-search me-2"></i></span>
                         </div>
-                        <input type="search" class="form-control" placeholder="Search Assets..." id="searchBarInput"></input>
+                        <input type="search" class="form-control ui-autocomplete" placeholder="Search Assets..." id="searchBarInput"></input>
                     </div>
                     <!-- Filter Pills -->
                     <div class="pb-3" id="filter-container">
@@ -275,6 +277,9 @@
 
     <!-- Bootstrap core JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Jquery -->
+    <script src="jquery/external/jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
     <!-- JSzip -->
     <script src="https://cdn.jsdelivr.net/npm/jszip@3.1.5/dist/jszip.min.js"></script>
     <!-- Core theme JS-->
