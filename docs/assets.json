@@ -57,7 +57,8 @@
             "Pangolin-Regular.ttf"
           ],
           "created_by": "Kevin Burke, Google Fonts",
-          "file_location": "https://raw.githubusercontent.com/Annacc211018/comixplain/e3137316b580396340f9d8810950833f5f0d21e4/Comixplain_Editions/fonts.svg"
+          "file_location": "https://raw.githubusercontent.com/Annacc211018/comixplain/e3137316b580396340f9d8810950833f5f0d21e4/Comixplain_Editions/fonts.svg",
+          "font_file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Pangolin-Regular.ttf"
         }
       ]
     }
@@ -184,7 +185,7 @@
       ],
       "assets": [
         {
-          "name": "Freckles Questioned no expression.png.png",
+          "name": "Freckles Questioned no expression.png",
           "keywords": [
             "boy",
             "young",
@@ -363,7 +364,7 @@
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
         },
         {
-          "name": "Freckles Questioned no expression.png.png",
+          "name": "Freckles Questioned no expression.png",
           "keywords": [
             "boy",
             "young",
@@ -542,7 +543,7 @@
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
         },
         {
-          "name": "Freckles Questioned no expression.png.png",
+          "name": "Freckles Questioned no expression.png",
           "keywords": [
             "boy",
             "young",
@@ -721,7 +722,7 @@
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
         },
         {
-          "name": "Freckles Questioned no expression.png.png",
+          "name": "Freckles Questioned no expression.png",
           "keywords": [
             "boy",
             "young",
@@ -900,7 +901,7 @@
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
         },
         {
-          "name": "Freckles Questioned no expression.png.png",
+          "name": "Freckles Questioned no expression.png",
           "keywords": [
             "boy",
             "young",
@@ -1079,7 +1080,7 @@
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
         },
         {
-          "name": "Freckles Questioned no expression.png.png",
+          "name": "Freckles Questioned no expression.png",
           "keywords": [
             "boy",
             "young",
@@ -1258,7 +1259,7 @@
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
         },
         {
-          "name": "Freckles Questioned no expression.png.png",
+          "name": "Freckles Questioned no expression.png",
           "keywords": [
             "boy",
             "young",
@@ -1473,7 +1474,7 @@
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20And%20Freckles%20At%20Table%20no%20expression.png?raw=true"
         },
         {
-          "name": "Ponytail And Freckles At Table.png.png",
+          "name": "Ponytail And Freckles At Table.png",
           "keywords": [
             "boy",
             "girl",
@@ -1830,7 +1831,7 @@
       "filter-options": ["food", "office", "bar"],
       "assets": [
         {
-          "name": "Apple Single5.png.png",
+          "name": "Apple Single5.png",
           "keywords": ["apple", "apples", "fruit", "food"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Apple%20Single5.png?raw=true"
@@ -1842,7 +1843,7 @@
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/apple%20duo.png?raw=true"
         },
         {
-          "name": "Office Chair Front.png.png",
+          "name": "Office Chair Front.png",
           "keywords": [
             "office",
             "office chair",
