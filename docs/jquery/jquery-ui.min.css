@@ -9,10 +9,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  cursor: pointer;
+  cursor: text;
   max-height: 200px;
   overflow-y: auto;
   overflow-x: hidden;
+  border-radius: 0.25rem;
 }
 .ui-menu {
   list-style: none;

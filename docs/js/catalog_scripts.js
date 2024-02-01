@@ -304,6 +304,9 @@ function displayMetaData(selectedAsset) {
       "shadow"
     );
 
+    // show here no cursor
+    imgElement.style.cursor = "default";
+
     // name
     const name = document.createElement("h6");
     name.innerText = `${asset.name}`;

@@ -6,6 +6,7 @@
   max-height: 150px;
   max-width: 300px;
   vertical-align: bottom;
+  cursor: pointer;
 }
 
 .catalog-image-selected {
@@ -22,6 +23,7 @@
   height: 100px;
   max-width: 250px;
   vertical-align: bottom;
+  cursor: pointer;
 }
 
 #selection {
