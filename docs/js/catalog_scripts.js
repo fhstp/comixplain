@@ -10,12 +10,13 @@ let filteredImagesBySearch = [];
 let activeFilter = [];
 let activeCategory = "Templates";
 let activeSubCategory = "Frames";
-const clearButton = document.getElementById("clearButton");
-const downloadButton = document.getElementById("downloadButton");
 const selectedImageContainer = document.getElementById(
   "selectedAssetsContainer"
 );
+const filterContainer = document.getElementById("filter-container");
 const searchBarInput = document.getElementById("searchBarInput");
+const clearButton = document.getElementById("clearButton");
+const downloadButton = document.getElementById("downloadButton");
 
 // ---------------------------------------------
 //  functions
@@ -226,7 +227,6 @@ function renderSelectedImages(selectedAsset) {
 // get filter-options from JSON
 function createFilter(category, subcategory) {
   const filterOptions = imageData[category][subcategory]["filter-options"];
-  const filterContainer = document.getElementById("filter-container");
 
   // Create a document fragment to hold the filter options
   const fragment = document.createDocumentFragment();
@@ -376,6 +376,9 @@ function searchBar(imageData, searchTerm) {
     }
   }
 
+  // hide filter container
+  filterContainer.style.display = "none";
+
   return filteredImagesBySearch;
 }
 
@@ -390,6 +393,9 @@ searchBarInput.addEventListener("search", (e) => {
       activeSubCategory
     );
     renderImages(filteredData);
+    // show filter container
+    filterContainer.style.display = "flex";
+    filterAssetsByActiveFilter(filteredImagesByCategory, activeFilter);
   }
 });
 
@@ -625,6 +631,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
           // clear the active filter array
           activeFilter = [];
+
+          // clear the search bar
+          searchBarInput.value = "";
+          // show filter container
+          filterContainer.style.display = "flex";
         });
       });
     }

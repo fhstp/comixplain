@@ -11,7 +11,9 @@
             "panel",
             "single panel",
             "single",
-            "border"
+            "border",
+            "template",
+            "grid"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/single_frame.png?raw=true"
@@ -24,7 +26,9 @@
             "panel",
             "double panel",
             "double",
-            "border"
+            "border",
+            "template",
+            "grid"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/double_frame.png?raw=true"
@@ -37,7 +41,9 @@
             "panel",
             "triple panel",
             "triple",
-            "border"
+            "border",
+            "template",
+            "grid"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/triple_frame.png?raw=true"
@@ -49,9 +55,7 @@
       "assets": [
         {
           "name": "Pangolin-Regular.ttf",
-          "keywords": [
-            "font"
-          ],
+          "keywords": ["font", "template", "letters"],
           "created_by": "Kevin Burke, Google Fonts",
           "file_location": "https://raw.githubusercontent.com/Annacc211018/comixplain/e3137316b580396340f9d8810950833f5f0d21e4/Comixplain_Editions/fonts.svg",
           "font_file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Pangolin-Regular.ttf"
@@ -73,11 +77,12 @@
         {
           "name": "expression angry2.png",
           "keywords": [
+            "emotion",
+            "facial expression",
+            "expression",
             "angry",
             "annoyed",
             "upset",
-            "questioning",
-            "concerned",
             "disturbed"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
@@ -86,32 +91,42 @@
         {
           "name": "expression happy1.png",
           "keywords": [
+            "emotion",
+            "facial expression",
+            "expression",
             "happy",
             "talking",
             "neutral",
-            "surprised",
-            "questioning"
+            "surprised"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20happy1.png?raw=true"
         },
         {
           "name": "expression neutral small4.png",
-          "keywords": ["happy", "smiling", "neutral", "questioning"],
+          "keywords": [
+            "emotion",
+            "facial expression",
+            "expression",
+            "happy",
+            "smiling",
+            "neutral"
+          ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/expression%20neutral%20small4.png?raw=true"
         },
         {
           "name": "expression questioning.png",
           "keywords": [
+            "emotion",
+            "facial expression",
+            "expression",
             "questioning",
             "confused",
             "talking",
             "asking",
-            "disturbed",
             "concerned",
-            "sad",
-            "distressed"
+            "sad"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20questioning.png?raw=true"
@@ -119,6 +134,9 @@
         {
           "name": "expression downwards sad.png",
           "keywords": [
+            "emotion",
+            "facial expression",
+            "expression",
             "questioning",
             "confused",
             "talking",
@@ -126,24 +144,32 @@
             "downwards",
             "down",
             "surprised",
-            "disappointed",
-            "shocked"
+            "disappointed"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20downwards%20sad.png?raw=true"
         },
         {
           "name": "expression big mouth.png",
-          "keywords": ["talking", "happy", "neutral", "excited", "questioning"],
+          "keywords": [
+            "emotion",
+            "facial expression",
+            "expression",
+            "talking",
+            "happy",
+            "excited"
+          ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20big%20mouth.png?raw=true"
         },
         {
           "name": "expression happy12.png",
           "keywords": [
+            "emotion",
+            "facial expression",
+            "expression",
             "happy",
             "embarrased",
-            "neutral",
             "shy",
             "love",
             "relieved",
@@ -155,10 +181,12 @@
         {
           "name": "expression winking.png",
           "keywords": [
+            "emotion",
+            "facial expression",
+            "expression",
             "happy",
             "winking",
             "wink",
-            "talking",
             "smiling",
             "joy",
             "joyful"
@@ -183,11 +211,12 @@
         {
           "name": "Freckles Questioned no expression.png",
           "keywords": [
+            "character",
+            "person",
             "boy",
             "young",
             "male",
             "no expression",
-            "expressionless",
             "front view",
             "questioning"
           ],
@@ -197,10 +226,11 @@
         {
           "name": "Freckles Questioned Face.png",
           "keywords": [
+            "character",
+            "person",
             "boy",
             "young",
             "male",
-            "with facial expression",
             "with expression",
             "front view",
             "questioning"
@@ -209,16 +239,74 @@
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20Face.png?raw=true"
         },
         {
+          "name": "Freckles with one hand no expression.png",
+          "keywords": [
+            "character",
+            "person",
+            "boy",
+            "young",
+            "male",
+            "no expression",
+            "front view"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20with%20one%20hand%20no%20expression.png?raw=true"
+        },
+        {
+          "name": "Freckles with one hand.png",
+          "keywords": [
+            "character",
+            "person",
+            "boy",
+            "young",
+            "male",
+            "with expression",
+            "front view"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20with%20one%20hand.png?raw=true"
+        },
+        {
+          "name": "Freckles wide arms no expression.png",
+          "keywords": [
+            "character",
+            "person",
+            "boy",
+            "young",
+            "male",
+            "no expression",
+            "front view"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20wide%20arms%20no%20expression.png?raw=true"
+        },
+        {
+          "name": "Freckles wide arms.png",
+          "keywords": [
+            "character",
+            "person",
+            "boy",
+            "young",
+            "male",
+            "with expression",
+            "front view",
+            "happy",
+            "talking"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20wide%20arms.png?raw=true"
+        },
+        {
           "name": "Oldie Crossed Arms no expression.png",
           "keywords": [
+            "character",
+            "person",
             "man",
             "senior",
             "old",
             "male",
-            "expressionless",
             "no expression",
             "side view",
-            "crossed arms",
             "arms crossed"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
@@ -227,34 +315,95 @@
         {
           "name": "Oldie Crossed Arm.png",
           "keywords": [
+            "character",
+            "person",
             "man",
             "senior",
             "old",
             "male",
             "with expression",
-            "with facial expression",
             "side view",
-            "crossed arms",
             "arms crossed"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms.png?raw=true"
         },
         {
+          "name": "Oldie explains no expression.png",
+          "keywords": [
+            "character",
+            "person",
+            "man",
+            "senior",
+            "old",
+            "male",
+            "no expression",
+            "side view"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20explains%20no%20expression.png?raw=true"
+        },
+        {
+          "name": "Oldie explains.png",
+          "keywords": [
+            "character",
+            "person",
+            "man",
+            "senior",
+            "old",
+            "male",
+            "with expression",
+            "side view",
+            "explaining"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20explains.png?raw=true"
+        },
+        {
+          "name": "Oldie showing no expression.png",
+          "keywords": [
+            "character",
+            "person",
+            "man",
+            "senior",
+            "old",
+            "male",
+            "no expression",
+            "side view"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20showing%20no%20expression.png?raw=true"
+        },
+        {
+          "name": "Oldie showing.png",
+          "keywords": [
+            "character",
+            "person",
+            "man",
+            "senior",
+            "old",
+            "male",
+            "with expression",
+            "side view",
+            "explaining",
+            "showing"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20showing.png?raw=true"
+        },
+        {
           "name": "Ponytail Exclaiming no expression.png",
           "keywords": [
+            "character",
+            "person",
             "female",
             "young",
-            "talking",
-            "explaining",
-            "finger pointed",
+            "pointing",
             "finger",
             "girl",
             "ponytail",
             "no expression",
-            "expressionless",
-            "front view",
-            "exclaiming"
+            "front view"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming%20no%20expression.png?raw=true"
@@ -262,15 +411,16 @@
         {
           "name": "Ponytail Exclaiming.png",
           "keywords": [
+            "character",
+            "person",
             "female",
             "young",
             "talking",
             "explaining",
-            "finger pointed",
+            "pointing",
             "finger",
             "girl",
             "ponytail",
-            "with facial expression",
             "with expression",
             "front view",
             "exclaiming"
@@ -279,1159 +429,324 @@
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming.png?raw=true"
         },
         {
-          "name": "Waiter With Food2.png",
+          "name": "Ponytail Pointing Far Away no expression.png",
           "keywords": [
-            "male",
-            "adult",
+            "character",
+            "person",
+            "female",
             "young",
-            "boy",
-            "talking",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "waiter",
-            "server",
-            "food",
-            "dinner",
-            "restaurant",
-            "serving"
+            "pointing",
+            "finger",
+            "girl",
+            "ponytail",
+            "no expression",
+            "front view"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2.png?raw=true"
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Pointing%20Far%20Away%20no%20expression.png?raw=true"
+        },
+        {
+          "name": "Ponytail Pointing Far Away.png",
+          "keywords": [
+            "character",
+            "person",
+            "female",
+            "young",
+            "talking",
+            "explaining",
+            "pointing",
+            "finger",
+            "girl",
+            "ponytail",
+            "with expression",
+            "front view"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Pointing%20Far%20Away.png?raw=true"
+        },
+        {
+          "name": "Ponytail Drawing no expression.png",
+          "keywords": [
+            "character",
+            "person",
+            "female",
+            "young",
+            "drawing",
+            "pen",
+            "girl",
+            "ponytail",
+            "no expression",
+            "side view"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Drawing%20no%20expression.png?raw=true"
+        },
+        {
+          "name": "Ponytail Drawing.png",
+          "keywords": [
+            "character",
+            "person",
+            "female",
+            "young",
+            "drawing",
+            "pen",
+            "girl",
+            "ponytail",
+            "with expression",
+            "side view"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Drawing.png?raw=true"
         },
         {
           "name": "Waiter With Food2 no expression.png",
           "keywords": [
+            "character",
+            "person",
             "male",
             "adult",
             "young",
             "boy",
             "no expression",
-            "expressionless",
             "front view",
             "waiter",
             "server",
             "food",
             "dinner",
-            "restaurant",
-            "serving"
+            "restaurant"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2%20no%20expression.png?raw=true"
         },
         {
-          "name": "Barista Explaining2.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "waiter",
-            "server",
-            "bartender",
-            "bar",
-            "serving",
-            "talking",
-            "explaining"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2.png?raw=true"
-        },
-        {
-          "name": "Barista Explaining2 no expression.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "no expression",
-            "expressionless",
-            "front view",
-            "waiter",
-            "server",
-            "bartender",
-            "bar",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Freckles Questioned no expression.png",
-          "keywords": [
-            "boy",
-            "young",
-            "male",
-            "no expression",
-            "expressionless",
-            "front view",
-            "questioning"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Freckles Questioned Face.png",
-          "keywords": [
-            "boy",
-            "young",
-            "male",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "questioning"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20Face.png?raw=true"
-        },
-        {
-          "name": "Oldie Crossed Arms no expression.png",
-          "keywords": [
-            "man",
-            "senior",
-            "old",
-            "male",
-            "expressionless",
-            "no expression",
-            "side view",
-            "crossed arms",
-            "arms crossed"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Oldie Crossed Arm.png",
-          "keywords": [
-            "man",
-            "senior",
-            "old",
-            "male",
-            "with expression",
-            "with facial expression",
-            "side view",
-            "crossed arms",
-            "arms crossed"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms.png?raw=true"
-        },
-        {
-          "name": "Ponytail Exclaiming no expression.png",
-          "keywords": [
-            "female",
-            "young",
-            "talking",
-            "explaining",
-            "finger pointed",
-            "finger",
-            "girl",
-            "ponytail",
-            "no expression",
-            "expressionless",
-            "front view",
-            "exclaiming"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Ponytail Exclaiming.png",
-          "keywords": [
-            "female",
-            "young",
-            "talking",
-            "explaining",
-            "finger pointed",
-            "finger",
-            "girl",
-            "ponytail",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "exclaiming"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming.png?raw=true"
-        },
-        {
           "name": "Waiter With Food2.png",
           "keywords": [
+            "character",
+            "person",
             "male",
             "adult",
             "young",
             "boy",
             "talking",
-            "with facial expression",
             "with expression",
             "front view",
             "waiter",
             "server",
             "food",
             "dinner",
-            "restaurant",
-            "serving"
+            "restaurant"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2.png?raw=true"
         },
         {
-          "name": "Waiter With Food2 no expression.png",
+          "name": "Waiter sideview no expression.png",
           "keywords": [
+            "character",
+            "person",
             "male",
             "adult",
             "young",
             "boy",
+            "talking",
             "no expression",
-            "expressionless",
-            "front view",
+            "side view",
             "waiter",
             "server",
-            "food",
-            "dinner",
             "restaurant",
-            "serving"
+            "writing",
+            "notepad"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20sideview%20no%20expression.png?raw=true"
         },
         {
-          "name": "Barista Explaining2.png",
+          "name": "Waiter sideview.png",
           "keywords": [
+            "character",
+            "person",
             "male",
             "adult",
             "young",
             "boy",
-            "with facial expression",
+            "talking",
             "with expression",
-            "front view",
+            "side view",
             "waiter",
             "server",
-            "bartender",
-            "bar",
-            "serving",
-            "talking",
-            "explaining"
+            "restaurant",
+            "writing",
+            "notepad"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2.png?raw=true"
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20%20sideview.png?raw=true"
+        },
+        {
+          "name": "Waiter talking sideview no expression.png",
+          "keywords": [
+            "character",
+            "person",
+            "male",
+            "adult",
+            "young",
+            "boy",
+            "talking",
+            "no expression",
+            "side view",
+            "waiter",
+            "server",
+            "restaurant",
+            "writing",
+            "notepad"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20talking%20sideview%20no%20expression.png?raw=true"
+        },
+        {
+          "name": "Waiter talking sideview.png",
+          "keywords": [
+            "character",
+            "person",
+            "male",
+            "adult",
+            "young",
+            "boy",
+            "talking",
+            "with expression",
+            "side view",
+            "waiter",
+            "server",
+            "restaurant",
+            "writing",
+            "notepad"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20talking%20sideview.png?raw=true"
         },
         {
           "name": "Barista Explaining2 no expression.png",
           "keywords": [
+            "character",
+            "person",
             "male",
             "adult",
             "young",
             "boy",
             "no expression",
-            "expressionless",
             "front view",
             "waiter",
             "server",
             "bartender",
-            "bar",
-            "serving"
+            "barista"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
         },
         {
-          "name": "Freckles Questioned no expression.png",
-          "keywords": [
-            "boy",
-            "young",
-            "male",
-            "no expression",
-            "expressionless",
-            "front view",
-            "questioning"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Freckles Questioned Face.png",
-          "keywords": [
-            "boy",
-            "young",
-            "male",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "questioning"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20Face.png?raw=true"
-        },
-        {
-          "name": "Oldie Crossed Arms no expression.png",
-          "keywords": [
-            "man",
-            "senior",
-            "old",
-            "male",
-            "expressionless",
-            "no expression",
-            "side view",
-            "crossed arms",
-            "arms crossed"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Oldie Crossed Arm.png",
-          "keywords": [
-            "man",
-            "senior",
-            "old",
-            "male",
-            "with expression",
-            "with facial expression",
-            "side view",
-            "crossed arms",
-            "arms crossed"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms.png?raw=true"
-        },
-        {
-          "name": "Ponytail Exclaiming no expression.png",
-          "keywords": [
-            "female",
-            "young",
-            "talking",
-            "explaining",
-            "finger pointed",
-            "finger",
-            "girl",
-            "ponytail",
-            "no expression",
-            "expressionless",
-            "front view",
-            "exclaiming"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Ponytail Exclaiming.png",
-          "keywords": [
-            "female",
-            "young",
-            "talking",
-            "explaining",
-            "finger pointed",
-            "finger",
-            "girl",
-            "ponytail",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "exclaiming"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming.png?raw=true"
-        },
-        {
-          "name": "Waiter With Food2.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "talking",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "waiter",
-            "server",
-            "food",
-            "dinner",
-            "restaurant",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2.png?raw=true"
-        },
-        {
-          "name": "Waiter With Food2 no expression.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "no expression",
-            "expressionless",
-            "front view",
-            "waiter",
-            "server",
-            "food",
-            "dinner",
-            "restaurant",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2%20no%20expression.png?raw=true"
-        },
-        {
           "name": "Barista Explaining2.png",
           "keywords": [
+            "character",
+            "person",
             "male",
             "adult",
             "young",
             "boy",
-            "with facial expression",
             "with expression",
             "front view",
             "waiter",
             "server",
             "bartender",
-            "bar",
-            "serving",
             "talking",
-            "explaining"
+            "explaining",
+            "barista"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2.png?raw=true"
         },
         {
-          "name": "Barista Explaining2 no expression.png",
+          "name": "Barista And Coffee no expression.png",
           "keywords": [
+            "character",
+            "person",
             "male",
             "adult",
             "young",
             "boy",
             "no expression",
-            "expressionless",
             "front view",
             "waiter",
             "server",
             "bartender",
-            "bar",
-            "serving"
+            "barista",
+            "coffee"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20And%20Coffee%20no%20expression.png?raw=true"
         },
         {
-          "name": "Freckles Questioned no expression.png",
+          "name": "Barista And Coffee.png",
           "keywords": [
-            "boy",
-            "young",
-            "male",
-            "no expression",
-            "expressionless",
-            "front view",
-            "questioning"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Freckles Questioned Face.png",
-          "keywords": [
-            "boy",
-            "young",
-            "male",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "questioning"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20Face.png?raw=true"
-        },
-        {
-          "name": "Oldie Crossed Arms no expression.png",
-          "keywords": [
-            "man",
-            "senior",
-            "old",
-            "male",
-            "expressionless",
-            "no expression",
-            "side view",
-            "crossed arms",
-            "arms crossed"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Oldie Crossed Arm.png",
-          "keywords": [
-            "man",
-            "senior",
-            "old",
-            "male",
-            "with expression",
-            "with facial expression",
-            "side view",
-            "crossed arms",
-            "arms crossed"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms.png?raw=true"
-        },
-        {
-          "name": "Ponytail Exclaiming no expression.png",
-          "keywords": [
-            "female",
-            "young",
-            "talking",
-            "explaining",
-            "finger pointed",
-            "finger",
-            "girl",
-            "ponytail",
-            "no expression",
-            "expressionless",
-            "front view",
-            "exclaiming"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Ponytail Exclaiming.png",
-          "keywords": [
-            "female",
-            "young",
-            "talking",
-            "explaining",
-            "finger pointed",
-            "finger",
-            "girl",
-            "ponytail",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "exclaiming"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming.png?raw=true"
-        },
-        {
-          "name": "Waiter With Food2.png",
-          "keywords": [
+            "character",
+            "person",
             "male",
             "adult",
             "young",
             "boy",
-            "talking",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "waiter",
-            "server",
-            "food",
-            "dinner",
-            "restaurant",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2.png?raw=true"
-        },
-        {
-          "name": "Waiter With Food2 no expression.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "no expression",
-            "expressionless",
-            "front view",
-            "waiter",
-            "server",
-            "food",
-            "dinner",
-            "restaurant",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Barista Explaining2.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "with facial expression",
             "with expression",
             "front view",
             "waiter",
             "server",
             "bartender",
-            "bar",
-            "serving",
             "talking",
-            "explaining"
+            "barista",
+            "coffee"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2.png?raw=true"
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20And%20Coffee.png?raw=true"
         },
         {
-          "name": "Barista Explaining2 no expression.png",
+          "name": "Barista Cleaning no expression.png",
           "keywords": [
+            "character",
+            "person",
             "male",
             "adult",
             "young",
             "boy",
             "no expression",
-            "expressionless",
             "front view",
             "waiter",
             "server",
             "bartender",
-            "bar",
-            "serving"
+            "barista",
+            "cleaning",
+            "cloth",
+            "glass"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Cleaning%20no%20expression.png?raw=true"
         },
         {
-          "name": "Freckles Questioned no expression.png",
+          "name": "Barista Cleaning.png",
           "keywords": [
-            "boy",
-            "young",
-            "male",
-            "no expression",
-            "expressionless",
-            "front view",
-            "questioning"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Freckles Questioned Face.png",
-          "keywords": [
-            "boy",
-            "young",
-            "male",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "questioning"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20Face.png?raw=true"
-        },
-        {
-          "name": "Oldie Crossed Arms no expression.png",
-          "keywords": [
-            "man",
-            "senior",
-            "old",
-            "male",
-            "expressionless",
-            "no expression",
-            "side view",
-            "crossed arms",
-            "arms crossed"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Oldie Crossed Arm.png",
-          "keywords": [
-            "man",
-            "senior",
-            "old",
-            "male",
-            "with expression",
-            "with facial expression",
-            "side view",
-            "crossed arms",
-            "arms crossed"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms.png?raw=true"
-        },
-        {
-          "name": "Ponytail Exclaiming no expression.png",
-          "keywords": [
-            "female",
-            "young",
-            "talking",
-            "explaining",
-            "finger pointed",
-            "finger",
-            "girl",
-            "ponytail",
-            "no expression",
-            "expressionless",
-            "front view",
-            "exclaiming"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Ponytail Exclaiming.png",
-          "keywords": [
-            "female",
-            "young",
-            "talking",
-            "explaining",
-            "finger pointed",
-            "finger",
-            "girl",
-            "ponytail",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "exclaiming"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming.png?raw=true"
-        },
-        {
-          "name": "Waiter With Food2.png",
-          "keywords": [
+            "character",
+            "person",
             "male",
             "adult",
             "young",
             "boy",
-            "talking",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "waiter",
-            "server",
-            "food",
-            "dinner",
-            "restaurant",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2.png?raw=true"
-        },
-        {
-          "name": "Waiter With Food2 no expression.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "no expression",
-            "expressionless",
-            "front view",
-            "waiter",
-            "server",
-            "food",
-            "dinner",
-            "restaurant",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Barista Explaining2.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "with facial expression",
             "with expression",
             "front view",
             "waiter",
             "server",
             "bartender",
-            "bar",
-            "serving",
-            "talking",
-            "explaining"
+            "barista",
+            "cleaning",
+            "cloth",
+            "glass"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2.png?raw=true"
-        },
-        {
-          "name": "Barista Explaining2 no expression.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "no expression",
-            "expressionless",
-            "front view",
-            "waiter",
-            "server",
-            "bartender",
-            "bar",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Freckles Questioned no expression.png",
-          "keywords": [
-            "boy",
-            "young",
-            "male",
-            "no expression",
-            "expressionless",
-            "front view",
-            "questioning"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Freckles Questioned Face.png",
-          "keywords": [
-            "boy",
-            "young",
-            "male",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "questioning"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20Face.png?raw=true"
-        },
-        {
-          "name": "Oldie Crossed Arms no expression.png",
-          "keywords": [
-            "man",
-            "senior",
-            "old",
-            "male",
-            "expressionless",
-            "no expression",
-            "side view",
-            "crossed arms",
-            "arms crossed"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Oldie Crossed Arm.png",
-          "keywords": [
-            "man",
-            "senior",
-            "old",
-            "male",
-            "with expression",
-            "with facial expression",
-            "side view",
-            "crossed arms",
-            "arms crossed"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms.png?raw=true"
-        },
-        {
-          "name": "Ponytail Exclaiming no expression.png",
-          "keywords": [
-            "female",
-            "young",
-            "talking",
-            "explaining",
-            "finger pointed",
-            "finger",
-            "girl",
-            "ponytail",
-            "no expression",
-            "expressionless",
-            "front view",
-            "exclaiming"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Ponytail Exclaiming.png",
-          "keywords": [
-            "female",
-            "young",
-            "talking",
-            "explaining",
-            "finger pointed",
-            "finger",
-            "girl",
-            "ponytail",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "exclaiming"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming.png?raw=true"
-        },
-        {
-          "name": "Waiter With Food2.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "talking",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "waiter",
-            "server",
-            "food",
-            "dinner",
-            "restaurant",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2.png?raw=true"
-        },
-        {
-          "name": "Waiter With Food2 no expression.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "no expression",
-            "expressionless",
-            "front view",
-            "waiter",
-            "server",
-            "food",
-            "dinner",
-            "restaurant",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Barista Explaining2.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "waiter",
-            "server",
-            "bartender",
-            "bar",
-            "serving",
-            "talking",
-            "explaining"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2.png?raw=true"
-        },
-        {
-          "name": "Barista Explaining2 no expression.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "no expression",
-            "expressionless",
-            "front view",
-            "waiter",
-            "server",
-            "bartender",
-            "bar",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Freckles Questioned no expression.png",
-          "keywords": [
-            "boy",
-            "young",
-            "male",
-            "no expression",
-            "expressionless",
-            "front view",
-            "questioning"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Freckles Questioned Face.png",
-          "keywords": [
-            "boy",
-            "young",
-            "male",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "questioning"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20Face.png?raw=true"
-        },
-        {
-          "name": "Oldie Crossed Arms no expression.png",
-          "keywords": [
-            "man",
-            "senior",
-            "old",
-            "male",
-            "expressionless",
-            "no expression",
-            "side view",
-            "crossed arms",
-            "arms crossed"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Oldie Crossed Arm.png",
-          "keywords": [
-            "man",
-            "senior",
-            "old",
-            "male",
-            "with expression",
-            "with facial expression",
-            "side view",
-            "crossed arms",
-            "arms crossed"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms.png?raw=true"
-        },
-        {
-          "name": "Ponytail Exclaiming no expression.png",
-          "keywords": [
-            "female",
-            "young",
-            "talking",
-            "explaining",
-            "finger pointed",
-            "finger",
-            "girl",
-            "ponytail",
-            "no expression",
-            "expressionless",
-            "front view",
-            "exclaiming"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Ponytail Exclaiming.png",
-          "keywords": [
-            "female",
-            "young",
-            "talking",
-            "explaining",
-            "finger pointed",
-            "finger",
-            "girl",
-            "ponytail",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "exclaiming"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming.png?raw=true"
-        },
-        {
-          "name": "Waiter With Food2.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "talking",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "waiter",
-            "server",
-            "food",
-            "dinner",
-            "restaurant",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2.png?raw=true"
-        },
-        {
-          "name": "Waiter With Food2 no expression.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "no expression",
-            "expressionless",
-            "front view",
-            "waiter",
-            "server",
-            "food",
-            "dinner",
-            "restaurant",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2%20no%20expression.png?raw=true"
-        },
-        {
-          "name": "Barista Explaining2.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "with facial expression",
-            "with expression",
-            "front view",
-            "waiter",
-            "server",
-            "bartender",
-            "bar",
-            "serving",
-            "talking",
-            "explaining"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2.png?raw=true"
-        },
-        {
-          "name": "Barista Explaining2 no expression.png",
-          "keywords": [
-            "male",
-            "adult",
-            "young",
-            "boy",
-            "no expression",
-            "expressionless",
-            "front view",
-            "waiter",
-            "server",
-            "bartender",
-            "bar",
-            "serving"
-          ],
-          "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Cleaning.png?raw=true"
         }
       ]
     },
@@ -1450,20 +765,19 @@
         {
           "name": "Ponytail And Freckles At Table no expression.png",
           "keywords": [
+            "character",
+            "person",
             "boy",
             "girl",
             "female",
             "male",
             "young",
-            "talking",
             "desk",
             "computer",
             "no expression",
-            "expressionless",
             "front view",
-            "side view",
-            "at table",
-            "at desk",
+            "table",
+            "desk",
             "conversation"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
@@ -1472,6 +786,8 @@
         {
           "name": "Ponytail And Freckles At Table.png",
           "keywords": [
+            "character",
+            "person",
             "boy",
             "girl",
             "female",
@@ -1481,11 +797,9 @@
             "desk",
             "computer",
             "with expression",
-            "with facial expression",
             "front view",
-            "side view",
-            "at table",
-            "at desk",
+            "table",
+            "desk",
             "conversation"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
@@ -1494,6 +808,8 @@
         {
           "name": "Ponytail And Freckled Talking.png",
           "keywords": [
+            "character",
+            "person",
             "boy",
             "girl",
             "male",
@@ -1502,10 +818,9 @@
             "conversation",
             "talking",
             "with expression",
-            "with facial expression",
             "side view",
-            "at table",
-            "at desk",
+            "table",
+            "desk",
             "computer",
             "laptop"
           ],
@@ -1515,6 +830,8 @@
         {
           "name": "Three Charas At Table With Apples.png",
           "keywords": [
+            "character",
+            "person",
             "boy",
             "girl",
             "senior",
@@ -1525,13 +842,10 @@
             "talking",
             "desk",
             "with expression",
-            "with facial expression",
             "front view",
-            "side view",
-            "at table",
-            "at desk",
+            "table",
+            "desk",
             "conversation",
-            "apples",
             "apple"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
@@ -1540,6 +854,8 @@
         {
           "name": "Three Charas At Table no expression.png",
           "keywords": [
+            "character",
+            "person",
             "boy",
             "girl",
             "senior",
@@ -1547,14 +863,11 @@
             "female",
             "young",
             "old",
-            "talking",
             "desk",
             "no expression",
-            "expressionless",
             "front view",
-            "side view",
-            "at table",
-            "at desk",
+            "table",
+            "desk",
             "conversation"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
@@ -1563,8 +876,10 @@
         {
           "name": "Family Sitting At Restaurant Table5.png",
           "keywords": [
+            "character",
+            "person",
             "family",
-            "at table",
+            "table",
             "sitting",
             "man",
             "woman",
@@ -1573,10 +888,8 @@
             "male",
             "eating",
             "dinner",
-            "family dinner",
             "restaurant",
-            "with expression",
-            "with facial expression"
+            "with expression"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Family%20Sitting%20At%20Restaurant%20Table5.png?raw=true"
@@ -1584,8 +897,10 @@
         {
           "name": "Family Sitting At Restaurant Table5 no expression.png",
           "keywords": [
+            "character",
+            "person",
             "family",
-            "at table",
+            "table",
             "sitting",
             "man",
             "woman",
@@ -1594,10 +909,8 @@
             "male",
             "eating",
             "dinner",
-            "family dinner",
             "restaurant",
-            "no expression",
-            "expressionless"
+            "no expression"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Family%20Sitting%20At%20Restaurant%20Table5%20no%20expression.png?raw=true"
@@ -1611,31 +924,31 @@
       "assets": [
         {
           "name": "Speechbubble12.png",
-          "keywords": ["speech bubble", "standalone", "balloon"],
+          "keywords": ["speech bubble", "standalone", "balloon", "left", "top"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble12.png?raw=true"
         },
         {
           "name": "Speechbubble13.png",
-          "keywords": ["speech bubble", "standalone", "balloon"],
+          "keywords": ["speech bubble", "standalone", "balloon", "right", "bottom"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble13.png?raw=true"
         },
         {
           "name": "Speechbubble11.png",
-          "keywords": ["speech bubble", "standalone", "balloon"],
+          "keywords": ["speech bubble", "standalone", "balloon", "left", "bottom"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble11.png?raw=true"
         },
         {
           "name": "Speechbubble10.png",
-          "keywords": ["speech bubble", "standalone", "balloon"],
+          "keywords": ["speech bubble", "standalone", "balloon", "bottom", "right"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble10.png?raw=true"
         },
         {
           "name": "Speechbubble1.png",
-          "keywords": ["speech bubble", "standalone", "balloon"],
+          "keywords": ["speech bubble", "standalone", "balloon", "bottom", "left"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble1.png?raw=true"
         }
@@ -1646,31 +959,31 @@
       "assets": [
         {
           "name": "Paneltop_Bubble1.png",
-          "keywords": ["speech bubble", "panel top", "paneltop", "balloon"],
+          "keywords": ["speech bubble", "panel top", "paneltop", "balloon", "left"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble1.png?raw=true"
         },
         {
           "name": "Paneltop_Bubble3.png",
-          "keywords": ["speech bubble", "panel top", "paneltop", "balloon"],
+          "keywords": ["speech bubble", "panel top", "paneltop", "balloon", "right"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble3.png?raw=true"
         },
         {
           "name": "Paneltop_Bubble11.png",
-          "keywords": ["speech bubble", "panel top", "paneltop", "balloon"],
+          "keywords": ["speech bubble", "panel top", "paneltop", "balloon", "right"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble11.png?raw=true"
         },
         {
           "name": "Paneltop_Bubble10.png",
-          "keywords": ["speech bubble", "panel top", "paneltop", "balloon"],
+          "keywords": ["speech bubble", "panel top", "paneltop", "balloon", "left"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble10.png?raw=true"
         },
         {
           "name": "Paneltop_Bubble2.png",
-          "keywords": ["speech bubble", "panel top", "paneltop", "balloon"],
+          "keywords": ["speech bubble", "panel top", "paneltop", "balloon", "left"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble2.png?raw=true"
         }
@@ -1681,31 +994,31 @@
       "assets": [
         {
           "name": "Paneltop_Caption6.png",
-          "keywords": ["caption", "caption box", "panel top", "paneltop"],
+          "keywords": ["caption", "caption box", "panel top", "paneltop", "round"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption6.png?raw=true"
         },
         {
           "name": "Paneltop_Caption7.png",
-          "keywords": ["caption", "caption box", "panel top", "paneltop"],
+          "keywords": ["caption", "caption box", "panel top", "paneltop", "round"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption7.png?raw=true"
         },
         {
           "name": "Paneltop_Caption1.png",
-          "keywords": ["caption", "caption box", "panel top", "paneltop"],
+          "keywords": ["caption", "caption box", "panel top", "paneltop", "square"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption1.png?raw=true"
         },
         {
           "name": "Paneltop_Caption2.png",
-          "keywords": ["caption", "caption box", "panel top", "paneltop"],
+          "keywords": ["caption", "caption box", "panel top", "paneltop", "square"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption2.png?raw=true"
         },
         {
           "name": "Paneltop_Caption3.png",
-          "keywords": ["caption", "caption box", "panel top", "paneltop"],
+          "keywords": ["caption", "caption box", "panel top", "paneltop", "square"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption3.png?raw=true"
         }
@@ -1714,7 +1027,12 @@
   },
   "Scenes": {
     "Background": {
-      "filter-options": ["no people", "with people", "no expression", "with expression"],
+      "filter-options": [
+        "no people",
+        "with people",
+        "no expression",
+        "with expression"
+      ],
       "assets": [
         {
           "name": "Office Background No People.png",
@@ -1723,12 +1041,11 @@
             "background",
             "scene",
             "office",
-            "desks",
-            "laptops",
-            "computers",
-            "chairs",
-            "tables",
-            "office background"
+            "desk",
+            "laptop",
+            "computer",
+            "chair",
+            "table"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background%20No%20People.png?raw=true"
@@ -1742,13 +1059,11 @@
             "scene",
             "scene with people",
             "office",
-            "desks",
-            "laptops",
-            "computers",
-            "chairs",
-            "tables",
-            "office background",
-            "expressionless",
+            "desk",
+            "laptop",
+            "computer",
+            "chair",
+            "table",
             "no expression"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
@@ -1763,14 +1078,12 @@
             "scene",
             "scene with people",
             "office",
-            "desks",
-            "laptops",
-            "computers",
-            "chairs",
-            "tables",
-            "office background",
-            "with expression",
-            "with facial expression"
+            "desk",
+            "laptop",
+            "computer",
+            "chair",
+            "table",
+            "with expression"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background%20with%20people.png?raw=true"
@@ -1784,17 +1097,13 @@
             "scene",
             "scene with people",
             "office",
-            "desks",
-            "laptops",
-            "computers",
-            "chairs",
-            "tables",
-            "office background",
+            "desk",
+            "laptop",
+            "computer",
+            "chair",
+            "table",
             "apple",
-            "apples",
-            "with apples",
-            "with expression",
-            "with facial expression"
+            "with expression"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background2%20With%20Apples.png?raw=true"
@@ -1808,15 +1117,12 @@
             "scene",
             "scene without people",
             "office",
-            "desks",
-            "laptops",
-            "computers",
-            "chairs",
+            "desk",
+            "laptop",
+            "computer",
+            "chair",
             "tables",
-            "office background",
-            "apple",
-            "apples",
-            "with apples"
+            "apple"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background2%20Without%20Charas.png?raw=true"
@@ -1828,13 +1134,13 @@
       "assets": [
         {
           "name": "Apple Single5.png",
-          "keywords": ["apple", "apples", "fruit", "food"],
+          "keywords": ["apple", "fruit", "food"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Apple%20Single5.png?raw=true"
         },
         {
           "name": "apple duo.png",
-          "keywords": ["apple", "apples", "fruit", "food"],
+          "keywords": ["apple", "fruit", "food"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/apple%20duo.png?raw=true"
         },
@@ -1842,7 +1148,6 @@
           "name": "Office Chair Front.png",
           "keywords": [
             "office",
-            "office chair",
             "chair",
             "sitting",
             "front view"
@@ -1854,7 +1159,6 @@
           "name": "Office Chair Side.png",
           "keywords": [
             "office",
-            "office chair",
             "chair",
             "sitting",
             "side view"
@@ -1866,11 +1170,10 @@
           "name": "Mini Notepad.png",
           "keywords": [
             "notepad",
-            "notes",
+            "note",
             "paper",
             "pen",
-            "writing",
-            "taking notes"
+            "writing"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Mini%20Notepad.png?raw=true"
@@ -1915,7 +1218,6 @@
           "name": "Rats in Love.png",
           "keywords": [
             "rat",
-            "rats",
             "mouse",
             "mice",
             "animal",
@@ -1930,35 +1232,35 @@
   },
   "Annotation Elements": {
     "Arrows": {
-      "filter-options": ["small", "big", "curved", "straight"],
+      "filter-options": ["small", "big"],
       "assets": [
         {
           "name": "arrow3.png",
-          "keywords": ["arrow", "arrows", "pointer", "pointing", "direction"],
+          "keywords": ["arrow", "pointer", "pointing", "direction", "small"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/arrow3.png?raw=true"
         },
         {
           "name": "arrow5.png",
-          "keywords": ["arrow", "arrows", "pointer", "pointing", "direction"],
+          "keywords": ["arrow", "pointer", "pointing", "direction", "small"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/arrow5.png?raw=true"
         },
         {
           "name": "Curved Arrow.png",
-          "keywords": ["arrow", "arrows", "pointer", "pointing", "direction"],
+          "keywords": ["arrow", "pointer", "pointing", "direction", "small"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Curved%20Arrow.png?raw=true"
         },
         {
           "name": "Arrow.png",
-          "keywords": ["arrow", "arrows", "pointer", "pointing", "direction"],
+          "keywords": ["arrow", "pointer", "pointing", "direction", "big"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Arrow.png?raw=true"
         },
         {
           "name": "arrow4.png",
-          "keywords": ["arrow", "arrows", "pointer", "pointing", "direction"],
+          "keywords": ["arrow", "pointer", "pointing", "direction", "big"],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/arrow4.png?raw=true"
         }
@@ -1975,8 +1277,8 @@
             "highlight",
             "groups",
             "sets",
-            "circle pointer",
-            "pointer"
+            "pointer",
+            "black"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Bubble.png?raw=true"
@@ -1989,8 +1291,8 @@
             "highlight",
             "groups",
             "sets",
-            "circle pointer",
-            "pointer"
+            "pointer",
+            "black"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Bubble%20Pinned.png?raw=true"
@@ -2003,8 +1305,8 @@
             "highlight",
             "groups",
             "sets",
-            "circle pointer",
-            "pointer"
+            "pointer",
+            "black"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Bubbles%20squashed.png?raw=true"
@@ -2017,8 +1319,8 @@
             "highlight",
             "groups",
             "sets",
-            "circle pointer",
-            "pointer"
+            "pointer",
+            "red"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Red%20Circle2.png?raw=true"
@@ -2031,10 +1333,9 @@
             "highlight",
             "groups",
             "sets",
-            "circle pointer",
             "pointer",
             "arrow",
-            "circle with arrow"
+            "red"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Red%20Circle%20with%20Arrow.png?raw=true"
@@ -2112,7 +1413,6 @@
             "stripes",
             "lines",
             "exclaiming",
-            "exlamaction",
             "ecxlamation stripes",
             "idea",
             "expression",
@@ -2132,7 +1432,6 @@
             "stripes",
             "lines",
             "exclaiming",
-            "exlamaction",
             "ecxlamation stripes",
             "idea",
             "expression",
@@ -2160,7 +1459,6 @@
           "name": "redline crossed.png",
           "keywords": [
             "line",
-            "marks",
             "mark",
             "cross",
             "crossed lines",
