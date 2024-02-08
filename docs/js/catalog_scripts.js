@@ -297,7 +297,6 @@ function displayMetaData(selectedAsset) {
     imgElement.classList.add(
       "catalog-image",
       "p-2",
-      "pt-4",
       "bg-white",
       "rounded",
       "m-2",

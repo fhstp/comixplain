@@ -4,7 +4,7 @@
 .catalog-image {
   min-height: 100px;
   max-height: 150px;
-  max-width: 300px;
+  max-width: 100%;
   vertical-align: bottom;
   cursor: pointer;
 }
@@ -17,6 +17,13 @@
   overflow-y: scroll;
   height: 500px;
 }
+
+@media (max-width: 587px) {
+  #filter-container{
+    flex-wrap: wrap;
+  }
+}
+
 
 /* Selection */
 .selected-image {
@@ -95,3 +102,20 @@ td {
   overflow: hidden;
   white-space: nowrap;
 }
+
+/* Sidebar
+.icons {
+  display: block;
+}
+
+@media (max-width: 1407px) {
+  .icons {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .icons {
+    display: block;
+  }
+} */
