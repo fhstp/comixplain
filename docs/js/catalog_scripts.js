@@ -413,7 +413,6 @@ $(function () {
 
 // button function - clear selection
 function clearSelection() {
-  console.log("button clicked");
   selectedAsset.forEach((item) => {
     item.isSelected = false;
   });
