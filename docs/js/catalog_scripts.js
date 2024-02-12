@@ -281,30 +281,41 @@ function displayMetaData(selectedAsset) {
   metaDataContainer.innerHTML = "";
   const metaDataTable = document.getElementById("details-Table");
 
-  // check if only one image is selected
-  if (selectedAsset.length === 1) {
+  // check if no image is selected
+ if (selectedAsset.length === 0) {
     // hide table
+    metaDataTable.style.display = "none";
+
+    const placeHolderText = document.createElement("p");
+    placeHolderText.classList.add("text-center", "text-muted", "mt-5");
+    placeHolderText.innerText = "Select an Asset to see details.";
+
+    metaDataContainer.appendChild(placeHolderText);
+  } else {
+    // display meta data for the last selected asset
     metaDataTable.style.display = "none";
 
     const fragment = document.createDocumentFragment();
     let asset = selectedAsset[0];
 
     // image
+    // create link element for image
+    const linkElement = document.createElement("a");
+    linkElement.href= asset.download_location || asset.file_location;
+    linkElement.target = "_blank";
+
     const imgElement = document.createElement("img");
     imgElement.src = asset.file_location;
     imgElement.alt = asset.name;
 
     imgElement.classList.add(
-      "catalog-image",
+      "selected-image",
       "p-2",
       "bg-white",
       "rounded",
       "m-2",
       "shadow"
     );
-
-    // show here no cursor
-    imgElement.style.cursor = "default";
 
     // name
     const name = document.createElement("h6");
@@ -321,32 +332,15 @@ function displayMetaData(selectedAsset) {
 
     const fileLocation = document.getElementById("td-Location");
     fileLocation.innerText = `${
-      asset.font_file_location || asset.file_location
+      asset.download_location || asset.file_location
     }`;
-    fileLocation.href = asset.font_file_location || asset.file_location;
+    fileLocation.href = asset.download_location || asset.file_location;
 
     // attach elements
-    fragment.appendChild(imgElement);
+    linkElement.appendChild(imgElement)
+    fragment.appendChild(linkElement);
     fragment.appendChild(name);
     metaDataContainer.appendChild(fragment);
-  } else if (selectedAsset.length === 0) {
-    // hide table
-    metaDataTable.style.display = "none";
-
-    const placeHolderText = document.createElement("p");
-    placeHolderText.classList.add("text-center", "text-muted", "mt-5");
-    placeHolderText.innerText = "Select an Asset to see details.";
-
-    metaDataContainer.appendChild(placeHolderText);
-  } else {
-    // hide table
-    metaDataTable.style.display = "none";
-    // show how many assets are selected
-    const assetCount = document.createElement("p");
-    assetCount.classList.add("text-center", "text-muted", "mt-5");
-    assetCount.innerText = `${selectedAsset.length} Assets selected`;
-
-    metaDataContainer.appendChild(assetCount);
   }
 }
 
@@ -443,7 +437,7 @@ async function downloadSelection(selectedAssets) {
     } else if (selectedAssets.length === 1) {
       // download the asset directly
       const asset = selectedAssets[0];
-      const assetUrl = asset.font_file_location || asset.file_location;
+      const assetUrl = asset.download_location || asset.file_location;
       const rawUrl = assetUrl
         .replace("github.com", "raw.githubusercontent.com")
         .replace("/blob/", "/");
@@ -476,7 +470,7 @@ async function downloadSelection(selectedAssets) {
       const zip = new JSZip();
 
       for (const asset of selectedAssets) {
-        const assetUrl = asset.font_file_location || asset.file_location;
+        const assetUrl = asset.download_location || asset.file_location;
         const rawUrl = assetUrl
           .replace("github.com", "raw.githubusercontent.com")
           .replace("/blob/", "/");

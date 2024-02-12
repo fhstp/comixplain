@@ -4,6 +4,22 @@
       "filter-options": [],
       "assets": [
         {
+          "name": "Comixplain Template.pptx",
+          "keywords": [
+            "frame",
+            "single frame",
+            "panel",
+            "single panel",
+            "single",
+            "border",
+            "template",
+            "grid"
+          ],
+          "created_by": "Magdalena Boucher & Alena Ertl",
+          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Template.png?raw=true",
+          "download_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Comixplain%20Template.pptx"
+        },
+        {
           "name": "single_frame.png",
           "keywords": [
             "frame",
@@ -58,7 +74,7 @@
           "keywords": ["font", "template", "letters"],
           "created_by": "Kevin Burke, Google Fonts",
           "file_location": "https://raw.githubusercontent.com/Annacc211018/comixplain/e3137316b580396340f9d8810950833f5f0d21e4/Comixplain_Editions/fonts.svg",
-          "font_file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Pangolin-Regular.ttf"
+          "download_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Pangolin-Regular.ttf"
         }
       ]
     }
@@ -1218,6 +1234,7 @@
           "name": "Rats in Love.png",
           "keywords": [
             "rat",
+            "rats",
             "mouse",
             "mice",
             "animal",

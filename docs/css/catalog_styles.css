@@ -28,7 +28,7 @@
 /* Selection */
 .selected-image {
   height: 100px;
-  max-width: 250px;
+  max-width: 100%;
   vertical-align: bottom;
   cursor: pointer;
 }
