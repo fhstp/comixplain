@@ -17,6 +17,9 @@ const filterContainer = document.getElementById("filter-container");
 const searchBarInput = document.getElementById("searchBarInput");
 const clearButton = document.getElementById("clearButton");
 const downloadButton = document.getElementById("downloadButton");
+const selectedAssetsHeadline = document.getElementById(
+  "selectedAssetsHeadline"
+);
 
 // ---------------------------------------------
 //  functions
@@ -70,6 +73,7 @@ function getAllKeywords(imageData) {
 
 // function to create the image card
 function renderImages(filteredData) {
+  console.log(filteredData);
   // get the image container
   const imageContainer = document.getElementById("image-container");
 
@@ -209,6 +213,7 @@ function renderSelectedImages(selectedAsset) {
 
         if (selectedAsset.length === 0) {
           noAssetsText.style.display = "block";
+          selectedAssetsHeadline.innerText = `Selected Assets`;
         }
       });
     }
@@ -221,6 +226,8 @@ function renderSelectedImages(selectedAsset) {
     selectedImageContainer.innerHTML = "";
     // show the placeholder text
     noAssetsText.style.display = "block";
+    // remove asset count
+    selectedAssetsHeadline.innerText = "Selected Assets";
   }
 }
 
@@ -282,7 +289,7 @@ function displayMetaData(selectedAsset) {
   const metaDataTable = document.getElementById("details-Table");
 
   // check if no image is selected
- if (selectedAsset.length === 0) {
+  if (selectedAsset.length === 0) {
     // hide table
     metaDataTable.style.display = "none";
 
@@ -292,6 +299,8 @@ function displayMetaData(selectedAsset) {
 
     metaDataContainer.appendChild(placeHolderText);
   } else {
+    // get selectedAsset headline and add selectedAsset.length
+    selectedAssetsHeadline.innerText = `Selected Assets (${selectedAsset.length})`;
     // display meta data for the last selected asset
     metaDataTable.style.display = "none";
 
@@ -301,7 +310,7 @@ function displayMetaData(selectedAsset) {
     // image
     // create link element for image
     const linkElement = document.createElement("a");
-    linkElement.href= asset.download_location || asset.file_location;
+    linkElement.href = asset.download_location || asset.file_location;
     linkElement.target = "_blank";
 
     const imgElement = document.createElement("img");
@@ -309,7 +318,7 @@ function displayMetaData(selectedAsset) {
     imgElement.alt = asset.name;
 
     imgElement.classList.add(
-      "selected-image",
+      "metaData-Image",
       "p-2",
       "bg-white",
       "rounded",
@@ -337,7 +346,7 @@ function displayMetaData(selectedAsset) {
     fileLocation.href = asset.download_location || asset.file_location;
 
     // attach elements
-    linkElement.appendChild(imgElement)
+    linkElement.appendChild(imgElement);
     fragment.appendChild(linkElement);
     fragment.appendChild(name);
     metaDataContainer.appendChild(fragment);
@@ -376,16 +385,17 @@ function searchBar(imageData, searchTerm) {
 }
 
 searchBarInput.addEventListener("search", (e) => {
+  filteredImagesByCategory = filterAssetsByCategory(
+    activeCategory,
+    activeSubCategory
+  );
+
   if (searchBarInput.value !== "") {
     const searchTerm = e.target.value;
     searchBar(imageData, searchTerm);
     renderImages(filteredImagesBySearch);
   } else {
-    let filteredData = filterAssetsByCategory(
-      activeCategory,
-      activeSubCategory
-    );
-    renderImages(filteredData);
+    renderImages(filteredImagesByCategory);
     // show filter container
     filterContainer.style.display = "flex";
     filterAssetsByActiveFilter(filteredImagesByCategory, activeFilter);
@@ -426,6 +436,8 @@ function clearSelection() {
   selectedImageContainer.innerHTML = "";
   // show the placeholder text
   noAssetsText.style.display = "block";
+  // remove asset count
+  selectedAssetsHeadline.innerText = "Selected Assets";
 }
 
 // button function - download
@@ -541,83 +553,60 @@ window.addEventListener("DOMContentLoaded", (event) => {
       `sidebar-sub-items-${sideBarItemId}`
     );
 
-    // get the sub-items as an array
-    const subCategoriesArray = Array.from(subCategories.children);
-
     // get the icon
     const itemIcon = sideBarItem.querySelector("i");
 
     // Add a click event listener to each 'sidebar-item'
     sideBarItem.addEventListener("click", () => {
-      // set the active category
-      activeCategory = sideBarItem.innerText;
       // Toggle the visibility of the corresponding sub-items
       if (subCategories) {
         subCategories.classList.toggle("collapse");
-      }
-
-      // change the icon
-      if (itemIcon) {
-        itemIcon.classList.toggle("bi-chevron-right");
-        itemIcon.classList.toggle("bi-chevron-down");
-      }
-
-      // add the "link-secondary" class to the clicked sidebar-item
-      sideBarItem.classList.add("link-secondary");
-
-      // other sidebar-items
-      sideBarItems.forEach((item) => {
-        if (item.id !== sideBarItem.id) {
-          // remove the "link-secondary" class
-          item.classList.remove("link-secondary");
-          item.classList.remove("active");
-
-          // collapse the sub-items
-          const itemId = item.id.split("-")[1];
-          const subItems = document.getElementById(
-            `sidebar-sub-items-${itemId}`
-          );
-          if (subItems) {
-            subItems.classList.add("collapse");
-          }
-
-          // change the icon
-          const itemIcon = item.querySelector("i");
-          itemIcon.classList.remove("bi-chevron-down");
-          itemIcon.classList.add("bi-chevron-right");
+        // Toggle the chevron icon
+        if (itemIcon) {
+          itemIcon.classList.toggle("bi-chevron-right");
+          itemIcon.classList.toggle("bi-chevron-down");
         }
-      });
+      }
     });
 
     // add a click event listener to each sub-item
     if (subCategories) {
+      const subCategoriesArray = Array.from(subCategories.children);
       subCategoriesArray.forEach((subCategory) => {
         subCategory.addEventListener("click", () => {
           // set the active sub-category
           activeSubCategory = subCategory.innerText;
-          // remove the "link-secondary" class from all sub-items of categories
+          // set the active category
+          activeCategory = sideBarItem.innerText;
+
+          // Remove 'link-secondary' class from all sub-items
           sideBarItems.forEach((item) => {
-            const itemId = item.id.split("-")[1];
             const subItems = document.getElementById(
-              `sidebar-sub-items-${itemId}`
+              `sidebar-sub-items-${item.id.split("-")[1]}`
             );
             if (subItems) {
-              const subItemsArray = Array.from(subItems.children);
-              subItemsArray.forEach((subItem) => {
+              Array.from(subItems.children).forEach((subItem) => {
                 subItem.classList.remove("link-secondary");
               });
             }
           });
 
-          // remove the "link-secondary" class
-          subCategory.classList.toggle("link-secondary");
+          // Add 'link-secondary' class to clicked sub-item
+          subCategory.classList.add("link-secondary");
 
+          // Remove 'link-secondary' class from all sidebar items
+          sideBarItems.forEach((item) => {
+            item.classList.remove("link-secondary");
+          });
+
+          // Add 'link-secondary' class to corresponding sidebar item
+          sideBarItem.classList.add("link-secondary");
+
+          // render the images and create the filter
           filteredImagesByCategory = filterAssetsByCategory(
             activeCategory,
             activeSubCategory
           );
-
-          // render the images and create the filter
           renderImages(filteredImagesByCategory);
           createFilter(activeCategory, activeSubCategory);
 
