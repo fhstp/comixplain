@@ -1,4 +1,12 @@
 /* Custom Catalog Styles */
+.loading {
+  cursor: wait;
+}
+
+#nav-guide {
+  color: inherit;
+  text-decoration: none;
+}
 
 /* Catalog */
 .catalog-image {
@@ -110,20 +118,3 @@ td {
   overflow: hidden;
   white-space: nowrap;
 }
-
-/* Sidebar
-.icons {
-  display: block;
-}
-
-@media (max-width: 1407px) {
-  .icons {
-    display: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .icons {
-    display: block;
-  }
-} */

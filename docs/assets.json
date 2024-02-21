@@ -6,9 +6,9 @@
         {
           "name": "Comixplain Template.pptx",
           "keywords": [
-            "frame",
+            "frames",
             "single frame",
-            "panel",
+            "panels",
             "single panel",
             "single",
             "border",
@@ -22,9 +22,9 @@
         {
           "name": "single_frame.png",
           "keywords": [
-            "frame",
+            "frames",
             "single frame",
-            "panel",
+            "panels",
             "single panel",
             "single",
             "border",
@@ -37,9 +37,9 @@
         {
           "name": "double_frame.png",
           "keywords": [
-            "frame",
+            "frames",
             "double frame",
-            "panel",
+            "panels",
             "double panel",
             "double",
             "border",
@@ -52,9 +52,9 @@
         {
           "name": "triple_frame.png",
           "keywords": [
-            "frame",
+            "frames",
             "triple frame",
-            "panel",
+            "panels",
             "triple panel",
             "triple",
             "border",
@@ -233,8 +233,7 @@
             "young",
             "male",
             "no expression",
-            "front view",
-            "questioning"
+            "front view"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20no%20expression.png?raw=true"
@@ -249,7 +248,8 @@
             "male",
             "with expression",
             "front view",
-            "questioning"
+            "questioning",
+            "confused"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20Face.png?raw=true"
@@ -277,7 +277,9 @@
             "young",
             "male",
             "with expression",
-            "front view"
+            "front view",
+            "happy",
+            "neutral"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20with%20one%20hand.png?raw=true"
@@ -339,7 +341,9 @@
             "male",
             "with expression",
             "side view",
-            "arms crossed"
+            "arms crossed",
+            "neutral",
+            "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms.png?raw=true"
@@ -370,7 +374,8 @@
             "male",
             "with expression",
             "side view",
-            "explaining"
+            "explaining",
+            "talking"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20explains.png?raw=true"
@@ -402,7 +407,9 @@
             "with expression",
             "side view",
             "explaining",
-            "showing"
+            "showing",
+            "talking",
+            "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20showing.png?raw=true"
@@ -439,7 +446,8 @@
             "ponytail",
             "with expression",
             "front view",
-            "exclaiming"
+            "exclaiming",
+            "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming.png?raw=true"
@@ -475,7 +483,8 @@
             "girl",
             "ponytail",
             "with expression",
-            "front view"
+            "front view",
+            "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Pointing%20Far%20Away.png?raw=true"
@@ -509,7 +518,9 @@
             "girl",
             "ponytail",
             "with expression",
-            "side view"
+            "side view",
+            "talking",
+            "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Drawing.png?raw=true"
@@ -550,7 +561,8 @@
             "server",
             "food",
             "dinner",
-            "restaurant"
+            "restaurant",
+            "neutral"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2.png?raw=true"
@@ -592,7 +604,8 @@
             "server",
             "restaurant",
             "writing",
-            "notepad"
+            "notepad",
+            "neutral"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20%20sideview.png?raw=true"
@@ -674,7 +687,8 @@
             "bartender",
             "talking",
             "explaining",
-            "barista"
+            "barista",
+            "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2.png?raw=true"
@@ -715,7 +729,8 @@
             "bartender",
             "talking",
             "barista",
-            "coffee"
+            "coffee",
+            "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20And%20Coffee.png?raw=true"
@@ -759,7 +774,8 @@
             "barista",
             "cleaning",
             "cloth",
-            "glass"
+            "glass",
+            "neutral"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Cleaning.png?raw=true"
@@ -816,7 +832,9 @@
             "front view",
             "table",
             "desk",
-            "conversation"
+            "conversation",
+            "happy",
+            "neutral"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20And%20Freckles%20At%20Table.png?raw=true"
@@ -838,7 +856,8 @@
             "table",
             "desk",
             "computer",
-            "laptop"
+            "laptop",
+            "neutral"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
           "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20And%20Freckled%20Talking.png?raw=true"

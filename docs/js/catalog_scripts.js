@@ -367,7 +367,7 @@ function searchBar(imageData, searchTerm) {
         const keywords = asset.keywords;
 
         for (const keyword of keywords) {
-          if (keyword.toLowerCase().includes(searchTerm.toLowerCase())) {
+          if (keyword.toLowerCase() === searchTerm.toLowerCase()) {
             // check if the asset is already in the array
             if (!filteredImagesBySearch.includes(asset)) {
               filteredImagesBySearch.push(asset);
@@ -443,9 +443,16 @@ function clearSelection() {
 // button function - download
 async function downloadSelection(selectedAssets) {
   try {
+    // Start loading
+    document.body.classList.add("loading");
+    downloadButton.disabled = true;
+
     if (selectedAssets.length === 0) {
       // show alert
       alert("No assets to download selected.");
+      // End loading
+      document.body.classList.remove("loading");
+      downloadButton.disabled = false;
     } else if (selectedAssets.length === 1) {
       // download the asset directly
       const asset = selectedAssets[0];
@@ -477,6 +484,10 @@ async function downloadSelection(selectedAssets) {
 
       // Revoke the URL to free up resources
       window.URL.revokeObjectURL(url);
+
+      // End loading
+      document.body.classList.remove("loading");
+      downloadButton.disabled = false;
     } else {
       // download a zip file with all assets using JSZip
       const zip = new JSZip();
@@ -514,9 +525,17 @@ async function downloadSelection(selectedAssets) {
 
       // Revoke the URL to free up resources
       window.URL.revokeObjectURL(zipUrl);
+
+      // End loading
+      document.body.classList.remove("loading");
+      downloadButton.disabled = false;
     }
   } catch (error) {
     console.error("Error fetching or downloading assets:", error);
+
+    // Ensure loading class is removed even if there's an error
+    document.body.classList.remove("loading");
+    downloadButton.disabled = false;
   }
 }
 
