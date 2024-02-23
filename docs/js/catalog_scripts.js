@@ -73,7 +73,6 @@ function getAllKeywords(imageData) {
 
 // function to create the image card
 function renderImages(filteredData) {
-  console.log(filteredData);
   // get the image container
   const imageContainer = document.getElementById("image-container");
 
@@ -211,9 +210,23 @@ function renderSelectedImages(selectedAsset) {
         });
         displayMetaData(selectedAsset);
 
-        if (selectedAsset.length === 0) {
-          noAssetsText.style.display = "block";
-          selectedAssetsHeadline.innerText = `Selected Assets`;
+        displayAssetCount(selectedAsset);
+      });
+
+      // add hover functionality to selected images
+      imgElement.addEventListener("mouseover", () => {
+        if (item !== selectedAsset[0]) {
+          displayMetaData([item]);
+        } else {
+          return;
+        }
+      });
+
+      imgElement.addEventListener("mouseout", () => {
+        if (item !== selectedAsset[0]) {
+          displayMetaData(selectedAsset);
+        } else {
+          return;
         }
       });
     }
@@ -221,14 +234,8 @@ function renderSelectedImages(selectedAsset) {
 
   selectedImageContainer.prepend(fragment);
 
-  if (selectedAsset.length === 0) {
-    // remove all images from the container
-    selectedImageContainer.innerHTML = "";
-    // show the placeholder text
-    noAssetsText.style.display = "block";
-    // remove asset count
-    selectedAssetsHeadline.innerText = "Selected Assets";
-  }
+  // display asset count
+  displayAssetCount(selectedAsset);
 }
 
 // get filter-options from JSON
@@ -299,8 +306,6 @@ function displayMetaData(selectedAsset) {
 
     metaDataContainer.appendChild(placeHolderText);
   } else {
-    // get selectedAsset headline and add selectedAsset.length
-    selectedAssetsHeadline.innerText = `Selected Assets (${selectedAsset.length})`;
     // display meta data for the last selected asset
     metaDataTable.style.display = "none";
 
@@ -350,6 +355,20 @@ function displayMetaData(selectedAsset) {
     fragment.appendChild(linkElement);
     fragment.appendChild(name);
     metaDataContainer.appendChild(fragment);
+  }
+}
+
+// display asset count
+function displayAssetCount(selectedAsset) {
+  if (selectedAsset.length !== 0) {
+    selectedAssetsHeadline.innerText = `Selected Assets (${selectedAsset.length})`;
+  } else {
+    // remove all images from the container
+    selectedImageContainer.innerHTML = "";
+    // show the placeholder text
+    noAssetsText.style.display = "block";
+    // remove asset count
+    selectedAssetsHeadline.innerText = "Selected Assets";
   }
 }
 
@@ -434,10 +453,8 @@ function clearSelection() {
 
   // remove all images from the container
   selectedImageContainer.innerHTML = "";
-  // show the placeholder text
-  noAssetsText.style.display = "block";
   // remove asset count
-  selectedAssetsHeadline.innerText = "Selected Assets";
+  displayAssetCount(selectedAsset);
 }
 
 // button function - download
