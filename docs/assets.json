@@ -16,8 +16,8 @@
             "grid"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Template.png?raw=true",
-          "download_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Comixplain%20Template.pptx"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Template.png?raw=true",
+          "download_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Comixplain%20Template.pptx"
         },
         {
           "name": "single_frame.png",
@@ -32,7 +32,7 @@
             "grid"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/single_frame.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/single_frame.png?raw=true"
         },
         {
           "name": "double_frame.png",
@@ -47,7 +47,7 @@
             "grid"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/double_frame.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/double_frame.png?raw=true"
         },
         {
           "name": "triple_frame.png",
@@ -62,7 +62,7 @@
             "grid"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/triple_frame.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/triple_frame.png?raw=true"
         }
       ]
     },
@@ -73,8 +73,8 @@
           "name": "Pangolin-Regular.ttf",
           "keywords": ["font", "template", "letters"],
           "created_by": "Kevin Burke, Google Fonts",
-          "file_location": "https://raw.githubusercontent.com/Annacc211018/comixplain/e3137316b580396340f9d8810950833f5f0d21e4/Comixplain_Editions/fonts.svg",
-          "download_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Pangolin-Regular.ttf"
+          "file_location": "https://raw.githubusercontent.com/fhstp/comixplain/e3137316b580396340f9d8810950833f5f0d21e4/Comixplain_Editions/fonts.svg",
+          "download_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Pangolin-Regular.ttf"
         }
       ]
     }
@@ -102,7 +102,7 @@
             "disturbed"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/expression%20angry2.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/expression%20angry2.png?raw=true"
         },
         {
           "name": "expression happy1.png",
@@ -116,7 +116,7 @@
             "surprised"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20happy1.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20happy1.png?raw=true"
         },
         {
           "name": "expression neutral small4.png",
@@ -129,7 +129,7 @@
             "neutral"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/expression%20neutral%20small4.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/expression%20neutral%20small4.png?raw=true"
         },
         {
           "name": "expression questioning.png",
@@ -145,7 +145,7 @@
             "sad"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20questioning.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20questioning.png?raw=true"
         },
         {
           "name": "expression downwards sad.png",
@@ -163,7 +163,7 @@
             "disappointed"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20downwards%20sad.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20downwards%20sad.png?raw=true"
         },
         {
           "name": "expression big mouth.png",
@@ -176,7 +176,7 @@
             "excited"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20big%20mouth.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20big%20mouth.png?raw=true"
         },
         {
           "name": "expression happy12.png",
@@ -192,7 +192,7 @@
             "satisfied"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/expression%20happy12.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/expression%20happy12.png?raw=true"
         },
         {
           "name": "expression winking.png",
@@ -208,7 +208,7 @@
             "joyful"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20winking.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/expression%20winking.png?raw=true"
         }
       ]
     },
@@ -236,7 +236,7 @@
             "front view"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20no%20expression.png?raw=true"
         },
         {
           "name": "Freckles Questioned Face.png",
@@ -252,7 +252,7 @@
             "confused"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20Face.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20Questioned%20Face.png?raw=true"
         },
         {
           "name": "Freckles with one hand no expression.png",
@@ -266,7 +266,7 @@
             "front view"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20with%20one%20hand%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20with%20one%20hand%20no%20expression.png?raw=true"
         },
         {
           "name": "Freckles with one hand.png",
@@ -282,7 +282,7 @@
             "neutral"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20with%20one%20hand.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20with%20one%20hand.png?raw=true"
         },
         {
           "name": "Freckles wide arms no expression.png",
@@ -296,7 +296,7 @@
             "front view"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20wide%20arms%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20wide%20arms%20no%20expression.png?raw=true"
         },
         {
           "name": "Freckles wide arms.png",
@@ -312,7 +312,7 @@
             "talking"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20wide%20arms.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Freckles%20wide%20arms.png?raw=true"
         },
         {
           "name": "Oldie Crossed Arms no expression.png",
@@ -328,7 +328,7 @@
             "arms crossed"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms%20no%20expression.png?raw=true"
         },
         {
           "name": "Oldie Crossed Arm.png",
@@ -346,7 +346,7 @@
             "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20Crossed%20Arms.png?raw=true"
         },
         {
           "name": "Oldie explains no expression.png",
@@ -361,7 +361,7 @@
             "side view"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20explains%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20explains%20no%20expression.png?raw=true"
         },
         {
           "name": "Oldie explains.png",
@@ -378,7 +378,7 @@
             "talking"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20explains.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20explains.png?raw=true"
         },
         {
           "name": "Oldie showing no expression.png",
@@ -393,7 +393,7 @@
             "side view"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20showing%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20showing%20no%20expression.png?raw=true"
         },
         {
           "name": "Oldie showing.png",
@@ -412,7 +412,7 @@
             "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20showing.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Oldie%20showing.png?raw=true"
         },
         {
           "name": "Ponytail Exclaiming no expression.png",
@@ -429,7 +429,7 @@
             "front view"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming%20no%20expression.png?raw=true"
         },
         {
           "name": "Ponytail Exclaiming.png",
@@ -450,7 +450,7 @@
             "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Exclaiming.png?raw=true"
         },
         {
           "name": "Ponytail Pointing Far Away no expression.png",
@@ -467,7 +467,7 @@
             "front view"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Pointing%20Far%20Away%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Pointing%20Far%20Away%20no%20expression.png?raw=true"
         },
         {
           "name": "Ponytail Pointing Far Away.png",
@@ -487,7 +487,7 @@
             "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Pointing%20Far%20Away.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Pointing%20Far%20Away.png?raw=true"
         },
         {
           "name": "Ponytail Drawing no expression.png",
@@ -504,7 +504,7 @@
             "side view"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Drawing%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Drawing%20no%20expression.png?raw=true"
         },
         {
           "name": "Ponytail Drawing.png",
@@ -523,7 +523,7 @@
             "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Drawing.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20Drawing.png?raw=true"
         },
         {
           "name": "Waiter With Food2 no expression.png",
@@ -543,7 +543,7 @@
             "restaurant"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2%20no%20expression.png?raw=true"
         },
         {
           "name": "Waiter With Food2.png",
@@ -565,7 +565,7 @@
             "neutral"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20With%20Food2.png?raw=true"
         },
         {
           "name": "Waiter sideview no expression.png",
@@ -586,7 +586,7 @@
             "notepad"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20sideview%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20sideview%20no%20expression.png?raw=true"
         },
         {
           "name": "Waiter sideview.png",
@@ -608,7 +608,7 @@
             "neutral"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20%20sideview.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20%20sideview.png?raw=true"
         },
         {
           "name": "Waiter talking sideview no expression.png",
@@ -629,7 +629,7 @@
             "notepad"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20talking%20sideview%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20talking%20sideview%20no%20expression.png?raw=true"
         },
         {
           "name": "Waiter talking sideview.png",
@@ -650,7 +650,7 @@
             "notepad"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20talking%20sideview.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Waiter%20talking%20sideview.png?raw=true"
         },
         {
           "name": "Barista Explaining2 no expression.png",
@@ -669,7 +669,7 @@
             "barista"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2%20no%20expression.png?raw=true"
         },
         {
           "name": "Barista Explaining2.png",
@@ -691,7 +691,7 @@
             "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Explaining2.png?raw=true"
         },
         {
           "name": "Barista And Coffee no expression.png",
@@ -711,7 +711,7 @@
             "coffee"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20And%20Coffee%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20And%20Coffee%20no%20expression.png?raw=true"
         },
         {
           "name": "Barista And Coffee.png",
@@ -733,7 +733,7 @@
             "happy"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20And%20Coffee.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20And%20Coffee.png?raw=true"
         },
         {
           "name": "Barista Cleaning no expression.png",
@@ -755,7 +755,7 @@
             "glass"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Cleaning%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Cleaning%20no%20expression.png?raw=true"
         },
         {
           "name": "Barista Cleaning.png",
@@ -778,7 +778,7 @@
             "neutral"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Cleaning.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Barista%20Cleaning.png?raw=true"
         }
       ]
     },
@@ -813,7 +813,7 @@
             "conversation"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20And%20Freckles%20At%20Table%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20And%20Freckles%20At%20Table%20no%20expression.png?raw=true"
         },
         {
           "name": "Ponytail And Freckles At Table.png",
@@ -837,7 +837,7 @@
             "neutral"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20And%20Freckles%20At%20Table.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20And%20Freckles%20At%20Table.png?raw=true"
         },
         {
           "name": "Ponytail And Freckled Talking.png",
@@ -860,7 +860,7 @@
             "neutral"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20And%20Freckled%20Talking.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Ponytail%20And%20Freckled%20Talking.png?raw=true"
         },
         {
           "name": "Three Charas At Table With Apples.png",
@@ -884,7 +884,7 @@
             "apple"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Three%20Charas%20At%20Table%20With%20Apples.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Three%20Charas%20At%20Table%20With%20Apples.png?raw=true"
         },
         {
           "name": "Three Charas At Table no expression.png",
@@ -906,7 +906,7 @@
             "conversation"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Three%20Charas%20At%20Table%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Three%20Charas%20At%20Table%20no%20expression.png?raw=true"
         },
         {
           "name": "Family Sitting At Restaurant Table5.png",
@@ -927,7 +927,7 @@
             "with expression"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Family%20Sitting%20At%20Restaurant%20Table5.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Family%20Sitting%20At%20Restaurant%20Table5.png?raw=true"
         },
         {
           "name": "Family Sitting At Restaurant Table5 no expression.png",
@@ -948,7 +948,7 @@
             "no expression"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Family%20Sitting%20At%20Restaurant%20Table5%20no%20expression.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Family%20Sitting%20At%20Restaurant%20Table5%20no%20expression.png?raw=true"
         }
       ]
     }
@@ -961,31 +961,31 @@
           "name": "Speechbubble12.png",
           "keywords": ["speech bubble", "standalone", "balloon", "left", "top"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble12.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble12.png?raw=true"
         },
         {
           "name": "Speechbubble13.png",
           "keywords": ["speech bubble", "standalone", "balloon", "right", "bottom"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble13.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble13.png?raw=true"
         },
         {
           "name": "Speechbubble11.png",
           "keywords": ["speech bubble", "standalone", "balloon", "left", "bottom"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble11.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble11.png?raw=true"
         },
         {
           "name": "Speechbubble10.png",
           "keywords": ["speech bubble", "standalone", "balloon", "bottom", "right"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble10.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble10.png?raw=true"
         },
         {
           "name": "Speechbubble1.png",
           "keywords": ["speech bubble", "standalone", "balloon", "bottom", "left"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble1.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Speechbubble1.png?raw=true"
         }
       ]
     },
@@ -996,31 +996,31 @@
           "name": "Paneltop_Bubble1.png",
           "keywords": ["speech bubble", "panel top", "paneltop", "balloon", "left"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble1.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble1.png?raw=true"
         },
         {
           "name": "Paneltop_Bubble3.png",
           "keywords": ["speech bubble", "panel top", "paneltop", "balloon", "right"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble3.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble3.png?raw=true"
         },
         {
           "name": "Paneltop_Bubble11.png",
           "keywords": ["speech bubble", "panel top", "paneltop", "balloon", "right"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble11.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble11.png?raw=true"
         },
         {
           "name": "Paneltop_Bubble10.png",
           "keywords": ["speech bubble", "panel top", "paneltop", "balloon", "left"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble10.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble10.png?raw=true"
         },
         {
           "name": "Paneltop_Bubble2.png",
           "keywords": ["speech bubble", "panel top", "paneltop", "balloon", "left"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble2.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Bubble2.png?raw=true"
         }
       ]
     },
@@ -1031,31 +1031,31 @@
           "name": "Paneltop_Caption6.png",
           "keywords": ["caption", "caption box", "panel top", "paneltop", "round"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption6.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption6.png?raw=true"
         },
         {
           "name": "Paneltop_Caption7.png",
           "keywords": ["caption", "caption box", "panel top", "paneltop", "round"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption7.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption7.png?raw=true"
         },
         {
           "name": "Paneltop_Caption1.png",
           "keywords": ["caption", "caption box", "panel top", "paneltop", "square"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption1.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption1.png?raw=true"
         },
         {
           "name": "Paneltop_Caption2.png",
           "keywords": ["caption", "caption box", "panel top", "paneltop", "square"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption2.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption2.png?raw=true"
         },
         {
           "name": "Paneltop_Caption3.png",
           "keywords": ["caption", "caption box", "panel top", "paneltop", "square"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption3.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Speechbubble%20Assets/Paneltop_Caption3.png?raw=true"
         }
       ]
     }
@@ -1083,7 +1083,7 @@
             "table"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background%20No%20People.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background%20No%20People.png?raw=true"
         },
         {
           "name": "Office Background with people no expressions.png",
@@ -1102,7 +1102,7 @@
             "no expression"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background%20with%20people%20no%20expressions.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background%20with%20people%20no%20expressions.png?raw=true"
         },
         {
           "name": "Office Background with people.png",
@@ -1121,7 +1121,7 @@
             "with expression"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background%20with%20people.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background%20with%20people.png?raw=true"
         },
         {
           "name": "Office Background2 With Apples.png",
@@ -1141,7 +1141,7 @@
             "with expression"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background2%20With%20Apples.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background2%20With%20Apples.png?raw=true"
         },
         {
           "name": "Office Background2 Without Charas.png",
@@ -1160,7 +1160,7 @@
             "apple"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background2%20Without%20Charas.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Office%20Background2%20Without%20Charas.png?raw=true"
         }
       ]
     },
@@ -1171,13 +1171,13 @@
           "name": "Apple Single5.png",
           "keywords": ["apple", "fruit", "food"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Apple%20Single5.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Apple%20Single5.png?raw=true"
         },
         {
           "name": "apple duo.png",
           "keywords": ["apple", "fruit", "food"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/apple%20duo.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/apple%20duo.png?raw=true"
         },
         {
           "name": "Office Chair Front.png",
@@ -1188,7 +1188,7 @@
             "front view"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Office%20Chair%20Front.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Office%20Chair%20Front.png?raw=true"
         },
         {
           "name": "Office Chair Side.png",
@@ -1199,7 +1199,7 @@
             "side view"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Office%20Chair%20Side.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Office%20Chair%20Side.png?raw=true"
         },
         {
           "name": "Mini Notepad.png",
@@ -1211,43 +1211,43 @@
             "writing"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Mini%20Notepad.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Mini%20Notepad.png?raw=true"
         },
         {
           "name": "Fish.png",
           "keywords": ["fish", "food", "dinner", "meal", "seafood"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Fish.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Fish.png?raw=true"
         },
         {
           "name": "Schnitzel.png",
           "keywords": ["schnitzel", "food", "dinner", "meal", "meat"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Schnitzel.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Schnitzel.png?raw=true"
         },
         {
           "name": "Mug.png",
           "keywords": ["mug", "glass", "drinking", "drinks", "cup", "bar"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Mug.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Mug.png?raw=true"
         },
         {
           "name": "Glass.png",
           "keywords": ["mug", "glass", "drinking", "drinks", "cup", "bar"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Glass.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Glass.png?raw=true"
         },
         {
           "name": "Cloth.png",
           "keywords": ["cloth", "clean", "cleaning", "bar", "tissue"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Cloth.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Cloth.png?raw=true"
         },
         {
           "name": "Barrel.png",
           "keywords": ["barrel", "bar", "drinking", "drinks", "wine", "beer"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/barrel.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/barrel.png?raw=true"
         },
         {
           "name": "Rats in Love.png",
@@ -1261,7 +1261,7 @@
             "heart"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Rats%20In%20Love.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Rats%20In%20Love.png?raw=true"
         }
       ]
     }
@@ -1274,31 +1274,31 @@
           "name": "arrow3.png",
           "keywords": ["arrow", "pointer", "pointing", "direction", "small"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/arrow3.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/arrow3.png?raw=true"
         },
         {
           "name": "arrow5.png",
           "keywords": ["arrow", "pointer", "pointing", "direction", "small"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/arrow5.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/arrow5.png?raw=true"
         },
         {
           "name": "Curved Arrow.png",
           "keywords": ["arrow", "pointer", "pointing", "direction", "small"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Curved%20Arrow.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Curved%20Arrow.png?raw=true"
         },
         {
           "name": "Arrow.png",
           "keywords": ["arrow", "pointer", "pointing", "direction", "big"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Arrow.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Arrow.png?raw=true"
         },
         {
           "name": "arrow4.png",
           "keywords": ["arrow", "pointer", "pointing", "direction", "big"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/arrow4.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/arrow4.png?raw=true"
         }
       ]
     },
@@ -1317,7 +1317,7 @@
             "black"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Bubble.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Bubble.png?raw=true"
         },
         {
           "name": "Bubble Pinned.png",
@@ -1331,7 +1331,7 @@
             "black"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Bubble%20Pinned.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Bubble%20Pinned.png?raw=true"
         },
         {
           "name": "Bubbles squashed.png",
@@ -1345,7 +1345,7 @@
             "black"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Bubbles%20squashed.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Bubbles%20squashed.png?raw=true"
         },
         {
           "name": "Red Circle2.png",
@@ -1359,7 +1359,7 @@
             "red"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Red%20Circle2.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Red%20Circle2.png?raw=true"
         },
         {
           "name": "Red Circle with Arrow.png",
@@ -1374,7 +1374,7 @@
             "red"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Red%20Circle%20with%20Arrow.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/Red%20Circle%20with%20Arrow.png?raw=true"
         }
       ]
     },
@@ -1395,7 +1395,7 @@
             "empty table"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/3x3%20Grid%20Duo.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/3x3%20Grid%20Duo.png?raw=true"
         },
         {
           "name": "3x3 Grid Duo Filled.png",
@@ -1411,7 +1411,7 @@
             "filled table"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/3x3%20Grid%20Duo%20Filled.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/3x3%20Grid%20Duo%20Filled.png?raw=true"
         },
         {
           "name": "Small Hand pointing.png",
@@ -1425,7 +1425,7 @@
             "explanation"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Small%20Hand%20pointing.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/Small%20Hand%20pointing.png?raw=true"
         },
         {
           "name": "Pointing Hand.png",
@@ -1439,7 +1439,7 @@
             "explanation"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Pointing%20Hand.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/Pointing%20Hand.png?raw=true"
         },
         {
           "name": "excalmation stripes.png",
@@ -1458,7 +1458,7 @@
             "action"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/excalmation%20stripes.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Central%20Tendency/Assets/excalmation%20stripes.png?raw=true"
         },
         {
           "name": "action lines.png",
@@ -1477,19 +1477,19 @@
             "action"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/action%20lines.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Primitive%20Types/Assets/action%20lines.png?raw=true"
         },
         {
           "name": "grey line.png",
           "keywords": ["line", "marks", "mark"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/grey%20line.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/grey%20line.png?raw=true"
         },
         {
           "name": "redline5.png",
           "keywords": ["line", "marks", "mark"],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/redline5.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/redline5.png?raw=true"
         },
         {
           "name": "redline crossed.png",
@@ -1501,7 +1501,7 @@
             "crossed out"
           ],
           "created_by": "Magdalena Boucher & Alena Ertl",
-          "file_location": "https://github.com/Annacc211018/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/redline%20crossed.png?raw=true"
+          "file_location": "https://github.com/fhstp/comixplain/blob/main/Comixplain_Editions/Mathematical%20Thinking/Assets/Mathematical%20Thinking%20Assets%20-%20Transparent/redline%20crossed.png?raw=true"
         }
       ]
     }
