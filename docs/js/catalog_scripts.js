@@ -1,5 +1,35 @@
 // imports
-import imageData from "../assets.json" assert { type: "json" };
+//import imageData from "../assets.json" assert { type: "json" }; // << Not supported by Firefox, Safari, Opera
+
+let imageData;
+fetch('http://localhost/docs/assets.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Failed to fetch assets.json');
+    }
+    return response.json();
+  })
+  .then(data => {
+    imageData = data; 
+    // ---------------------------------------------
+    //  load the page
+    // ---------------------------------------------
+    // Render the fist images on page load
+    renderImages(filterAssetsByCategory(activeCategory, activeSubCategory));
+    // create the filter on page load
+    createFilter(activeCategory, activeSubCategory);
+    // display metadata
+    displayMetaData(selectedAsset);
+    // add event listener to the clear button
+    clearButton.addEventListener("click", clearSelection);
+    // add event listener to the download button
+    downloadButton.addEventListener("click", function () {
+      downloadSelection(selectedAsset);
+    });
+  })
+  .catch(error => {
+    console.error('Error fetching assets.json:', error);
+  });
 
 // ---------------------------------------------
 // global variables
@@ -555,22 +585,6 @@ async function downloadSelection(selectedAssets) {
     downloadButton.disabled = false;
   }
 }
-
-// ---------------------------------------------
-//  load the page
-// ---------------------------------------------
-// Render the fist images on page load
-renderImages(filterAssetsByCategory(activeCategory, activeSubCategory));
-// create the filter on page load
-createFilter(activeCategory, activeSubCategory);
-// display metadata
-displayMetaData(selectedAsset);
-// add event listener to the clear button
-clearButton.addEventListener("click", clearSelection);
-// add event listener to the download button
-downloadButton.addEventListener("click", function () {
-  downloadSelection(selectedAsset);
-});
 
 // ---------------------------------------------
 // sidebar functionality
