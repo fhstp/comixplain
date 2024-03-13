@@ -2,7 +2,7 @@
 //import imageData from "../assets.json" assert { type: "json" }; // << Not supported by Firefox, Safari, Opera
 
 let imageData;
-fetch('http://localhost/docs/assets.json')
+fetch('https://fhstp.github.io/comixplain/assets.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('Failed to fetch assets.json');
