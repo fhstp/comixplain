@@ -3,9 +3,33 @@
   cursor: wait;
 }
 
+#navigation-bar{
+  color: #6c757d;
+}
+
+#page-select{
+  color: #6c757d;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+}
+
+.catalog-container{
+  margin-top: -5px;
+}
+
+.asset-shadow{
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
 #nav-guide {
   color: inherit;
   text-decoration: none;
+}
+
+.filterbar{
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Catalog */
@@ -23,7 +47,7 @@
 
 #image-container {
   overflow-y: scroll;
-  height: 520px;
+  height: 450px;
 }
 
 @media (max-width: 587px) {

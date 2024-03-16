@@ -1,8 +1,7 @@
 // imports
-//import imageData from "../assets.json" assert { type: "json" }; // << Not supported by Firefox, Safari, Opera
-
 let imageData;
-fetch('https://fhstp.github.io/comixplain/assets.json')
+fetch('https://fhstp.github.io/comixplain/assetsChange.json')
+//fetch('http://localhost/docs/assetsChange.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('Failed to fetch assets.json');
@@ -15,7 +14,7 @@ fetch('https://fhstp.github.io/comixplain/assets.json')
     //  load the page
     // ---------------------------------------------
     // Render the fist images on page load
-    renderImages(filterAssetsByCategory(activeCategory, activeSubCategory));
+    renderImages(filterAssetsByCategory(activeCategory, activeSubCategory),1);
     // create the filter on page load
     createFilter(activeCategory, activeSubCategory);
     // display metadata
@@ -34,6 +33,7 @@ fetch('https://fhstp.github.io/comixplain/assets.json')
 // ---------------------------------------------
 // global variables
 // ---------------------------------------------
+let maxPages = 20;
 let selectedAsset = [];
 let filteredImagesByCategory = [];
 let filteredImagesBySearch = [];
@@ -60,21 +60,11 @@ function filterAssetsByCategory(category, subcategory) {
 }
 
 // filter json data by filter options
-function filterAssetsByActiveFilter(imageData, activeFilter) {
-  // COMMENT: THIS IS AN ALTERNATIVE WAY OF FILTERING THE DATA
-  // let filteredData = [];
-  // activeFilter.forEach((filter) => {
-  //   imageData.forEach((item) => {
-  //     if (item.keywords.includes(filter) && !filteredData.includes(item)) {
-  //       filteredData.push(item);
-  //     }
-  //   });
-  // });
-
+function filterAssetsByActiveFilter(imageData, activeFilter, page) {
   let filteredData = imageData.filter((item) => {
     return activeFilter.every((keyword) => item.keywords.includes(keyword));
   });
-  renderImages(filteredData);
+  renderImages(filteredData,page);
 }
 
 function getAllKeywords(imageData) {
@@ -101,8 +91,41 @@ function getAllKeywords(imageData) {
   return keywords;
 }
 
+// Populate page select dropdown with page numbers
+function populatePageSelect(filteredData, currentPage) {
+  const totalPages = Math.ceil(filteredData.length / maxPages);
+  const pageSelect = document.getElementById("page-select");
+  pageSelect.innerHTML = "";
+
+  for (let i = 1; i <= totalPages; i++) {
+    const option = document.createElement("option");
+    option.value = i;
+    option.textContent = ` ${i} `;
+    if (i === currentPage) {
+      option.selected = true;
+    }
+    pageSelect.appendChild(option);
+  }
+}
+
+// Add event listener to page select dropdown 
+document.getElementById("page-select").addEventListener("change", (event) => {
+  const selectedPage = parseInt(event.target.value);
+  if (activeFilter.length !== 0 && filteredImagesByCategory.length !== 0)
+    filterAssetsByActiveFilter(filteredImagesByCategory, activeFilter, selectedPage);
+  else if(filteredImagesBySearch.length !== 0)
+    renderImages(filteredImagesBySearch, selectedPage);
+  else
+    renderImages(filterAssetsByCategory(activeCategory, activeSubCategory), selectedPage);
+});
+
 // function to create the image card
-function renderImages(filteredData) {
+function renderImages(filteredData, page) {
+  populatePageSelect(filteredData, page);
+  
+  const startIndex = (page - 1) * maxPages;
+  const endIndex = startIndex + maxPages;
+
   // get the image container
   const imageContainer = document.getElementById("image-container");
 
@@ -112,8 +135,11 @@ function renderImages(filteredData) {
   // Clear previous content
   imageContainer.innerHTML = "";
 
+   // Get the subset of data to render based on pagination
+  const dataToRender = filteredData.slice(startIndex, endIndex);
+
   // Iterate over each item in the filtered data
-  filteredData.forEach((item) => {
+  dataToRender.forEach((item) => {
     const imgElement = document.createElement("img");
     imgElement.src = item.file_location;
     imgElement.alt = item.name;
@@ -125,7 +151,7 @@ function renderImages(filteredData) {
       "bg-white",
       "rounded",
       "m-2",
-      "shadow"
+      "asset-shadow"
     );
 
     // set isSelected to false initially
@@ -164,7 +190,7 @@ function renderImages(filteredData) {
   });
 
   // handle case when filteredData is empty
-  if (filteredData.length === 0) {
+  if (dataToRender.length === 0) {
     const noImagesElement = document.createElement("p");
     noImagesElement.innerText =
       "No images found for the currently selected filters or search term.";
@@ -215,7 +241,7 @@ function renderSelectedImages(selectedAsset) {
         "bg-white",
         "rounded",
         "m-2",
-        "shadow",
+        "asset-shadow",
         "border",
         "border-secondary"
       );
@@ -311,7 +337,7 @@ function createFilter(category, subcategory) {
       }
 
       // filter the images
-      filterAssetsByActiveFilter(filteredImagesByCategory, activeFilter);
+      filterAssetsByActiveFilter(filteredImagesByCategory, activeFilter,1);
     });
   });
 
@@ -358,7 +384,7 @@ function displayMetaData(selectedAsset) {
       "bg-white",
       "rounded",
       "m-2",
-      "shadow"
+      "asset-shadow"
     );
 
     // name
@@ -428,7 +454,7 @@ function searchBar(imageData, searchTerm) {
   }
 
   // hide filter container
-  filterContainer.style.display = "none";
+  filterContainer.style.visibility = "hidden";
 
   return filteredImagesBySearch;
 }
@@ -442,12 +468,13 @@ searchBarInput.addEventListener("search", (e) => {
   if (searchBarInput.value !== "") {
     const searchTerm = e.target.value;
     searchBar(imageData, searchTerm);
-    renderImages(filteredImagesBySearch);
+    renderImages(filteredImagesBySearch, 1);
   } else {
-    renderImages(filteredImagesByCategory);
+    filteredImagesBySearch = [];
+    renderImages(filteredImagesByCategory, 1);
     // show filter container
-    filterContainer.style.display = "flex";
-    filterAssetsByActiveFilter(filteredImagesByCategory, activeFilter);
+    filterContainer.style.visibility = "visible";
+    filterAssetsByActiveFilter(filteredImagesByCategory, activeFilter, 1);
   }
 });
 
@@ -459,7 +486,7 @@ $(function () {
     select: function (event, ui) {
       const selectedKeyWord = ui.item.value;
       searchBar(imageData, selectedKeyWord);
-      renderImages(filteredImagesBySearch);
+      renderImages(filteredImagesBySearch, 1);
     },
   });
 });
@@ -657,7 +684,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
             activeCategory,
             activeSubCategory
           );
-          renderImages(filteredImagesByCategory);
+          renderImages(filteredImagesByCategory, 1);
           createFilter(activeCategory, activeSubCategory);
 
           // clear the active filter array
@@ -665,8 +692,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
           // clear the search bar
           searchBarInput.value = "";
+          filteredImagesBySearch = [];
           // show filter container
-          filterContainer.style.display = "flex";
+          filterContainer.style.visibility = "visible";
         });
       });
     }

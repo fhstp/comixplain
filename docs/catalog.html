@@ -67,7 +67,7 @@
     <!-- Bootstrap Grid -->
     <section class="pb-0">
         <div class="container-fluid mt-1">
-            <div class="row pt-3">
+            <div class="row pt-3 catalog-container">
                 <!-- Sidebar -->
                 <div class="col-md-2 pt-3">
                     <h3>Categories</h3>
@@ -168,8 +168,15 @@
                         <input type="search" class="form-control ui-autocomplete" placeholder="Search Assets..."
                             id="searchBarInput"></input>
                     </div>
-                    <!-- Filter Pills -->
-                    <div class="pb-3" id="filter-container">
+                    <div class="filterbar pb-3">
+                        <!-- Filter Pills -->
+                        <div class="pb-3" id="filter-container">
+                        </div>
+                        <!-- Pagination -->
+                        <div id="navigation-bar">
+                          <label for="page-select">Page: </label>
+                          <select id="page-select"></select>
+                        </div>
                     </div>
                     <!-- Images -->
                     <div id="image-container">
