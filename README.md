@@ -6,6 +6,8 @@ The effectiveness of comics in learning for both children and adults has been sh
 
 In the last years, especially due to distance learning, we saw the importance of engaging supplementary material for students at the university. Our hypothesis is that comics can be used to effectively understand, review, or provoke the discussion of complex subjects such as math, statistics, or physics. The goal of this project is to understand and identify which factors are related to the difficulty in learning such topics and how comics can contribute to the learning process.
 
+See the results from Comixplain in our [project page](https://fhstp.github.io/comixplain/).
+
 ## Getting Started
 
 * The folder "Comixplain_Guide" contains instructions on how to design and adapt Comixplain comics.
@@ -35,6 +37,10 @@ Alena Ertl
 ## Illustrations
 
 Magdalena Boucher & Alena Ertl
+
+## Catalog Search Tool
+
+Anna Blasinger
 
 ## Acknowledgments
 
