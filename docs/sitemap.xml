@@ -13,6 +13,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://fhstp.github.io/comixplain/index.html</loc>
+  <lastmod>2024-04-03T11:46:28+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
   <loc>https://fhstp.github.io/comixplain/catalog.html</loc>
   <lastmod>2024-04-03T11:46:28+00:00</lastmod>
   <priority>0.80</priority>
@@ -20,18 +25,14 @@
 <url>
   <loc>https://fhstp.github.io/comixplain/mediasummerschool.html</loc>
   <lastmod>2024-04-03T11:46:28+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.70</priority>
 </url>
 <url>
   <loc>https://fhstp.github.io/comixplain/rights.html</loc>
   <lastmod>2024-04-03T11:46:28+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.50</priority>
 </url>
-<url>
-  <loc>https://fhstp.github.io/comixplain/index.html</loc>
-  <lastmod>2024-04-03T11:46:28+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+
 
 
 </urlset>
