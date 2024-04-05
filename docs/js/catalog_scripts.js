@@ -24,6 +24,19 @@ fetch('https://fhstp.github.io/comixplain/assets.json')
     downloadButton.addEventListener("click", function () {
       downloadSelection(selectedAsset);
     });
+
+    // auto complete functionality using jquery ui
+    $(function () {
+      const availableTags = getAllKeywords(imageData);
+      $("#searchBarInput").autocomplete({
+        source: availableTags,
+        select: function (event, ui) {
+          const selectedKeyWord = ui.item.value;
+          searchBar(imageData, selectedKeyWord);
+          renderImages(filteredImagesBySearch, 1);
+        },
+      });
+    });
   })
   .catch(error => {
     console.error('Error fetching assets.json:', error);
@@ -92,6 +105,7 @@ function getAllKeywords(imageData) {
 
 // Populate page select dropdown with page numbers
 function populatePageSelect(filteredData, currentPage) {
+
   const totalPages = Math.ceil(filteredData.length / maxPages);
   const pageSelect = document.getElementById("page-select");
   pageSelect.innerHTML = "";
@@ -295,6 +309,7 @@ function renderSelectedImages(selectedAsset) {
 
 // get filter-options from JSON
 function createFilter(category, subcategory) {
+
   const filterOptions = imageData[category][subcategory]["filter-options"];
 
   // Create a document fragment to hold the filter options
@@ -475,19 +490,6 @@ searchBarInput.addEventListener("search", (e) => {
     filterContainer.style.visibility = "visible";
     filterAssetsByActiveFilter(filteredImagesByCategory, activeFilter, 1);
   }
-});
-
-// auto complete functionality using jquery ui
-$(function () {
-  const availableTags = getAllKeywords(imageData);
-  $("#searchBarInput").autocomplete({
-    source: availableTags,
-    select: function (event, ui) {
-      const selectedKeyWord = ui.item.value;
-      searchBar(imageData, selectedKeyWord);
-      renderImages(filteredImagesBySearch, 1);
-    },
-  });
 });
 
 // button function - clear selection
