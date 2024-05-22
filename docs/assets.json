@@ -577,7 +577,7 @@
       ]
     }
   },
-  "Annotation Elements": {
+  "Shapes": {
     "Arrows": {
       "filter-options": ["short", "long", "thin", "thick"],
       "assets": [
