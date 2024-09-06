@@ -11685,3 +11685,35 @@ footer a:hover, footer a:active, footer a:focus {
 .sidebar-active-item {
   text-decoration: underline;
 }
+
+/* New carousel styles */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #000000;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.wrapperCarouselCards{
+  margin-left:  5px;
+  margin-right:  5px;
+}
