@@ -11717,3 +11717,11 @@ footer a:hover, footer a:active, footer a:focus {
   margin-left:  5px;
   margin-right:  5px;
 }
+
+#links{
+  padding-top: 2rem;
+}
+
+#links ul li{
+  margin-bottom: 1em;
+}
