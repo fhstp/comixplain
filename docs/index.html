@@ -55,10 +55,10 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
             <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top">
+                <a class="navbar-brand fw-bold" href="#page-top" aria-label="Comixplain Homepage">
                     <img class="comixplainLogo" alt="comixplain" src="./assets/logo.png"/>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation options">
                     <i class="bi-list" alt="Menu"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -126,7 +126,7 @@
                     <div class="col-md-4 mb-5">
                         <!-- Feature item-->
                         <div class="text-center">
-                            <i class="bi-gift icon-git mb-3"></i>
+                            <i class="bi-gift icon-git mb-3" aria-hidden="true"></i>
                             <h2 class="font-alt">Free to Use</h2>
                             <p class="mb-0">Comixplain editions are free to download, use, print, and distribute for teaching scientific subjects. </p>
                         </div>
@@ -135,7 +135,7 @@
                     <div class="col-md-4 mb-5">
                         <!-- Feature item-->
                         <div class="text-center">
-                            <i class="bi-columns-gap icon-git mb-3"></i>
+                            <i class="bi-columns-gap icon-git mb-3" aria-hidden="true"></i>
                             <h2 class="font-alt">Flexible</h2>
                             <p class="mb-0">Comixplain provides a modular template, allowing the use of whole stories or a fewer set of panels according to your needs.</p>
                         </div>
@@ -144,7 +144,7 @@
                     <div class="col-md-4 mb-5">
                         <!-- Feature item-->
                         <div class="text-center">
-                            <i class="bi-cc-circle icon-git mb-3"></i>
+                            <i class="bi-cc-circle icon-git mb-3" aria-hidden="true"></i>
                             <h2 class="font-alt">Open Source</h2>
                             <p class="mb-0">Comixplain is CC BY-SA licensed, and you can adapt the comics and share them under the same license.</p>
                         </div>
@@ -160,7 +160,10 @@
                     <div class="col-12 col-lg-5">
                         <h2 class="display-4 lh-1 mb-4">User Guide</h2>
                         <p class="lead fw-normal text-muted mb-5 mb-lg-0">We have prepared a helping guide from Comixplain to support lecturers and instructors. Our intent with this guide is to help you better understand comics and how to create them.</p>
-                        <br/><p class="lead fw-normal mb-5 mb-lg-0">[<a href="https://github.com/fhstp/comixplain/raw/main/Comixplain_Guide/Comixplain%20-%20Guide%20EN.pdf">English Version</a>] [<a href="https://github.com/fhstp/comixplain/raw/main/Comixplain_Guide/Comixplain%20-%20Guide%20DE.pdf">German Version</a>]</p>
+                        <br/><p class="lead fw-normal mb-5 mb-lg-0">
+                            <a class="btn btn-outline-primary px-4 rounded-pill" href="https://github.com/fhstp/comixplain/raw/main/Comixplain_Guide/Comixplain%20-%20Guide%20EN.pdf" target="_blank" aria-label="English Version">English | PDF, 3 MB</a>
+                            <a class="btn btn-outline-primary px-4 rounded-pill" href="https://github.com/fhstp/comixplain/raw/main/Comixplain_Guide/Comixplain%20-%20Guide%20DE.pdf" target="_blank" aria-label="German Version">German - PDF, 3 MB</a>
+                        </p>
                     </div>
                     <div class="col-sm-8 col-md-6">
                         <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="./assets/cover.png" alt="" /></div>
@@ -181,7 +184,7 @@
                                     <div class="text-center">
                                         <img class="rounded-circle filterContrast" height="150px" src="./assets/cover_attribute.png" alt=""/>
                                         <h3 class="font-alt">Attribute Types</h3>
-                                        <p class="mb-0"><button class="btn btn-outline-primary px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#cmxAttrTypeModal">Download</button></p>
+                                        <p class="mb-0"><button class="btn btn-outline-primary px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#cmxAttrTypeModal" aria-label="Download Options">Download</button></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-5">
@@ -189,7 +192,7 @@
                                     <div class="text-center">
                                         <img class="rounded-circle filterContrast" height="150px" src="./assets/cover_central.png" alt="" />
                                         <h3 class="font-alt">Central Tendency</h3>
-                                        <p class="mb-0"><button class="btn btn-outline-primary px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#cmxCentralTendencyModal">Download</button></p>
+                                        <p class="mb-0"><button class="btn btn-outline-primary px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#cmxCentralTendencyModal" aria-label="Download Options">Download</button></p>
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +202,7 @@
                                     <div class="text-center">
                                         <img class="rounded-circle filterContrast" height="165px" src="./assets/cover_math.png" alt="" />
                                         <h3 class="font-alt">Mathematical Thinking</h3>
-                                        <p class="mb-0"><button class="btn btn-outline-primary px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#cmxMathThinkingModal">Download</button></p>
+                                        <p class="mb-0"><button class="btn btn-outline-primary px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#cmxMathThinkingModal" aria-label="Download Options">Download</button></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -207,7 +210,7 @@
                                     <div class="text-center">
                                         <img class="rounded-circle filterContrast" height="165px" src="./assets/cover_primitive.png" alt="" />
                                         <h3 class="font-alt">Primitive Types</h3>
-                                        <p class="mb-0"><button class="btn btn-outline-primary px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#cmxPrimTypeModal">Download</button></p>
+                                        <p class="mb-0"><button class="btn btn-outline-primary px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#cmxPrimTypeModal" aria-label="Download Options">Download</button></p>
                                     </div>
                                 </div>
                             </div>
@@ -238,7 +241,7 @@
                     <h3 class="text-white display-6 lh-1 mb-4 mt-5">
                         Recent Updates:
                     </h3>
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row wrapperCarouselCards row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -250,9 +253,9 @@
                                         <h4 class="card-title">Measuring UX</h4>
                                         <small class="text-muted">A Manga-style comic created by <a href="https://faculty.bentley.edu/profile/mziat">Dr. Mounia Ziat</a> for the course HF751 Measuring User Experience.</small>
                                       </div>
-                                      <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><small class="text-muted"><a href="https://phaidra.fhstp.ac.at/api/object/o:5792/preview" class="btn btn-primary">Take a look</a></small></li>
-                                      </ul>
+
+                                      <small class="button_card"><a href="https://phaidra.fhstp.ac.at/api/object/o:5792/preview" class="btn btn-primary" aria-label="Take a look at Measuring UX comics">Take a look</a></small>
+                                      
                                       <div class="card-footer"><small class="text-muted">Added on Mar, 2025</small></div>
                                     </div>
                                   </div>
@@ -264,9 +267,7 @@
                                         <h4 class="card-title">Comixcraft</h4>
                                         <small class="text-muted">A web comic editor created by A. Holla, A. Blasinger, A. Muneret, F. Gabillon, H. Wagner, J. Matsumura, and V. Koeck</small>
                                       </div>
-                                      <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><small class="text-muted"><a href="https://comixcraft.com/" class="btn btn-primary">Try it out now</a></small></li>
-                                      </ul>
+                                      <small class="button_card"><a href="https://comixcraft.com/" class="btn btn-primary" aria-label="Try Comixcraft now">Try it out now</a></small>
                                       <div class="card-footer"><small class="text-muted">Added on Sept, 2024</small></div>
                                     </div>
                                   </div>
@@ -278,9 +279,7 @@
                                         <h4 class="card-title">Comic Construction Kit</h4>
                                         <small class="text-muted">An educational activity for Data Visualization by M. Boucher, C. Stoiber, M. Keck, V. De-Jesus-Oliveira, and W. Aigner</small>
                                       </div>
-                                      <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><small class="text-muted"><a href="./vis4schools.html" class="btn btn-primary">Take a look</a></small></li>
-                                      </ul>
+                                      <small class="button_card"><a href="./vis4schools.html" class="btn btn-primary" aria-label="Take a look at the comic construction kit">Take a look</a></small>
                                       <div class="card-footer"><small class="text-muted">Added on Sept, 2024</small></div>
                                     </div>
                                   </div>
@@ -292,9 +291,7 @@
                                         <h4 class="card-title">Interactive Web Comic</h4>
                                         <small class="text-muted">Web-Comic for Nuclear Medicine Education created by Silvia Angjeliu. Currently available only in German</small>
                                       </div>
-                                      <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><small class="text-muted"><a href="https://vdejesus-10510.node.fhstp.cc/" class="btn btn-primary">Try it out</a></small></li>
-                                      </ul>
+                                      <small class="button_card"><a href="https://vdejesus-10510.node.fhstp.cc/" class="btn btn-primary" aria-label="Try the interactive web comic">Try it out</a></small>
                                       <div class="card-footer"><small class="text-muted">Added on Sept, 2024</small></div>
                                     </div>
                                   </div>
@@ -312,9 +309,7 @@
                                         <h4 class="card-title">New Translations</h4>
                                         <small class="text-muted">Share the news!</br>Comixplain editions are now available in French, Spanish, and Italian!</small>
                                       </div>
-                                      <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><small class="text-muted"><a href="#editions" class="btn btn-primary">Take a look</a></small></li>
-                                      </ul>
+                                      <small class="button_card"><a href="#editions" class="btn btn-primary" aria-label="Take a look at our new translations">Take a look</a></small>
                                       <div class="card-footer"><small class="text-muted">Added on Jul, 2024</small></div>
                                     </div>
                                   </div>
@@ -326,9 +321,7 @@
                                         <h4 class="card-title">Catalog Search</h4>
                                         <small class="text-muted">A new interface was created by Anna Blasinger to facilitate finding assets in the Comixplain repository</small>
                                       </div>
-                                      <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><small class="text-muted"><a href="./catalog.html" class="btn btn-primary">Try it now</a></small></li>
-                                      </ul>
+                                      <small class="button_card"><a href="./catalog.html" class="btn btn-primary" aria-label="Try our catalog search">Try it now</a></small>
                                       <div class="card-footer"><small class="text-muted">Added on Mar, 2024</small></div>
                                     </div>
                                   </div>
@@ -340,9 +333,7 @@
                                         <h4 class="card-title">Augmented Comics</h4>
                                         <small class="text-muted">Students at the Creative Media Summer School 2023 created Augmented Reality applications to enrich our comics</small>
                                       </div>
-                                      <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><small class="text-muted"><a href="./mediasummerschool.html" class="btn btn-primary">Try it out now</a></small></li>
-                                      </ul>
+                                      <small class="button_card"><a href="./mediasummerschool.html" class="btn btn-primary" aria-label="Try our AR Comics">Try it out now</a></small>
                                       <div class="card-footer"><small class="text-muted">Added on Jun, 2023</small></div>
                                     </div>
                                   </div>
@@ -354,9 +345,7 @@
                                         <h4 class="card-title">First Editions</h4>
                                         <small class="text-muted">First release of Comixplain editions in English, German, and Portuguese (pt-br), both in PDF and PowerPoint formats</small>
                                       </div>
-                                      <ul class="list-group list-group-flush">
-                                        <li class="list-group-item"><small class="text-muted"><a href="#editions" class="btn btn-primary">Take a look</a></small></li>
-                                      </ul>
+                                      <small class="button_card"><a href="#editions" class="btn btn-primary" aria-label="Take a look at our first comic editions">Take a look</a></small>
                                       <div class="card-footer"><small class="text-muted">Added on Feb, 2023</small></div>
                                     </div>
                                   </div>
@@ -430,7 +419,7 @@
                 <div class="modal-content">
                     <div class="modal-header bg-gradient-primary-to-secondary p-4">
                         <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Contact Us</h5>
-                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close Feedback Modal"></button>
                     </div>
                     <div class="modal-body border-0 p-4">
                         <p>We appreciate your contribution. Your participation can help us to improve our comics and to continue producing new stories.</p>
@@ -447,13 +436,13 @@
         <div class="modal fade" id="cmxAttrTypeModal" tabindex="-1" aria-labelledby="cmxAttrTypeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modalComics">
                 <div class="modal-content">
-                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close Modal"></button>
                     <img class="rounded-circle filterContrast modalComicsImage" height="100px" src="./assets/cover_attribute.png" alt="" data-bs-toggle="modal" data-bs-target="#cmxAttrTypeModal"/>
 
                     <div class="modal-body border-0">
                         <h5 class="modal-title font-alt" id="cmxAttrTypeModalLabel">Attribute Types</h5>
                         <p><b>Story:</b> Victor De-Jesus-Oliveira<br/><b>Art:</b> Magdalena Boucher</p>
-                        <p><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></p>
+                        <p><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="Creative Commons License Attribution-ShareAlike 4.0 International"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></p>
                         <hr/>
 
                         <h6 class="font-alt">Translations:</h6>
@@ -485,13 +474,13 @@
         <div class="modal fade" id="cmxMathThinkingModal" tabindex="-1" aria-labelledby="cmxMathThinkingModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modalComics">
                 <div class="modal-content">
-                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close Modal"></button>
                     <img class="rounded-circle modalComicsImage" height="100px" src="./assets/cover_math.png" alt="" data-bs-toggle="modal" data-bs-target="#cmxAttrTypeModal"/>
 
                     <div class="modal-body border-0">
                         <h5 class="modal-title font-alt" id="cmxMathThinkingModalLabel">Mathematical Thinking</h5>
                         <p><b>Story:</b> Hsiang-Yun Wu<br/><b>Art:</b> Magdalena Boucher & Alena Ertl</p>
-                        <p><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></p>
+                        <p><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="Creative Commons License Attribution-ShareAlike 4.0 International"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></p>
                         <hr/>
 
                         <h6 class="font-alt">Translations:</h6>
@@ -518,13 +507,13 @@
         <div class="modal fade" id="cmxCentralTendencyModal" tabindex="-1" aria-labelledby="cmxCentralTendencyModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modalComics">
                 <div class="modal-content">
-                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close Modal"></button>
                     <img class="rounded-circle filterContrast modalComicsImage" height="100px" src="./assets/cover_central.png" alt="" data-bs-toggle="modal" data-bs-target="#cmxAttrTypeModal"/>
 
                     <div class="modal-body border-0">
                         <h5 class="modal-title font-alt" id="cmxCentralTendencyModalLabel">Central Tendency</h5>
                         <p><b>Story:</b> Victor De-Jesus-Oliveira<br/><b>Art:</b> Magdalena Boucher & Alena Ertl</p>
-                        <p><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></p>
+                        <p><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="Creative Commons License Attribution-ShareAlike 4.0 International"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></p>
                         <hr/>
 
                         <h6 class="font-alt">Translations:</h6>
@@ -558,13 +547,13 @@
         <div class="modal fade" id="cmxPrimTypeModal" tabindex="-1" aria-labelledby="cmxPrimTypeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modalComics">
                 <div class="modal-content">
-                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close Modal"></button>
                     <img class="rounded-circle modalComicsImage" height="100px" src="./assets/cover_primitive.png" alt="" data-bs-toggle="modal" data-bs-target="#cmxAttrTypeModal"/>
 
                     <div class="modal-body border-0">
                         <h5 class="modal-title font-alt" id="cmxPrimTypeModalLabel">Primitive Types</h5>
                         <p><b>Story:</b> Magdalena Boucher<br/><b>Art:</b> Magdalena Boucher & Alena Ertl</p>
-                        <p><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></p>
+                        <p><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="Creative Commons License Attribution-ShareAlike 4.0 International"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></p>
                         <hr/>
 
                         <h6 class="font-alt">Translations:</h6>

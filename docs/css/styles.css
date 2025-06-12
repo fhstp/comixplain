@@ -11726,3 +11726,7 @@ footer a:hover, footer a:active, footer a:focus {
 #links ul li{
   margin-bottom: 1em;
 }
+
+.button_card{
+  margin-bottom: 1rem;
+}
