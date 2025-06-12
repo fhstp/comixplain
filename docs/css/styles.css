@@ -4558,6 +4558,7 @@ textarea.form-control-lg {
 
 .card-title {
   margin-bottom: 0.5rem;
+  font-size: 1.25rem;
 }
 
 .card-subtitle {
@@ -7786,7 +7787,7 @@ textarea.form-control-lg {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: #6c757d !important;
+  color: #555962 !important;
 }
 
 .text-black-50 {
