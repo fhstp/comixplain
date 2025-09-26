@@ -3,248 +3,344 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Educational Comic Design Guidelines — Collapsibles</title>
+<title>Educational Comic Guidelines</title>
 <link rel="stylesheet" href="./styles/styles.css">
 <script src="./scripts/script.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Educational Comic Guidelines</h1>
-    </header>
+  <div id="banner">
+      <header>
+        <h1>Educational Comic Guidelines</h1>
+        <h3>Self-Assessment for Authors, Artists, and Educators</h3>
+      </header>
 
-    <div id="progress-bar">
-      <p id="progress-value">0%</p>
-      <div class="progress-wrapper">
-        <div class="progress-fill" id="progress-fill"></div>
+      <div id="divider"></div>
+      
+      <div id="meta-info">
+        <div id="author-info">
+          <svg fill="#444444" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+              width="14" height="14" viewBox="0 0 528.899 528.899" xml:space="preserve" alt="" aria-hidden="true">
+            <g>
+              <path d="M328.883,89.125l107.59,107.589l-272.34,272.34L56.604,361.465L328.883,89.125z M518.113,63.177l-47.981-47.981
+                c-18.543-18.543-48.653-18.543-67.259,0l-45.961,45.961l107.59,107.59l53.611-53.611
+                C532.495,100.753,532.495,77.559,518.113,63.177z M0.3,512.69c-1.958,8.812,5.998,16.708,14.811,14.565l119.891-29.069
+                L27.473,390.597L0.3,512.69z"/>
+            </g>
+          </svg>
+          <i>authored by Michaela Topalovic</i>
+        </div>
+
+        <div id="publishing-info">
+          <svg fill="#444444" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+              width="14px" height="14px" viewBox="0 0 610.398 610.398" xml:space="preserve" alt="" aria-hidden="true">
+            <g>
+              <g>
+                <path d="M159.567,0h-15.329c-1.956,0-3.811,0.411-5.608,0.995c-8.979,2.912-15.616,12.498-15.616,23.997v10.552v27.009v14.052
+                  c0,2.611,0.435,5.078,1.066,7.44c2.702,10.146,10.653,17.552,20.158,17.552h15.329c11.724,0,21.224-11.188,21.224-24.992V62.553
+                  V35.544V24.992C180.791,11.188,171.291,0,159.567,0z"/>
+                <path d="M461.288,0h-15.329c-11.724,0-21.224,11.188-21.224,24.992v10.552v27.009v14.052c0,13.804,9.5,24.992,21.224,24.992
+                  h15.329c11.724,0,21.224-11.188,21.224-24.992V62.553V35.544V24.992C482.507,11.188,473.007,0,461.288,0z"/>
+                <path d="M539.586,62.553h-37.954v14.052c0,24.327-18.102,44.117-40.349,44.117h-15.329c-22.247,0-40.349-19.79-40.349-44.117
+                  V62.553H199.916v14.052c0,24.327-18.102,44.117-40.349,44.117h-15.329c-22.248,0-40.349-19.79-40.349-44.117V62.553H70.818
+                  c-21.066,0-38.15,16.017-38.15,35.764v476.318c0,19.784,17.083,35.764,38.15,35.764h468.763c21.085,0,38.149-15.984,38.149-35.764
+                  V98.322C577.735,78.575,560.671,62.553,539.586,62.553z M527.757,557.9l-446.502-0.172V173.717h446.502V557.9z"/>
+                <path d="M353.017,266.258h117.428c10.193,0,18.437-10.179,18.437-22.759s-8.248-22.759-18.437-22.759H353.017
+                  c-10.193,0-18.437,10.179-18.437,22.759C334.58,256.074,342.823,266.258,353.017,266.258z"/>
+                <path d="M353.017,348.467h117.428c10.193,0,18.437-10.179,18.437-22.759c0-12.579-8.248-22.758-18.437-22.758H353.017
+                  c-10.193,0-18.437,10.179-18.437,22.758C334.58,338.288,342.823,348.467,353.017,348.467z"/>
+                <path d="M353.017,430.676h117.428c10.193,0,18.437-10.18,18.437-22.759s-8.248-22.759-18.437-22.759H353.017
+                  c-10.193,0-18.437,10.18-18.437,22.759S342.823,430.676,353.017,430.676z"/>
+                <path d="M353.017,512.89h117.428c10.193,0,18.437-10.18,18.437-22.759c0-12.58-8.248-22.759-18.437-22.759H353.017
+                  c-10.193,0-18.437,10.179-18.437,22.759C334.58,502.71,342.823,512.89,353.017,512.89z"/>
+                <path d="M145.032,266.258H262.46c10.193,0,18.436-10.179,18.436-22.759s-8.248-22.759-18.436-22.759H145.032
+                  c-10.194,0-18.437,10.179-18.437,22.759C126.596,256.074,134.838,266.258,145.032,266.258z"/>
+                <path d="M145.032,348.467H262.46c10.193,0,18.436-10.179,18.436-22.759c0-12.579-8.248-22.758-18.436-22.758H145.032
+                  c-10.194,0-18.437,10.179-18.437,22.758C126.596,338.288,134.838,348.467,145.032,348.467z"/>
+                <path d="M145.032,430.676H262.46c10.193,0,18.436-10.18,18.436-22.759s-8.248-22.759-18.436-22.759H145.032
+                  c-10.194,0-18.437,10.18-18.437,22.759S134.838,430.676,145.032,430.676z"/>
+                <path d="M145.032,512.89H262.46c10.193,0,18.436-10.18,18.436-22.759c0-12.58-8.248-22.759-18.436-22.759H145.032
+                  c-10.194,0-18.437,10.179-18.437,22.759C126.596,502.71,134.838,512.89,145.032,512.89z"/>
+              </g>
+            </g>
+          </svg>
+          <i>published September 2025</i>
+        </div>
+      </div>
+  </div>
+
+  <nav id="tabs" aria-label="Versions">
+    <div id="tablist" role="tablist" aria-orientation="horizontal">
+      <div id="online-tab-style" class="active">
+        <button id="online-tab" role="tab" aria-selected="true" aria-controls="online-version">
+          Online Version
+        </button>
+      </div>
+      <div id="offline-tab-style">
+        <button id="offline-tab" role="tab" aria-selected="false" aria-controls="pdf-version">
+          PDF Version
+        </button>
       </div>
     </div>
+  </nav>
 
-    <!-- GUIDELINES IN CAT DEVELOPMENT-->
-    <h2>Development</h2>
+  <main>
+    <div class="container" id="online-version" role="tabpanel" aria-labelledby="online-tab">
 
+      <div id="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-live="polite">
+        <div id="compliance-rate" aria-label="compliance-rate">
+          <span id="progress-value">0%</span>
+          <span id="compliance-text">compliance</span>
+        </div>
+        <div class="progress-wrapper" aria-hidden="true">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+      </div>
 
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Context and Learner Analysis
-        <span class="indicator">▾</span>
-      </button>
+      <!-- GUIDELINES IN CAT DEVELOPMENT-->
+      <h2>Development</h2>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+            Context and Learner Analysis
+            <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Context and Learner Analysis description">
+          <p>Analyze the educational context as well as learner knowledge and needs prior to development to guide design choices.</p>
+        </div>
+      </div>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Goal Orientation
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Goal Orientation description">
+          <p>Plan the comic around what learners should know or be able to do after interacting with it.</p>
+        </div>
+      </div>
+
+        <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Self-Contained and Versatile Design
+          <span class="indicator">▾</span>
+        </button>
+      <div class="content" role="region" aria-label="Self-Contained and Versatile Design description">
+        <p>Develop the comic to be self-sufficient and easily adaptable for various contexts, audiences or educational purposes.</p>
+      </div>
+      </div>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Evaluation and Revision
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Evaluation and Revision description">
+          <p>Evaluate and revise the comic regularly based on feedback, research, and evolving educational needs to ensure effectiveness.</p>
+        </div>
+      </div>
+
+      <!-- GUIDELINES IN CAT STRUCTURE AND FORMAT-->
+      <h2>Structure and Format</h2>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Conversational Language
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Conversational Language description">
+          <p>Use simple, authentic, and conversational language that is appropriate for the learner’s level when technical terms are not required.</p>
+        </div>
+      </div>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Conciseness and Segmentation
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Conciseness and Segmentation description">
+          <p>Keep the comic as well as the text short and focused, and break longer sections into clear, standalone segments.</p>
+        </div>
+      </div>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Task Progression
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Task Progression description">
+          <p>Provide questions, tasks and activities about the comic’s content that progressively increase in difficulty, accompanied by clear instructions and assessment criteria.</p>
+        </div>
+      </div>
+
+      <!-- GUIDELINES IN CAT CONTENT-->
+      <h2>Content</h2>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Content Integrity and Compliance
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Content Integrity and Compliance description">
+          <p>Include content that is accurate, appropriately cited, and legally compliant.</p>
+        </div>
+      </div>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Structured Narrative
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Structured Narrative description">
+          <p>Frame the comic as a narrative with a logical and continuous story progression containing a clear beginning, middle, and conclusion.</p>
+        </div>
+      </div>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Engaging Characters
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Engaging Characters description">
+          <p>Narrate the content through a few expressive and well-defined human or personified characters.</p>
+        </div>
+      </div>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Real World Context
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Real-World Context description">
+          <p>Employ realistic, representative, and relevant examples grounded in real life and industry contexts.</p>
+        </div>
+      </div>
+
+      <!-- GUIDELINES IN CAT VISUAL DESIGN-->
+      <h2>Visual Design</h2>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Limited and Consistent Typography
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Limited and Consistent Typography description">
+          <p>Use a limited and consistent set of fonts and text formatting to support, enhance and stimulate reading.</p>
+        </div>
+      </div>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Purposeful Color Usage
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Purposeful Color Usage description">
+          <p>Apply color purposefully and consistently, keeping the color palette balanced and limited.</p>
+        </div>
+      </div>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Visual Emphasis and Focus
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Visual Emphasis and Focus description">
+          <p>Utilize contrast, visual hierarchy and cues to emphasize essential content and guide the learner's focus to it.</p>
+        </div>
+      </div>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Visual Balance and Spacing
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Visual Balance and Spacing description">
+          <p>Ensure a balanced layout with sufficient white space to avoid clutter and maintain visual harmony.</p>
+        </div>
+      </div>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Sequential Clarity
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Sequential Clarity description">
+          <p>Place text next to relevant imagery while arranging elements such as panels, captions, and speech balloons carefully to establish a clear reading sequence.</p>
+        </div>
+      </div>
+
+      
+      <!-- GUIDELINES IN CAT DEPLOYMENT-->
+      <h2>Deployment</h2>
+      
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Support through Repetition
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Support through Repetition description">
+          <p>Use the comic as a complementary and assistive tool in delivering the content, enhancing retention through effective repetition.</p>
+        </div>
+      </div>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Personal Relevance and Motivation
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Personal Relevance and Motivation description">
+          <p>Ensure the comic conveys its real-world value and personal significance to learners, fostering motivation and personal involvement.</p>
+        </div>
+      </div>
+
+      <div class="guideline-grid">
+        <input type="checkbox" class="progress-check">
+        <button type="button" class="collapsible" aria-expanded="false">
+          Attitude Formation
+          <span class="indicator">▾</span>
+        </button>
+        <div class="content" role="region" aria-label="Attitude Formation description">
+          <p>Utilize the comic to promote confidence and ease in learners, fostering positive attitudes towards the subject.</p>
+        </div>
+      </div>
     </div>
-    <div class="content" role="region" aria-label="Goal Orientation description">
-      <p>Analyze the educational context as well as learner knowledge and needs prior to development to guide design choices.</p>
-   </div>
     
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Goal Orientation
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Goal Orientation description">
-      <p>Plan the comic around what learners should know or be able to do after interacting with it.</p>
-    </div>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Self-Contained and Versatile Design
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Self-Contained and Versatile Design description">
-      <p>Develop the comic to be self-sufficient and easily adaptable for various contexts, audiences or educational purposes.</p>
+    <div class="container" id="pdf-version" role="tabpanel" aria-labelledby="offline-tab" hidden>
+      <div id="donwload-link">
+        <a id="download-button" href="./assets/Educational Comic Guidelines - Self-Assessment.pdf" download>
+          Download PDF
+        </a>
+      </div>
+      <embed src="./assets/Educational Comic Guidelines - Self-Assessment.pdf" 
+        type="application/pdf"
+        title="Educational Comic Guidelines — PDF preview"
+      />
     </div>
 
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Evaluation and Revision
-        <span class="indicator">▾</span>
-      </button>
     </div>
-    <div class="content" role="region" aria-label="Evaluation and Revision description">
-      <p>Evaluate and revise the comic regularly based on feedback, research, and evolving educational needs to ensure effectiveness.</p>
-    </div>
+  </main>
 
-    <!-- GUIDELINES IN CAT STRUCTURE AND FORMAT-->
-    <h2>Structure and Format</h2>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Conversational Language
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Conversational Language description">
-      <p>Use simple, authentic and conversational language that is appropriate for the learner’s level when technical terms are not required.</p>
-    </div>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Conciseness and Segmentation
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Conciseness and Segmentation description">
-      <p>Keep the comic as well as the text short and focused, and break longer sections into clear, standalone segments.</p>
-    </div>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Task Progression
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Task Progression description">
-      <p>Provide questions, tasks and activities about the comic’s content that progressively increase in difficulty, accompanied by clear instructions and assessment criteria.</p>
-    </div>
-
-    <!-- GUIDELINES IN CAT CONTENT-->
-    <h2>Content</h2>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Content Integrity and Compliance
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Content Integrity and Compliance description">
-      <p>Include content that is accurate, appropriately cited, and legally compliant.</p>
-    </div>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Structured Narrative
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Structured Narrative description">
-      <p>Frame the comic as a narrative with a logical and continuous story progression containing a clear beginning, middle, and conclusion.</p>
-    </div>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Engaging Characters
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Engaging Characters description">
-      <p>Narrate the content through a few expressive and well-defined human or personified characters.</p>
-    </div>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Real World Context
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Real-World Context description">
-      <p>Employ realistic, representative, and relevant examples grounded in real life and industry contexts.</p>
-    </div>
-
-    <!-- GUIDELINES IN CAT VISUAL DESIGN-->
-    <h2>Visual Design</h2>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Limited and Consistent Typography
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Limited and Consistent Typography description">
-      <p>Use a limited and consistent set of fonts and text formatting to support, enhance and stimulate reading.</p>
-    </div>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Purposeful Color Usage
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Purposeful Color Usage description">
-      <p>Apply color purposefully and consistently, keeping the color palette balanced and limited.</p>
-    </div>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Visual Emphasis and Focus
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Visual Emphasis and Focus description">
-      <p>Utilize contrast, visual hierarchy and cues to emphasize essential content and guide the learner's focus to it.</p>
-    </div>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Visual Balance and Spacing
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Visual Balance and Spacing description">
-      <p>Ensure a balanced layout with sufficient white space to avoid clutter and maintain visual harmony.</p>
-    </div>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Sequential Clarity
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Sequential Clarity description">
-      <p>Place text next to relevant imagery while arranging elements such as panels, captions, and speech balloons carefully to establish a clear reading sequence.</p>
-    </div>
-
-    
-    <!-- GUIDELINES IN CAT DEPLOYMENT-->
-    <h2>Deployment</h2>
-    
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Support through Repetition
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Support through Repetition description">
-      <p>Use the comic as a complementary and assistive tool in delivering the content, enhancing retention through effective repetition.</p>
-    </div>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Personal Relevance and Motivation
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Personal Relevance and Motivation description">
-      <p>Ensure the comic conveys its real-world value and personal significance to learners, fostering motivation and personal involvement.</p>
-    </div>
-
-    <div class="checkbox-wrapper">
-      <input type="checkbox" class="progress-check">
-      <button type="button" class="collapsible" aria-expanded="false">
-        Attitude Formation
-        <span class="indicator">▾</span>
-      </button>
-    </div>
-    <div class="content" role="region" aria-label="Attitude Formation description">
-      <p>Utilize the comic to promote confidence and ease in learners, fostering positive attitudes towards the subject.</p>
+  <div id="footer">
+    <div id="footer-content">
+      Developed as part of a bachelor's thesis at the St. Pölten University of Applied Sciences under the supervision of FH-Prof. Dr. Victor-Adriel De-Jesus-Oliveira, these guidelines were formed through a literature review and validated through an expert evaluation.
+      They provide a structured approach for potential authors, artists and educators who want to create or utilize educational comics, addressing both general principles of educational material design and aspects specific to comics.
     </div>
   </div>
 </body>
