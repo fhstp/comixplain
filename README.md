@@ -32,7 +32,7 @@ Christina Stoiber
 
 Magdalena Boucher
 
-Alena Ertl
+Alena Boucher
 
 ## Illustrations
 
