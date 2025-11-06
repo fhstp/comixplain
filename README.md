@@ -44,4 +44,4 @@ Anna Blasinger
 
 ## Acknowledgments
 
-Comixplain is a project of the Institute for Creative\Media/Technologies [(IC\M/T)](https://icmt.fhstp.ac.at), developed at Sankt Pölten University of Applied Sciences [(STPUAS)](https://www.fhstp.ac.at/en) and funded by STPUAS' Innovation Call 2022.
+Comixplain is a project of the Institute for Creative\Media/Technologies [(IC\M/T)](https://icmt.ustp.at/), developed at University of Applied Sciences St. Pölten [(USTP)](https://www.ustp.at/en) and funded by USTP's Innovation Call 2022.
