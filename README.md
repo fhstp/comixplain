@@ -36,7 +36,7 @@ Alena Ertl
 
 ## Illustrations
 
-Magdalena Boucher & Alena Ertl
+Magdalena Boucher & Alena Boucher
 
 ## Catalog Search Tool
 
