@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Rubik Spray Paint
+- Font Title: Rubik Burned
 - Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/rubikspraypaint/v1/WnzhHBAoeBPUDTB4EWR82y6EXWPH-Ro-QoaBZQxP.ttf
+- Font Source: https://fonts.gstatic.com/s/rubikburned/v1/Jqzk5TmOVOqQHihKqPpscqniHQuaCY5ZSg.ttf
 - Font License: undefined)
