@@ -7959,6 +7959,7 @@ textarea.form-control-lg {
 
 .rounded-pill {
   border-radius: 50rem !important;
+  margin-bottom: 0.1rem;
 }
 
 .rounded-top {
