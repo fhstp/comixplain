@@ -1,6 +1,6 @@
 // imports
 let imageData;
-fetch('https://fhstp.github.io/comixplain/assets.json')
+fetch('https://www.comixplain.cc/assets.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('Failed to fetch assets.json');
