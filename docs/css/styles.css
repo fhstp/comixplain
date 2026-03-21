@@ -7990,6 +7990,25 @@ textarea.form-control-lg {
   visibility: hidden !important;
 }
 
+#skip a {
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1031;
+    width:1px;
+	height:1px;
+	overflow:hidden;
+	font-size: 0.7rem;
+}
+ 
+#skip a:focus {
+    width: auto;
+	height: auto;
+	background: #000000;
+	color: #ffffff;
+	padding: 0 0.7rem;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
