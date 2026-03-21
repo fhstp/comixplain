@@ -167,6 +167,8 @@ function renderImages(filteredData, page) {
       "asset-shadow"
     );
 
+    imgElement.setAttribute("tabindex","0");
+
     // set isSelected to false initially
     item.isSelected = false;
 
@@ -196,6 +198,14 @@ function renderImages(filteredData, page) {
       }
 
       displayMetaData(selectedAsset);
+    });
+
+    // Execute a function when the user presses a key on the keyboard
+    imgElement.addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        imgElement.click();
+      }
     });
 
     // Append the image to the document fragment
@@ -647,6 +657,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
       }
     });
 
+    // Execute a function when the user presses a key on the keyboard
+    sideBarItem.addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        event.preventDefault();
+        sideBarItem.click();
+      }
+    });
+
     // add a click event listener to each sub-item
     if (subCategories) {
       const subCategoriesArray = Array.from(subCategories.children);
@@ -696,6 +714,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
           filteredImagesBySearch = [];
           // show filter container
           filterContainer.style.visibility = "visible";
+        });
+
+        // Execute a function when the user presses a key on the keyboard
+        subCategory.addEventListener("keypress", function(event) {
+          if (event.key === "Enter") {
+            event.preventDefault();
+            subCategory.click();
+          }
         });
       });
     }
