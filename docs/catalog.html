@@ -63,7 +63,7 @@
     <a href="#" id="open_preferences_center">Update cookies preferences</a>
     <div id="skip"><a href="#content">Skip to content</a></div>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav" aria-label="top navigation">
         <div class="container px-5">
             <a class="navbar-brand fw-bold" href="./index.html" aria-label="Comixplain Homepage">
                 <img class="comixplainLogo" alt="comixplain" src="./assets/logo.png" />
@@ -72,25 +72,17 @@
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation options">
                 <i class="bi-list" alt="Menu"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="collapse navbar-collapse" id="navbarResponsive" aria-label="page sections">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="./#userGuide">User Guide</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="./#editions">Comixplain Editions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="./#derivatives">Community Contributions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3 link-secondary" href="">Catalog</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="./#userGuide">User Guide</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="./#editions">Comixplain Editions</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="./#derivatives">Community Contributions</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3 link-secondary" href="">Catalog</a></li>
                 </ul>
                 <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
                     data-bs-target="#feedbackModal">
                     <span class="d-flex align-items-center">
-                        <i class="bi-chat-text-fill me-2"></i>
+                        <i class="bi-chat-text-fill me-2" aria-hidden="true"></i>
                         <span class="small">Contact Us</span>
                     </span>
                 </button>
@@ -98,202 +90,203 @@
         </div>
     </nav>
 
-    <!-- Bootstrap Grid -->
-    <section class="pb-0" id="content">
-        <h1 class="invisible visually-hidden">Comixplain Catalog</h1>
-        <div class="container-fluid mt-1">
-            <div class="row pt-3 catalog-container">
-                <!-- Sidebar -->
-                <div class="col-md-2 pt-3">
-                    
-                    <h2 class="h3">Categories</h2>
-                    <hr />
-                    <div class="row pb-3">
-                        <div class="col-auto pl-2">
-                            <i class="bi bi-info-circle" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-auto p-0">
-                            <div class="sidebar-item fw-bold" id="item-0" role="button" tabindex="0">
-                                <a href="./#userGuide" target="_blank" id="nav-guide"><span class="px-1">User Guide</span> <i class="bi bi-box-arrow-up-right"></i></a> 
+    <main id="content" aria-label="main content">
+        <section class="pb-0" aria-label="Comixplain Catalog">
+            <h1 class="invisible visually-hidden">Comixplain Catalog</h1>
+            <div class="container-fluid mt-1">
+                <div class="row pt-3 catalog-container">
+                    <!-- Sidebar -->
+                    <div class="col-md-2 pt-3" role="region" aria-label="catalog navigation">
+                        
+                        <h2 class="h3">Categories</h2>
+                        <hr />
+                        <div class="row pb-3">
+                            <div class="col-auto pl-2">
+                                <i class="bi bi-info-circle" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-auto p-0">
+                                <div class="sidebar-item fw-bold" id="item-0" role="button" tabindex="0">
+                                    <a href="./#userGuide" target="_blank" id="nav-guide"><span class="px-1">User Guide</span> <i class="bi bi-box-arrow-up-right"></i></a> 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row pb-3">
-                        <div class="col-auto pl-2">
-                            <i class="bi bi-file-font icons" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-auto p-0">
-                            <div class="sidebar-item fw-bold link-secondary" id="item-1" role="button" tabindex="0">
-                                <i class="bi bi-chevron-down"></i><span class="px-2">Templates</span>
+                        <div class="row pb-3">
+                            <div class="col-auto pl-2">
+                                <i class="bi bi-file-font icons" aria-hidden="true"></i>
                             </div>
-                            <div class="" id="sidebar-sub-items-1">
+                            <div class="col-auto p-0">
+                                <div class="sidebar-item fw-bold link-secondary" id="item-1" role="button" tabindex="0">
+                                    <i class="bi bi-chevron-down"></i><span class="px-2">Templates</span>
+                                </div>
+                                <div class="" id="sidebar-sub-items-1">
 
-                                <div class="mx-4 fs-6 link-secondary" role="button" tabindex="0">Frames</div>
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Font</div>
+                                    <div class="mx-4 fs-6 link-secondary" role="button" tabindex="0">Frames</div>
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Font</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row pb-3">
-                        <div class="col-auto pl-2">
-                            <i class="bi bi-people icons" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-auto p-0">
-                            <div class="sidebar-item fw-bold" id="item-2" role="button" tabindex="0"><i
-                                    class="bi bi-chevron-right"></i><span class="px-2">Characters</span></div>
-                            <div class="collapse" id="sidebar-sub-items-2">
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Single</div>
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Multiple</div>
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Facial Expressions</div>
+                        <div class="row pb-3">
+                            <div class="col-auto pl-2">
+                                <i class="bi bi-people icons" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-auto p-0">
+                                <div class="sidebar-item fw-bold" id="item-2" role="button" tabindex="0"><i
+                                        class="bi bi-chevron-right"></i><span class="px-2">Characters</span></div>
+                                <div class="collapse" id="sidebar-sub-items-2">
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Single</div>
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Multiple</div>
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Facial Expressions</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row pb-3">
-                        <div class="col-auto pl-2">
-                            <i class="bi bi-chat icons" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-auto p-0">
-                            <div class="sidebar-item fw-bold" id="item-3" role="button" tabindex="0"><i
-                                    class="bi bi-chevron-right"></i><span class="px-2">Speech Bubbles</span></div>
-                            <div class="collapse" id="sidebar-sub-items-3">
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Full Bubbles</div>
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Half Bubbles</div>
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Caption Boxes</div>
+                        <div class="row pb-3">
+                            <div class="col-auto pl-2">
+                                <i class="bi bi-chat icons" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-auto p-0">
+                                <div class="sidebar-item fw-bold" id="item-3" role="button" tabindex="0"><i
+                                        class="bi bi-chevron-right"></i><span class="px-2">Speech Bubbles</span></div>
+                                <div class="collapse" id="sidebar-sub-items-3">
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Full Bubbles</div>
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Half Bubbles</div>
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Caption Boxes</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row pb-3">
-                        <div class="col-auto pl-2">
-                            <i class="bi bi-image icons" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-auto p-0">
-                            <div class="sidebar-item fw-bold" id="item-4" role="button" tabindex="0"><i
-                                    class="bi bi-chevron-right"></i><span class="px-2">Scenes</span></div>
-                            <div class="collapse" id="sidebar-sub-items-4">
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Background</div>
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Items</div>
+                        <div class="row pb-3">
+                            <div class="col-auto pl-2">
+                                <i class="bi bi-image icons" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-auto p-0">
+                                <div class="sidebar-item fw-bold" id="item-4" role="button" tabindex="0"><i
+                                        class="bi bi-chevron-right"></i><span class="px-2">Scenes</span></div>
+                                <div class="collapse" id="sidebar-sub-items-4">
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Background</div>
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Items</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-auto pl-2">
-                            <i class="bi bi-pin icons" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-auto p-0">
-                            <div class="sidebar-item fw-bold" id="item-5" role="button" tabindex="0"><i
-                                    class="bi bi-chevron-right"></i><span class="px-2">Shapes</span></div>
-                            <div class="collapse" id="sidebar-sub-items-5">
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Arrows</div>
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Circles</div>
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Rectangles</div>
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Lines</div>
-                                <div class="mx-4 fs-6" role="button" tabindex="0">Others</div>
+                        <div class="row">
+                            <div class="col-auto pl-2">
+                                <i class="bi bi-pin icons" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-auto p-0">
+                                <div class="sidebar-item fw-bold" id="item-5" role="button" tabindex="0"><i
+                                        class="bi bi-chevron-right"></i><span class="px-2">Shapes</span></div>
+                                <div class="collapse" id="sidebar-sub-items-5">
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Arrows</div>
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Circles</div>
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Rectangles</div>
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Lines</div>
+                                    <div class="mx-4 fs-6" role="button" tabindex="0">Others</div>
+                                </div>
                             </div>
                         </div>
+                        <hr />
                     </div>
-                    <hr />
+                    <!-- Gallery -->
+                    <div class="col-md-8 pt-3 pb-2 masthead" role="region" aria-label="gallery">
+                        <!-- Search Bar -->
+                        <div class="input-group pb-3" role="search" aria-label="search assets">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="bi bi-search me-2" aria-hidden="true"></i></span>
+                            </div>
+                            <input type="search" class="form-control ui-autocomplete" placeholder="Search Assets..."
+                                id="searchBarInput"></input>
+                        </div>
+                        <div class="filterbar pb-3" role="region" aria-label="filters">
+                            <!-- Filter Pills -->
+                            <div class="pb-3" id="filter-container">
+                            </div>
+                            <!-- Pagination -->
+                            <div id="navigation-bar" role="region" aria-label="pagination">
+                                <label for="page-select">Page: </label>
+                                <select id="page-select"></select>
+                            </div>
+                        </div>
+                        <!-- Images -->
+                        <div id="image-container" role="region" aria-label="assets">
+                        </div>
+                    </div>
+                    <!-- Meta Data -->
+                    <div class="col-md-2 pt-3 pb-2 masthead" id="metaData-Container" role="region" aria-label="metadata">
+                        <div id="metaData-Image"></div>
+                        <table id="details-Table">
+                            <thead>
+                                <tr>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="td-left">Keywords:</td>
+                                    <td class="td-right" id="td-Keywords"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-left">Created by:</td>
+                                    <td class="td-right" id="td-Created"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-left">File Location:</td>
+                                    <td class="td-right"><a id="td-Location" target="_blank"></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="td-left">Rights:</td>
+                                    <td class="td-right"><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank"><img class="ccimg" src="./assets/CCbysa.png" alt="Creative Commons Attribution-ShareAlike" width="50px" title="Free to share and adapt, giving appropriate credit to authors and distributing under the same license" /></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <!-- Gallery -->
-                <div class="col-md-8 pt-3 pb-2 masthead">
-                    <!-- Search Bar -->
-                    <div class="input-group pb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="bi bi-search me-2" aria-hidden="true"></i></span>
-                        </div>
-                        <input type="search" class="form-control ui-autocomplete" placeholder="Search Assets..."
-                            id="searchBarInput"></input>
-                    </div>
-                    <div class="filterbar pb-3">
-                        <!-- Filter Pills -->
-                        <div class="pb-3" id="filter-container">
-                        </div>
-                        <!-- Pagination -->
-                        <div id="navigation-bar">
-                          <label for="page-select">Page: </label>
-                          <select id="page-select"></select>
+                <div class="row mb-3" id="selection" role="region" aria-label="selected assets">
+                    <!-- Selected Assets -->
+                    <div class="col-sm-2"></div>
+
+                    <div class="col-md-8">
+                        <h3 class="h5" id="selectedAssetsHeadline">Selected Assets</h3>
+                        <div id="selectedAssets">
+                            <div id="selectedAssetsContainer"></div>
+                            <p class="text-center text-muted mt-3" id="noAssetsText">No Assets selected yet.</p>
                         </div>
                     </div>
-                    <!-- Images -->
-                    <div id="image-container">
+                    <!-- Buttons -->
+                    <div class="col-sm-2" id="buttons">
+                        <div class="col-auto mb-2">
+                            <button class="btn btn-outline-secondary mb-2 mb-lg-0" id="clearButton">
+                                <span class="d-flex align-items-center">
+                                    <span class="small">Clear Selection</span>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-outline-primary mb-2 mb-lg-0" id="downloadButton">
+                                <span class="d-flex align-items-center">
+                                    <span class="small">Download</span>
+                                </span>
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <!-- Meta Data -->
-                <div class="col-md-2 pt-3 pb-2 masthead" id="metaData-Container">
-                    <div id="metaData-Image"></div>
-                    <table id="details-Table">
-                        <thead>
-                            <tr>
-                                <th>Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="td-left">Keywords:</td>
-                                <td class="td-right" id="td-Keywords"></td>
-                            </tr>
-                            <tr>
-                                <td class="td-left">Created by:</td>
-                                <td class="td-right" id="td-Created"></td>
-                            </tr>
-                            <tr>
-                                <td class="td-left">File Location:</td>
-                                <td class="td-right"><a id="td-Location" target="_blank"></a></td>
-                            </tr>
-                            <tr>
-                                <td class="td-left">Rights:</td>
-                                <td class="td-right"><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank"><img class="ccimg" src="./assets/CCbysa.png" alt="Creative Commons Attribution-ShareAlike" width="50px" title="Free to share and adapt, giving appropriate credit to authors and distributing under the same license" /></a></td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
-            <div class="row mb-3" id="selection">
-                <!-- Selected Assets -->
-                <div class="col-sm-2"></div>
+        </section>
+    </main>
 
-                <div class="col-md-8">
-                    <h3 class="h5" id="selectedAssetsHeadline">Selected Assets</h3>
-                    <div id="selectedAssets">
-                        <div id="selectedAssetsContainer"></div>
-                        <p class="text-center text-muted mt-3" id="noAssetsText">No Assets selected yet.</p>
-                    </div>
+    <footer class="bg-black text-center py-5" aria-label="footer">
+        <div class="container px-5">
+            <div class="text-white-50 small">
+                <div class="mb-2">&copy; Comixplain 2025. <a href="./rights.html">All Rights Reserved</a>.</div>
+                <div class="mb-2">
+                    Catalog designed and developed by <a href="mailto: a_blasinger@hotmail.com">Anna Blasinger</a> 2024.
                 </div>
-                <!-- Buttons -->
-                <div class="col-sm-2" id="buttons">
-                    <div class="col-auto mb-2">
-                        <button class="btn btn-outline-secondary mb-2 mb-lg-0" id="clearButton">
-                            <span class="d-flex align-items-center">
-                                <span class="small">Clear Selection</span>
-                            </span>
-                        </button>
-                    </div>
-                    <div class="col-auto">
-                        <button class="btn btn-outline-primary mb-2 mb-lg-0" id="downloadButton">
-                            <span class="d-flex align-items-center">
-                                <span class="small">Download</span>
-                            </span>
-                        </button>
-                    </div>
-                </div>
+                <a href="https://www.google.com.sg/maps/place/Fachhochschule+St.+P%C3%B6lten/@48.2136616,15.6292532,17z/data=!3m1!4b1!4m6!3m5!1s0x47727f54b59fd221:0x831d622b4ba9fc93!8m2!3d48.2136616!4d15.6314419!16s%2Fm%2F0524k6y">Hochschule für Angewandte Wissenschaften St. Pölten GmbH, Campus-Platz 1, 3100 St. Pölten</a><br/>
+                <a href="https://www.ustp.at/de/impressum/impressum?set_language=de">Impressum & Datenschutz</a> | <a href="https://www.ustp.at/en/legal-information/legal-information?set_language=en">Legal Information</a> 
             </div>
         </div>
-    </section>
-    <!-- Footer-->
-        <footer class="bg-black text-center py-5">
-            <div class="container px-5">
-                <div class="text-white-50 small">
-                    <div class="mb-2">&copy; Comixplain 2025. <a href="./rights.html">All Rights Reserved</a>.</div>
-                    <div class="mb-2">
-                        Catalog designed and developed by <a href="mailto: a_blasinger@hotmail.com">Anna Blasinger</a> 2024.
-                    </div>
-                    <a href="https://www.google.com.sg/maps/place/Fachhochschule+St.+P%C3%B6lten/@48.2136616,15.6292532,17z/data=!3m1!4b1!4m6!3m5!1s0x47727f54b59fd221:0x831d622b4ba9fc93!8m2!3d48.2136616!4d15.6314419!16s%2Fm%2F0524k6y">Hochschule für Angewandte Wissenschaften St. Pölten GmbH, Campus-Platz 1, 3100 St. Pölten</a><br/>
-                    <a href="https://www.ustp.at/de/impressum/impressum?set_language=de">Impressum & Datenschutz</a> | <a href="https://www.ustp.at/en/legal-information/legal-information?set_language=en">Legal Information</a> 
-                </div>
-            </div>
-        </footer>
+    </footer>
 
     <!-- Contact Modal-->
     <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
