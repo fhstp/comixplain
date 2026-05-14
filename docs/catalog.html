@@ -99,14 +99,14 @@
                     <div class="col-md-2 pt-3" role="region" aria-label="catalog navigation">
                         
                         <h2 class="h3">Categories</h2>
-                        <hr />
+                        <hr aria-hidden="true" />
                         <div class="row pb-3">
                             <div class="col-auto pl-2">
                                 <i class="bi bi-info-circle" aria-hidden="true"></i>
                             </div>
                             <div class="col-auto p-0">
                                 <div class="sidebar-item fw-bold" id="item-0" role="button" tabindex="0">
-                                    <a href="./#userGuide" target="_blank" id="nav-guide"><span class="px-1">User Guide</span> <i class="bi bi-box-arrow-up-right"></i></a> 
+                                    <a href="./#userGuide" id="nav-guide"><span class="px-1">User Guide</span> <i class="bi bi-box-arrow-up-right" aria-label="external link"></i></a> 
                                 </div>
                             </div>
                         </div>
@@ -115,11 +115,10 @@
                                 <i class="bi bi-file-font icons" aria-hidden="true"></i>
                             </div>
                             <div class="col-auto p-0">
-                                <div class="sidebar-item fw-bold link-secondary" id="item-1" role="button" tabindex="0">
-                                    <i class="bi bi-chevron-down"></i><span class="px-2">Templates</span>
+                                <div class="sidebar-item fw-bold link-secondary" id="item-1" role="button" tabindex="0" aria-controls="sidebar-sub-items-1" aria-expanded="true">
+                                    <i class="bi bi-chevron-down" aria-hidden="true"></i><span class="px-2">Templates</span>
                                 </div>
-                                <div class="" id="sidebar-sub-items-1">
-
+                                <div class="" id="sidebar-sub-items-1" role="region" aria-labelledby="item-1">
                                     <div class="mx-4 fs-6 link-secondary" role="button" tabindex="0">Frames</div>
                                     <div class="mx-4 fs-6" role="button" tabindex="0">Font</div>
                                 </div>
@@ -131,9 +130,9 @@
                                 <i class="bi bi-people icons" aria-hidden="true"></i>
                             </div>
                             <div class="col-auto p-0">
-                                <div class="sidebar-item fw-bold" id="item-2" role="button" tabindex="0"><i
-                                        class="bi bi-chevron-right"></i><span class="px-2">Characters</span></div>
-                                <div class="collapse" id="sidebar-sub-items-2">
+                                <div class="sidebar-item fw-bold" id="item-2" role="button" tabindex="0" aria-controls="sidebar-sub-items-2" aria-expanded="false">
+                                	<i class="bi bi-chevron-right" aria-hidden="true"></i><span class="px-2">Characters</span></div>
+                                <div class="collapse" id="sidebar-sub-items-2" role="region" aria-labelledby="item-2">
                                     <div class="mx-4 fs-6" role="button" tabindex="0">Single</div>
                                     <div class="mx-4 fs-6" role="button" tabindex="0">Multiple</div>
                                     <div class="mx-4 fs-6" role="button" tabindex="0">Facial Expressions</div>
@@ -146,9 +145,9 @@
                                 <i class="bi bi-chat icons" aria-hidden="true"></i>
                             </div>
                             <div class="col-auto p-0">
-                                <div class="sidebar-item fw-bold" id="item-3" role="button" tabindex="0"><i
-                                        class="bi bi-chevron-right"></i><span class="px-2">Speech Bubbles</span></div>
-                                <div class="collapse" id="sidebar-sub-items-3">
+                                <div class="sidebar-item fw-bold" id="item-3" role="button" tabindex="0" aria-controls="sidebar-sub-items-3" aria-expanded="false">
+                                	<i class="bi bi-chevron-right" aria-hidden="true"></i><span class="px-2">Speech Bubbles</span></div>
+                                <div class="collapse" id="sidebar-sub-items-3"  role="region" aria-labelledby="item-3">
                                     <div class="mx-4 fs-6" role="button" tabindex="0">Full Bubbles</div>
                                     <div class="mx-4 fs-6" role="button" tabindex="0">Half Bubbles</div>
                                     <div class="mx-4 fs-6" role="button" tabindex="0">Caption Boxes</div>
@@ -161,9 +160,9 @@
                                 <i class="bi bi-image icons" aria-hidden="true"></i>
                             </div>
                             <div class="col-auto p-0">
-                                <div class="sidebar-item fw-bold" id="item-4" role="button" tabindex="0"><i
-                                        class="bi bi-chevron-right"></i><span class="px-2">Scenes</span></div>
-                                <div class="collapse" id="sidebar-sub-items-4">
+                                <div class="sidebar-item fw-bold" id="item-4" role="button" tabindex="0" aria-controls="sidebar-sub-items-4" aria-expanded="false">
+                                	<i class="bi bi-chevron-right" aria-hidden="true"></i><span class="px-2">Scenes</span></div>
+                                <div class="collapse" id="sidebar-sub-items-4" role="region" aria-labelledby="item-4">
                                     <div class="mx-4 fs-6" role="button" tabindex="0">Background</div>
                                     <div class="mx-4 fs-6" role="button" tabindex="0">Items</div>
                                 </div>
@@ -175,9 +174,9 @@
                                 <i class="bi bi-pin icons" aria-hidden="true"></i>
                             </div>
                             <div class="col-auto p-0">
-                                <div class="sidebar-item fw-bold" id="item-5" role="button" tabindex="0"><i
-                                        class="bi bi-chevron-right"></i><span class="px-2">Shapes</span></div>
-                                <div class="collapse" id="sidebar-sub-items-5">
+                                <div class="sidebar-item fw-bold" id="item-5" role="button" tabindex="0" aria-controls="sidebar-sub-items-5" aria-expanded="false">
+                                	<i class="bi bi-chevron-right" aria-hidden="true"></i><span class="px-2">Shapes</span></div>
+                                <div class="collapse" id="sidebar-sub-items-5" role="region" aria-labelledby="item-5">
                                     <div class="mx-4 fs-6" role="button" tabindex="0">Arrows</div>
                                     <div class="mx-4 fs-6" role="button" tabindex="0">Circles</div>
                                     <div class="mx-4 fs-6" role="button" tabindex="0">Rectangles</div>
@@ -186,7 +185,7 @@
                                 </div>
                             </div>
                         </div>
-                        <hr />
+                        <hr aria-hidden="true" />
                     </div>
                     <!-- Gallery -->
                     <div class="col-md-8 pt-3 pb-2 masthead" role="region" aria-label="gallery">
@@ -256,16 +255,16 @@
                     <!-- Buttons -->
                     <div class="col-sm-2" id="buttons">
                         <div class="col-auto mb-2">
-                            <button class="btn btn-outline-secondary mb-2 mb-lg-0" id="clearButton">
+                            <button class="btn btn-outline-secondary mb-2 mb-lg-0" id="clearButton" disabled>
                                 <span class="d-flex align-items-center">
                                     <span class="small">Clear Selection</span>
                                 </span>
                             </button>
                         </div>
                         <div class="col-auto">
-                            <button class="btn btn-outline-primary mb-2 mb-lg-0" id="downloadButton">
+                            <button class="btn btn-outline-primary mb-2 mb-lg-0" id="downloadButton" disabled>
                                 <span class="d-flex align-items-center">
-                                    <span class="small">Download</span>
+                                    <span class="small">Download Assets</span>
                                 </span>
                             </button>
                         </div>

@@ -18,6 +18,8 @@ fetch('https://www.comixplain.cc/assets.json')
     createFilter(activeCategory, activeSubCategory);
     // display metadata
     displayMetaData(selectedAsset);
+    // setup selection buttons
+    setupSelectionButtons(selectedAsset);
     // add event listener to the clear button
     clearButton.addEventListener("click", clearSelection);
     // add event listener to the download button
@@ -197,6 +199,8 @@ function renderImages(filteredData, page) {
         });
       }
 
+      setupSelectionButtons(selectedAsset);
+
       displayMetaData(selectedAsset);
     });
 
@@ -232,6 +236,17 @@ function renderImages(filteredData, page) {
       }
     });
   });
+}
+
+function setupSelectionButtons(selectedAsset) {
+  if(selectedAsset.length > 0){
+    clearButton.removeAttribute("disabled");
+    downloadButton.removeAttribute("disabled");
+  } else {
+    clearButton.setAttribute("disabled","disabled");
+    downloadButton.setAttribute("disabled","disabled");
+  }
+  
 }
 
 // Render selected images
@@ -287,8 +302,9 @@ function renderSelectedImages(selectedAsset) {
             image.classList.remove("catalog-image-selected");
           }
         });
-        displayMetaData(selectedAsset);
 
+        setupSelectionButtons(selectedAsset); 
+        displayMetaData(selectedAsset);
         displayAssetCount(selectedAsset);
       });
 
@@ -509,6 +525,7 @@ function clearSelection() {
   });
 
   selectedAsset = [];
+  setupSelectionButtons(selectedAsset);
   displayMetaData(selectedAsset);
   // also remove all borders
   const images = document.querySelectorAll(".catalog-image");
@@ -647,6 +664,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     // Add a click event listener to each 'sidebar-item'
     sideBarItem.addEventListener("click", () => {
       // Toggle the visibility of the corresponding sub-items
+      const expanded = sideBarItem.getAttribute("aria-expanded") === "true";
       if (subCategories) {
         subCategories.classList.toggle("collapse");
         // Toggle the chevron icon
@@ -655,6 +673,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
           itemIcon.classList.toggle("bi-chevron-down");
         }
       }
+      sideBarItem.setAttribute("aria-expanded",!expanded);
     });
 
     // Execute a function when the user presses a key on the keyboard
