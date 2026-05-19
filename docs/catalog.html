@@ -192,7 +192,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="bi bi-search me-2" aria-hidden="true"></i></span>
                             </div>
-                            <input type="search" class="form-control ui-autocomplete" placeholder="Search Assets..." id="searchBarInput">
+                            <input type="search" class="form-control ui-autocomplete" placeholder="Search Assets..." id="searchBarInput" aria-label="search assets">
                         </div>
                         <div class="filterbar pb-3" role="region" aria-label="filters">
                             <!-- Filter Pills -->
@@ -201,7 +201,7 @@
                             <!-- Pagination -->
                             <div id="navigation-bar" role="region" aria-label="pagination">
                                 <label for="page-select">Page: </label>
-                                <select id="page-select"></select>
+                                <select name="pages" id="page-select"></select>
                             </div>
                         </div>
                         <!-- Images -->
@@ -228,7 +228,7 @@
                                 </tr>
                                 <tr>
                                     <td class="td-left">File Location:</td>
-                                    <td class="td-right"><a id="td-Location" href="#"></a></td>
+                                    <td class="td-right"><a id="td-Location" href="#" aria-label="open file"></a></td>
                                 </tr>
                                 <tr>
                                     <td class="td-left">Rights:</td>

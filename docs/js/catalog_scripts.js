@@ -170,6 +170,7 @@ function renderImages(filteredData, page) {
     );
 
     imgElement.setAttribute("tabindex","0");
+    imgElement.setAttribute("role","button");
 
     // set isSelected to false initially
     item.isSelected = false;
