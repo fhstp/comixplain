@@ -70,10 +70,10 @@
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation options">
-                <i class="bi-list" alt="Menu"></i>
+                <i class="bi-list"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive" aria-label="page sections">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0" aria-label="page sections">
                     <li class="nav-item"><a class="nav-link me-lg-3" href="./#userGuide">User Guide</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="./#editions">Comixplain Editions</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="./#derivatives">Community Contributions</a></li>
@@ -105,9 +105,7 @@
                                 <i class="bi bi-info-circle" aria-hidden="true"></i>
                             </div>
                             <div class="col-auto p-0">
-                                <div class="sidebar-item fw-bold" id="item-0" role="button" tabindex="0">
-                                    <a href="./#userGuide" id="nav-guide" aria-label="User guide on the main page"><span class="px-1">User Guide</span> <i class="bi bi-box-arrow-up-right"></i></a> 
-                                </div>
+                                <a href="./#userGuide" class="sidebar-item fw-bold" id="nav-guide" aria-label="User guide on the main page"><span class="px-1">User Guide</span> <i class="bi bi-box-arrow-up-right"></i></a> 
                             </div>
                         </div>
                         <div class="row pb-3">
@@ -194,8 +192,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="bi bi-search me-2" aria-hidden="true"></i></span>
                             </div>
-                            <input type="search" class="form-control ui-autocomplete" placeholder="Search Assets..."
-                                id="searchBarInput"></input>
+                            <input type="search" class="form-control ui-autocomplete" placeholder="Search Assets..." id="searchBarInput">
                         </div>
                         <div class="filterbar pb-3" role="region" aria-label="filters">
                             <!-- Filter Pills -->
@@ -217,7 +214,7 @@
                         <table id="details-Table">
                             <thead>
                                 <tr>
-                                    <th>Details</th>
+                                    <th colspan="2">Details</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -231,11 +228,11 @@
                                 </tr>
                                 <tr>
                                     <td class="td-left">File Location:</td>
-                                    <td class="td-right"><a id="td-Location" target="_blank"></a></td>
+                                    <td class="td-right"><a id="td-Location" href="#"></a></td>
                                 </tr>
                                 <tr>
                                     <td class="td-left">Rights:</td>
-                                    <td class="td-right"><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank"><img class="ccimg" src="./assets/CCbysa.png" alt="Creative Commons Attribution-ShareAlike" width="50px" title="Free to share and adapt, giving appropriate credit to authors and distributing under the same license"></a></td>
+                                    <td class="td-right"><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en"><img class="ccimg" src="./assets/CCbysa.png" alt="Creative Commons Attribution-ShareAlike" width="50" title="Free to share and adapt, giving appropriate credit to authors and distributing under the same license."></a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -278,7 +275,7 @@
         <div class="container px-5">
             <div class="text-white-50 small">
                 <div class="mb-2">&copy; Comixplain 2025. <a href="./rights.html">All Rights Reserved</a>.</div>
-                <div class="mb-2">Catalog designed and developed by <a href="mailto: a_blasinger@hotmail.com">Anna Blasinger</a> 2024.</div>
+                <div class="mb-2">Catalog designed and developed by <a href="mailto:a_blasinger@hotmail.com">Anna Blasinger</a> 2024.</div>
                 <a lang="de" href="https://www.google.com.sg/maps/place/Fachhochschule+St.+P%C3%B6lten/@48.2136616,15.6292532,17z/data=!3m1!4b1!4m6!3m5!1s0x47727f54b59fd221:0x831d622b4ba9fc93!8m2!3d48.2136616!4d15.6314419!16s%2Fm%2F0524k6y">Hochschule für Angewandte Wissenschaften St. Pölten GmbH, Campus-Platz 1, 3100 St. Pölten <i class="bi bi-box-arrow-up-right ms-2"></i></a><br>
                 <a lang="de" href="https://www.ustp.at/de/impressum/impressum?set_language=de">Impressum & Datenschutz <i class="bi bi-box-arrow-up-right ms-2 me-2"></i></a> | <a href="https://www.ustp.at/en/legal-information/legal-information?set_language=en">Legal Information <i class="bi bi-box-arrow-up-right ms-2 me-2"></i></a> | <a href="./accessibility.html">Accessibility</a> 
             </div>
@@ -286,13 +283,13 @@
     </footer>
 
     <!-- Contact Modal-->
-    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true" role="dialog" aria-modal="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header bg-gradient-primary-to-secondary p-4">
-                    <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">
+                    <h2 class="modal-title font-alt text-white h5" id="feedbackModalLabel">
                         Contact Us
-                    </h5>
+                    </h2>
                     <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
