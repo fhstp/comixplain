@@ -163,7 +163,7 @@ function renderImages(filteredData, page) {
     imgElement.classList.add(
       "catalog-image",
       "p-2",
-      "bg-white",
+      "bg-white-pattern",
       "rounded",
       "m-2",
       "asset-shadow"
@@ -277,7 +277,7 @@ function renderSelectedImages(selectedAsset) {
       imgElement.classList.add(
         "selected-image",
         "p-2",
-        "bg-white",
+        "bg-white-pattern",
         "rounded",
         "m-2",
         "asset-shadow",
@@ -422,7 +422,7 @@ function displayMetaData(selectedAsset) {
     imgElement.classList.add(
       "metaData-Image",
       "p-2",
-      "bg-white",
+      "bg-white-pattern",
       "rounded",
       "m-2",
       "asset-shadow"
