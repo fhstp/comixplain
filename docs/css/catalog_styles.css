@@ -143,3 +143,10 @@ td {
   white-space: nowrap;
 }
 
+.bg-white-pattern {
+  background-color: rgba(249, 249, 249, 0.9);
+  background-image: url("../assets/img/dotpattern.png");
+  background-blend-mode:lighten;
+  background-size: 200px;
+}
+
