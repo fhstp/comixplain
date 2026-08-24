@@ -354,7 +354,7 @@ function createFilter(category, subcategory) {
     filterElement.style.marginBottom = "0.5rem";
 
     // add classes to the filter element
-    filterElement.classList.add("btn", "btn-outline-secondary", "btn-sm");
+    filterElement.classList.add("filter-button","btn", "btn-outline-secondary", "btn-sm");
 
     // Append the filter to the document fragment
     fragment.appendChild(filterElement);
@@ -363,22 +363,20 @@ function createFilter(category, subcategory) {
 
     // add a click event listener to each filter
     filterElement.addEventListener("click", () => {
-      if (!isActive) {
-        isActive = true;
-        filterElement.classList.toggle("btn-outline-secondary");
-        filterElement.classList.toggle("btn-secondary");
+      const wasActive = filterElement.classList.contains("btn-secondary");
+      document.querySelectorAll(".filter-button").forEach((element) => {
+        element.classList.remove("btn-secondary");
+        element.classList.add("btn-outline-secondary");
+      });
+
+      activeFilter.length = 0;
+      if (!wasActive) {
+        filterElement.classList.remove("btn-outline-secondary");
+        filterElement.classList.add("btn-secondary");
 
         activeFilter.push(item);
-      } else {
-        isActive = false;
-        filterElement.classList.toggle("btn-outline-secondary");
-        filterElement.classList.toggle("btn-secondary");
-
-        activeFilter.splice(activeFilter.indexOf(item), 1);
       }
-
-      // filter the images
-      filterAssetsByActiveFilter(filteredImagesByCategory, activeFilter,1);
+      filterAssetsByActiveFilter(filteredImagesByCategory,activeFilter,1);
     });
   });
 
