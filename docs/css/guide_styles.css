@@ -1,0 +1,211 @@
+h3, .h3 {
+    font-size: calc(1.3rem + 0.6vw);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  @media (min-width: 1200px) {
+    h3, .h3 {
+      font-size: 1.75rem;
+    }
+  }
+
+  h4, .h4 {
+    font-size: calc(1.3rem + 0.6vw);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  @media (min-width: 1200px) {
+    h4, .h4 {
+      font-size: 1.75rem;
+    }
+  }
+
+/* Guide page layout */
+.guide-container {
+    margin-top: -5px;
+    margin-right: 10%;
+}
+
+.guide-sidebar-wrapper {
+    align-self: flex-start;
+}
+
+.guide-sidebar {
+    position: fixed;
+    top: 5.5rem;
+    max-height: calc(100vh - 6rem);
+    overflow-y: auto;
+}
+
+.guide-sidebar .nav-link {
+    color: #51555c;
+    padding: 0.5rem 0;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+    padding-left: 0.75rem;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.guide-sidebar .nav-link:hover,
+.guide-sidebar .nav-link:focus {
+    color: #9f1ae2;
+}
+
+.guide-sidebar .nav-link.active {
+    color: #9f1ae2;
+    border-left-color: #9f1ae2;
+    font-weight: 600;
+}
+
+.guide-content {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.guide-section {
+    padding-top: 3rem;
+    padding-bottom: 7rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    scroll-margin-top: 5.5rem;
+}
+
+.guide-section:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.guide-placeholder-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    background-color: #f8f9fa;
+    border: 2px dashed #ced4da;
+    border-radius: 0.5rem;
+    color: #adb5bd;
+}
+
+.guide-placeholder-image i {
+    font-size: 3rem;
+}
+
+/* Mobile sidebar toggle */
+.guide-sidebar-toggle {
+    position: fixed;
+    top: 4.75rem;
+    left: 0.75rem;
+    z-index: 1025;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.375rem;
+    background-color: #fff;
+    color: #51555c;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08);
+    transition: color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.guide-sidebar-toggle:hover,
+.guide-sidebar-toggle:focus {
+    color: #9f1ae2;
+    border-color: rgba(159, 26, 226, 0.35);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.12);
+}
+
+.guide-sidebar-toggle.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.guide-sidebar-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1035;
+    background-color: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.guide-sidebar-overlay.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.guide-sidebar-open {
+    overflow: hidden;
+}
+
+.guide-sidebar-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    border: none;
+    border-radius: 0.375rem;
+    background: transparent;
+    color: #51555c;
+    transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.guide-sidebar-close:hover,
+.guide-sidebar-close:focus {
+    color: #9f1ae2;
+    background-color: rgba(159, 26, 226, 0.08);
+}
+
+@media (max-width: 991.98px) {
+    .guide-content {
+        padding-top: 2.5rem !important;
+    }
+    .guide-container {
+        margin-right: 0%;
+    }
+
+    .guide-section {
+        scroll-margin-top: 4.5rem;
+    }
+
+    .guide-sidebar-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 66.67%;
+        max-width: 22rem;
+        height: 100%;
+        z-index: 1040;
+        padding: 0;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        pointer-events: none;
+    }
+
+    .guide-sidebar-wrapper.is-open {
+        transform: translateX(0);
+        pointer-events: auto;
+    }
+
+    .guide-sidebar {
+        position: static;
+        max-height: none;
+        height: 100%;
+        padding-top: 5rem !important;
+        background-color: #fff;
+        box-shadow: 0.25rem 0 1rem rgba(0, 0, 0, 0.15);
+        overflow-y: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .guide-sidebar-overlay,
+    .guide-sidebar-toggle {
+        display: none !important;
+    }
+}
