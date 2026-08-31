@@ -35,6 +35,7 @@ h3, .h3 {
     top: 5.5rem;
     max-height: calc(100vh - 6rem);
     overflow-y: auto;
+    background: #ffffff;
 }
 
 .guide-sidebar .nav-link {
